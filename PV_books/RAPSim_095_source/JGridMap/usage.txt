@@ -1,0 +1,7 @@
+TODO
+
+PrimaryView manages all other view classes and implements all view interfaces.
+For the communication only the Interfaces or the PrimaryView class itself (JPanel) should be needed.
+
+
+  

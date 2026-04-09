@@ -1,0 +1,24 @@
+65,23
+
+ WwwwwwwW   WW        W           W           W     W   WwwwwwwW
+ W          W W       W          W W          W    W    W
+ W          W  W      W         W   W         W   W     W
+ W          W   W     W        W     W        W  W      W
+ WwwwwwwW   W    W    W       W       W       WwW       WwwwwwW
+        W   W     W   W      W  WwwwW  W      W  W      W
+        W   W      W  W     W           W     W   W     W
+        W   W       W W    W             W    W    W    W
+ WwwwwwwW   W        WW   W               W   W     W   WwwwwwwW
+
+ BBBBBBBB   B         B   B               B   B     B   BBBBBBBB  
+                                                                 
+
+ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW 
+ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW 
+ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW 
+ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW 
+ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW 
+ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW 
+ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW 
+
