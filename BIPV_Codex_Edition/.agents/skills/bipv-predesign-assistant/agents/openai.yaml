@@ -1,0 +1,6 @@
+interface:
+  display_name: "BIPV Assistant"
+  short_description: "Decision-grade pre-design guidance for glazing-integrated PV blind systems."
+  default_prompt: "Analyze this iWin-type BIPV task using evidence tags, design-envelope checks, explicit assumptions, and vendor-data closure rules."
+policy:
+  allow_implicit_invocation: true

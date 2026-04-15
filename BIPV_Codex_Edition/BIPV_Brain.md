@@ -1,0 +1,153 @@
+# BIPV_Brain
+
+Rolling archive for session summaries, decisions, learnings, unresolved questions, and next-work anchors for the iWin / BIPV pre-design effort.
+
+## Purpose
+
+Use this file as the project memory for:
+- session-by-session summaries
+- decisions taken or explicitly deferred
+- stable technical learnings worth carrying forward
+- unresolved assumptions and open threads
+- links to the latest durable artifacts
+
+## Operating Rules
+
+- Do not convert a public clue into a design fact.
+- Keep evidence tagged mentally as:
+  - `Verified public fact`
+  - `Standards-backed framing`
+  - `Public clue`
+  - `Engineering inference`
+  - `Vendor-data required`
+- Do not rank architecture options before the electrical envelope is defined.
+- Keep module-level, system-level, electrical-design, commissioning, and maintenance obligations separate.
+- Treat temperature, mismatch, bypass topology, moving conductors, feedthroughs, diagnostics, and replacement boundary as first-order issues.
+
+## Current Position
+
+### Working conclusion
+
+The current project direction favors finer-granularity power processing over classic centralized string MPPT for iWin-type moving PV blinds, but no preferred architecture is closed yet.
+
+### Why no architecture is closed yet
+
+The following hard-gate inputs are still missing or not yet verified:
+- `Voc,max`
+- `Isc,max`
+- MPPT window requirement
+- disconnect / isolation boundary
+- protection concept
+- connector family
+- cable class
+- replacement boundary
+- thermal mission profile
+- moving-interface definition
+
+## Durable Artifacts
+
+- Deck audit: [analysis/BIPV_Presentation_Deck_Audit.md](C:/Users/Denys/Documents/Codex/BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Audit.md)
+- Lugano research prompt: [analysis/Research_Prompt_Lugano_iWin_Office_Facade.md](C:/Users/Denys/Documents/Codex/BIPV_Codex_Edition/analysis/Research_Prompt_Lugano_iWin_Office_Facade.md)
+
+## Current Decisions
+
+| Date | Decision | Status | Notes |
+| --- | --- | --- | --- |
+| 2026-04-14 | Use explicit evidence taxonomy for all non-trivial BIPV claims | Active | Prevents marketing drift and hidden assumptions |
+| 2026-04-14 | Do not rank architecture until electrical-envelope hard gates are populated | Active | Core project gate |
+| 2026-04-14 | Treat safety, thermal behavior, moving conductors, and service boundary as first-order design topics | Active | Applies to all future architecture work |
+| 2026-04-14 | Use Lugano office facade case as practical sizing reference: 60 m2 per floor, 3-5 floors | Active | Used in the latest research prompt |
+| 2026-04-14 | Explicitly include Swiss normative and legislative constraints in future research work | Active | Federal, cantonal, municipal, fire-safety, and market-interface layers required |
+
+## Current Learnings
+
+- The five reviewed decks are directionally strong but overstate certainty.
+- The strongest technical content is around shading mismatch, reverse bias, hot-spot logic, and the value of higher granularity.
+- The weakest content is around:
+  - universalized power-loss claims
+  - absolute safety claims
+  - unsupported PR / LCOE / NPV claims
+  - premature optimizer-versus-microinverter conclusions
+- Safety claims must not collapse into slogans such as:
+  - "safe below 120 V"
+  - "microinverters eliminate risk"
+  - "insurable architecture" without approval evidence
+- Economics cannot be treated honestly until yield assumptions, replacement burden, thermal derating, and regulatory constraints are explicit.
+- Swiss / Ticino / Lugano regulatory fit is not background context. It is an architecture filter.
+
+## Open Threads
+
+| Priority | Thread | Why it matters | Blocking items |
+| --- | --- | --- | --- |
+| High | Electrical envelope definition | Blocks architecture ranking | Module / louver electrical data, grouping assumptions, converter windows |
+| High | Lugano practical dimensioning | Converts concept into usable pre-design | Power density, weather / irradiance source, facade assumptions |
+| High | Swiss normative and legislative map | Can eliminate topologies before design effort is wasted | OIBT / NIV, ESTI, VKF / AEAI, Ticino, Lugano, DSO interface |
+| High | Safety state definition | Needed for shutdown, fire response, maintenance | Isolation boundary, residual voltage, segmentation strategy |
+| High | Thermal mission profile | Directly affects reliability and architecture choice | Cavity temperatures, low-temp Voc,max, derating behavior |
+| Medium | Moving conductor and feedthrough strategy | Unique failure and maintenance driver for PV blinds | Cable class, flex life, sealing, strain relief, replacement method |
+| Medium | Vendor-data request package | Needed to close assumptions cleanly | Datasheets, qualification reports, drawings, shutdown behavior |
+| Medium | Architecture decision matrix | Needed after envelope and regulatory mapping | Comparable criteria and product candidates |
+
+## Session Log
+
+### 2026-04-14 - Session 01
+
+#### Summary
+
+- Reviewed five BIPV / iWin presentation decks in detail.
+- Verified core physics and architecture claims against public technical sources.
+- Identified the main overstated or unsupported claims.
+- Produced a detailed Lugano office-facade research prompt.
+- Extended that prompt to force Swiss normative and legislative constraint mapping.
+
+#### Decisions / outcomes
+
+- Keep the project in pre-design mode; no procurement or compliance language.
+- Use the Lugano office-building facade as the practical case:
+  - 60 m2 per floor
+  - 3-5 floors
+  - 180-300 m2 total active area
+- Require future research to separate:
+  - legal requirements
+  - recognized technical rules
+  - fire guidance
+  - permit process
+  - incentive conditions
+
+#### Learnings captured
+
+- The project now needs less storytelling and more bounded calculations.
+- Future work should focus on:
+  - first-pass dimensioning
+  - segmentation strategy
+  - safety states
+  - thermal mission profile
+  - approval and evidence path
+
+#### Open threads carried forward
+
+- Create a Lugano-specific normative checklist matrix
+- Build the first electrical-envelope worksheet
+- Draft a vendor-data request list tied to blocking assumptions
+- Create a practical architecture comparison matrix using the Lugano case
+
+## Update Template
+
+Copy this block when adding a new session:
+
+```text
+### YYYY-MM-DD - Session NN
+
+#### Summary
+- ...
+
+#### Decisions / outcomes
+- ...
+
+#### Learnings captured
+- ...
+
+#### Open threads carried forward
+- ...
+```
+
