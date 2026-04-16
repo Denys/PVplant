@@ -1,0 +1,5 @@
+1_BIPV_Shading_Mitigation.pdf	pages=17	title=	author=
+2_The_Granularity_Paradigm.pdf	pages=16	title=	author=
+3_BIPV_Safety_Architecture.pdf	pages=15	title=	author=
+4_Active_Envelope_Engineering.pdf	pages=16	title=	author=
+5_BIPV_SD_Architectures_ACvsDC_Comparison.pdf	pages=15	title=	author=

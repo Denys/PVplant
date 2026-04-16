@@ -46,8 +46,9 @@ The following hard-gate inputs are still missing or not yet verified:
 
 ## Durable Artifacts
 
-- Deck audit: [analysis/BIPV_Presentation_Deck_Audit.md](C:/Users/Denys/Documents/Codex/BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Audit.md)
-- Lugano research prompt: [analysis/Research_Prompt_Lugano_iWin_Office_Facade.md](C:/Users/Denys/Documents/Codex/BIPV_Codex_Edition/analysis/Research_Prompt_Lugano_iWin_Office_Facade.md)
+- Deck audit: [analysis/BIPV_Presentation_Deck_Audit.md](C:/Users/Denys/Documents/Projects/PVplant/BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Audit.md)
+- Primary-source reevaluation: [analysis/BIPV_Presentation_Deck_Primary_Source_Reevaluation.md](C:/Users/Denys/Documents/Projects/PVplant/BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Primary_Source_Reevaluation.md)
+- Lugano research prompt: [analysis/Research_Prompt_Lugano_iWin_Office_Facade.md](C:/Users/Denys/Documents/Projects/PVplant/BIPV_Codex_Edition/analysis/Research_Prompt_Lugano_iWin_Office_Facade.md)
 
 ## Current Decisions
 
@@ -89,6 +90,42 @@ The following hard-gate inputs are still missing or not yet verified:
 | Medium | Architecture decision matrix | Needed after envelope and regulatory mapping | Comparable criteria and product candidates |
 
 ## Session Log
+
+### 2026-04-16 - Session 02
+
+#### Summary
+
+- Re-reviewed the five uploaded deck PDFs directly as primary evidence for what the decks actually claim.
+- Extracted page text and rendered decision-critical slides into a dedicated workspace subfolder.
+- Compared the direct slide wording against the prior audit.
+- Added a primary-source reevaluation note to capture what changed.
+
+#### Decisions / outcomes
+
+- The earlier audit stands directionally.
+- The actual slide wording makes the safety, compliance, ROI, PR, LCOE, NPV, and optimizer-preference claims more absolute than the earlier text extraction suggested.
+- No electrical-envelope hard gate was closed by the uploaded decks.
+- No architecture ranking is justified yet.
+
+#### Learnings captured
+
+- The deck set is better treated as advocacy material than as decision-grade engineering evidence.
+- The slides do confirm the intended design direction toward higher granularity, but they do not prove the final architecture choice.
+- The strongest newly confirmed issue is categorical language:
+  - `safe`
+  - `pass`
+  - `strict, inherent compliance`
+  - `only friction point`
+  - `LCOE superiority`
+  - `highly positive NPV`
+  - `ideal`
+
+#### Open threads carried forward
+
+- Turn the strengthened unsupported claims into a vendor-data closure list
+- Build the Lugano normative checklist matrix
+- Create the first electrical-envelope worksheet
+- Define shutdown, firefighter, maintenance-lockout, and residual-voltage states
 
 ### 2026-04-14 - Session 01
 
@@ -150,4 +187,3 @@ Copy this block when adding a new session:
 #### Open threads carried forward
 - ...
 ```
-

@@ -1,0 +1,801 @@
+
+===== PAGE 1 =====
+                             An
+
+                        Ne
+
+
+                       SF    amma
+                                     = The Architecture
+
+
+
+
+                       I
+                                2 of Light & Shado
+                                         Mit  gating Shading VuInerabilities ir
+
+
+                                        og
+                                        4   =»
+
+                                         .  uilding-Integrated Photovoltaics (BIPV
+
+                                         id
+
+
+
+
+Sf          SE  ST    § S|    A     A     VS     | Sn | SI  I SS]   —   S—)A/a                                                         a
+
+===== PAGE 2 =====
+                                                                                                                                                                            Rad      -       - =  air pane   HERHH IR]     "         '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                               Ta,  tim                             ha
+
+
+
+
+
+
+
+                                                                                                                                                                                h    -                           inl
+
+                                                                                                                                                                             VE                                         ”
+         * Unimpeded Solar Access: Direct vertical irradiance.
+                                                                                                                                                                                                         ,             1
+
+
+
+
+                                                                                                                                                                                                        hd                  Ll
+                                                                                                                                                          eed)                             [1]                  -      .              i
+
+                                                                                                                                                                                                                 at
+                                                                                                                                                                                   Near           :   =LJ Field Shading:
+
+
+                                                                                                                                                                                                                  I
+                                                     —   aw                                                                                                                        Overhangs,
+                                                                                                                                                                                   balconies, and               x
+                                                          /iiNGo%                                                                         no                                       street-level trees.
+                                                                                                                                                          dh
+                                                                                                                                                           mE
+
+
+                                                                                                                                                     ee
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                 | Far-Field Shading:
+                                  oy                                                                                                      EEE                                      Shadows cast by
+
+                               or   Eb                                                                                                                                             neighboring
+                                                                                                                                                          a                        skyscrapers blocking
+
+                         LR]
+                                A                          0                                                                                                                        he sun's trajectory. |
+                                  )
+
+                                 wy                  ak
+
+                                    Cn                                                                                                                    a
+                                                      AN  IN                                                                              EE              ey
+
+
+
+                                                                                                                                                   CR      SEE
+
+                                                                                                                                                           GAN
+                                                                 "8
+                                                                                                                                                   "  n
+                                                                 -
+                                                                 3
+
+
+
+
+
+
+                                                                 2
+
+
+                    LT OPERATES IN A DYNAMICALLY SHIFTING LANDSCAPE OF SHADOWS.
+FELAT ROOFTOP SOLAR FARM
+
+===== PAGE 3 =====
+         Eo   -                    A              .      ILo!                            :
+    ‘The 5%= 80% Paradox§
+
+
+
+
+
+                         och
+                                i     JL)           CE      So  FF In a standard crystalline Yj=o    Area Shaded  Si   =   ER  | silicon array, a mere 5%
+                                  |  ¥              |  EN       ra   | shadow covering just a
+                                                            :      ANF   | fraction of a module can
+                                                                                   trigger a catastrophic
+
+
+
+
+. | 80% drop in total powerah   generation,
+
+===== PAGE 4 =====
+                       ~Unshaded S  is- , Agi                                                I Reduced System output §]
+                              Cha  ) osFRC                                                   | (Trerickle Flow) RE
+                     (Wide
+
+
+
+                                                                                                  BE          iol  tr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          h
+
+
+
+
+
+           .  yi  i =
+
+
+             rs  TY
+           . hE
+           1  ihe lh -
+              «  RwH
+                   fe o2You  i
+
+
+      a ICrystalline solar cellsaare . 2. Because they share a single 2             "3. The shaded cell acts asa
+         connectedin seriesto #4    continuous circuit, the entire
+                                    dl    string is only as strong asits Ji
+                                            i weakest, least-illuminated cell. Ji
+1hstrict bottleneck,  dictating    and %Eres     Aoi               | +                        vende
+
+===== PAGE 5 =====
+                             PEERY I TEL A                            X
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                 4     |
+                             4 4 4 « «4
+                      am    lala:Nv alec NR a)  Wa     =   =                 er     ro
+                           ENR            15a    aFR                                                        SS,
+                             %                                               +                        ry           N         :  Er   TET         .
+                                                                      Jo    EE Fr Rr  eruer RTS,
+
+                      ow)      hx
+                    I   2    1   Bb lyNE NRA   at, foua  smn              SST     CRiS Cie OR
+                         7d J FI TTT TTI IIIT EDIE TE TIT   T 5 I
+                               wl JNSHADED CELL   “gp
+
+
+
+
+
+
+                                                               # When forced to pass a current higher than hI
+                                                                   its generation capability, the shaded cell           s
+
+                                                              J | becomes reverse-biased. It stops sourcing-| JES
+pil power and begins forcefully sinking it                                    iE
+
+===== PAGE 6 =====
+        Sr  Ye
+
+
+
+
+
+
+
+
+rough  thelinactivecellhe series string pushes,massive currentHatpr
+
+===== PAGE 7 =====
+                    I*F Intense  Local Heating                     °
+                        Temperatures rapidly spike to  [=ig
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     4 150°C+ at the breakdown site. Ji
+
+
+             Material Degradation
+             At these temperatures, the EVA 1
+       +                 | lamination/encapsulation material
+
+
+
+       Ik  al deteriorates irreversibly.
+
+
+       |  System Failure
+
+       #   | Prolonged reverse bias leads to cracked-
+       I} | cells, melted backsheets, and severe
+a      fire risks in building facades.
+
+===== PAGE 8 =====
+                             Ru  vos
+                             Ee  =
+
+
+
+                              LL                  -   Ry
+                                vo             Liga”
+
+                                                ol   »
+                             »
+
+                               ,
+                             f
+
+
+                             A            |               § The Bypass Diode “Band-Aid” |
+
+
+
+
+
+
+
+                             VE               n           ui                                                a                                                       |    ,         +   Cl   Fig   :                              ar    Ed
+
+
+
+       a                                                                        i To prevent catastrophic hot spots,    !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                   |     F \—     . standard modules integrate bypass diodes
+  EIN             |   iE          vm
+
+
+
+
+                                                     wu  {I    i (typically one for every 20-24 cells).   b
+
+  || ShADED/BL0CKED caus) -   Bb   .   4                                             When reverse bias equals the diode’s
+                                                                                     threshold, it activates—rerouting the
+
+                                                                                |  current around the blocked cells and §
+                                                                                | keeping the rest of the string alive.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                  NCE
+“dH          BE| AD    '
+
+===== PAGE 9 =====
+          The Voltage Sacrifice |7]                                                                          | Conduction Losses ~~ ||  Burnout Risk
+           Bridging the gap saves the cell from fire, E    Diodes require a forward voltage drop (e.g.,  | In an urban canopy with constant, dynamic
+           but completely sacrifices the voltage BY   1V). At 7 Amps, this introduces 7W of pure                     1  shading, diodes are overworked. Constant
+           contribution of that entire 20-24 cell q gk    conduction loss, generating localized heat.    switching can cause diode failure,
+           sub-string.                                                                                           |  adila 208                       compromising the entire string.
+
+
+                                                                                                                        DYNAMIC
+
+
+
+.  N  DIODE FAILURE -&.        SYSTEM COMPROMISED
+
+===== PAGE 10 =====
+                                         ay  ha   -
+                                1
+                               ~   1
+                             a       pl
+                 eBlindS                          pot of Centralized MPPT
+
+
+
+
+
+
+
+
+
+
+                                                                     AEA
+                                                                     LR
+                                                                      RY
+
+
+
+
+
+                                                     ——
+
+                                             he
+
+
+
+                                                                         IRN     mn
+                                                                             TOTETRNR
+                                                                           LT Wl
+
+                                                                            py
+                                             Ry,                  AORN ¥ANAT
+                                                                           mn ————
+                                             aunt                        AY.e—  BT aa}
+                                           pan                              —
+
+                                                                            a
+                                                                           a     SE
+                                                                  =           SET
+                                                                           Walled—
+                                            RCkt                               ID
+
+                                                                              OR NTA
+
+                                                                              AR
+
+
+
+
+
+
+
+  th
+
+                                                                                                                                                        IZ¢€d Maximum Power Point Tracking applies
+                                                                                                                                              a single mathematical algorithm to the entire array.
+                                                                                                                                              In an unshaded field, this works flawlessly. In a
+                                                                                                                                              highly shaded urban BIPV facade, it creates severe
+                                                                                                                                              "Misrepresentative Power Losses".
+
+~
+
+===== PAGE 11 =====
+, the energy that the unshaded  modules  are fully capable of producing.                                                                                                                                                                     :Partial  shading creates  a multi-peak   P-V curve. The centralized  inverter  gets “stuck”            3|  racking  a false local peak. Because it cannot adjust module-by-module,  it squanders J
+
+===== PAGE 12 =====
+    myou cannotf
+  ‘eliminate the shadow, 4
+you must  Isolate  it.”
+
+===== PAGE 13 =====
+                         %
+
+                         e
+
+
+
+
+
+
+
+
+                    KY
+
+
+
+
+
+                    5
+
+
+
+
+                    o
+       0!
+                        Distributed Maximum Power Point Tracking breaks the array down into
+                      independent zones. By placing the ‘brain’ at the module (or string) level, the
+                        system ensures that a shadow on a single window isolates the power
+drop to only that window.
+
+===== PAGE 14 =====
+                                                                                                                                                                          "u   =
+                                                                                                                                                                          P=                 N
+
+
+
+
+
+                                                                A                                   SR                           .       -     CoE             a.    -       i
+               Ba
+                  sem                                         v     :                                                                                           La                                                -.    -  -  a Se            o>.
+                                                                                                                                                                  :       Tea     TRY    ie       '  i
+                                                               "
+
+                                                               "a                                                                    :.                                                                                                         :    rel                   n       <
+                                                               i                                                                                     .     “rd         i   Bal             ;
+                                                               gn                                                                                            I                                    .    She   fn ot ett     in 5 ”“                                                                                                                                                                                                                  :                                 .    *   Lely                  ~h
+                                                               H                                                      .                             .  oe               gH                             %
+
+
+
+
+                                                              a:                                                                            -                                  nt  .  Tae            [okey  -     "yp                                                                        Bl:                                             ' RA         -       Lal]
+
+                                                                                                                                                                               '  bE)                   Cho
+                   Microinverters (Module-to-AC) |      § Power Optimizers (DC-to-DC) ise
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Mechanism: Directly converts 22-45V DC te AC atg    "Mechanism:  Modulates the output of each module J
+              the module itself.          CY       independently on a common DC bus, before hitting 3
+
+                                                                               og       a central AC inverter.         E
+         Advantage:    Ultimate independence. Connectedin;               pw
+        i  parallel directly to the AC network.     |     i  Advantage: High efficiency, often lower components
+hi                                        —m                                                                             d     cost than full microinverters.                                       Ee
+
+===== PAGE 15 =====
+   p   The Granularity Spectrum
+
+
+
+
+
+
+                                           -   | fee            5                               rer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                            FT
+               > Array Level iA       g    §  ”m  Module Level  ol  Sub-Module/Cell Level “ig
+         a  (Central Inverter)  EBB"    RF  (Microinverters/Optimizers) | |    (On-Chip MPPT)  I
+       mE:  cripples the system. Le  still suffer bottleneck effects. Jl:  shading to individual facade 1-1 boost converters operatingat                                |BiFighly vulnerable. One shadow ll E.-Marginally better, but strings ‘®t. The BIPV Standard. Isolates \        | The Frontier. Synchronous DC/DC"—%
+
+           «3      me         J.     elements.» ||    |  _a=t— 500 kHz, eliminating partial
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                              | SSE.  shading mismatch entirely at
+
+
+
+
+I——E.     the microscopic level.LI-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          glA          am                                                    .       pI                 “a
+
+===== PAGE 16 =====
+                               f Highhreliance on stressed 1  Minimized via granular      )bypass diodes = ®    voltage control
+
+                               id
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               by
+                               h |
+
+Mandatory   for urbanintegrationeee
+
+===== PAGE 17 =====
+                                                                                                                            JR-S  [
+
+
+          {|
+      F collection of static od
+                                                                                                                    ESS   PI |    HITEa
+
+                                                                                                                      fi——— —r
+          panels; it is a living |
+          electrical skin." ud
+
+
+          To survive the chaotic shading of the =
+      urban canopy, it cannot rely on a single,§
+      5 centralized brain. It requires the  yr
+       ~ distributed nervous system of DMPPT4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                           3
+
+
+     Sn           whem on 2      Ach ihTHIET LR
+     ro                                Co
+adres=   eR

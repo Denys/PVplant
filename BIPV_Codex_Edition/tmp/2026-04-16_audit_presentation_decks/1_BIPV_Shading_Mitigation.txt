@@ -1,0 +1,645 @@
+
+===== PAGE 1 =====
+= The Architecture
+2 of Light & Shado
+u
+M i t
+gating Shading V
+Inerabili ties ir
+og =»uilding-Integrated Photovoltaics (B
+4 IPV
+.
+id
+EEE
+ERTS
+CG
+cri
+A
+n
+a
+m
+m
+a
+CR
+TT
+—h)R
+rh
+N
+e +
+WN
+I
+NN
+NO
+WN
+I
+ON
+WO
+S
+F
+I
+A/a
+a
+Sf
+SE
+ST
+§
+S|
+A
+A
+VS
+|
+Sn
+|
+SI
+I
+SS]
+—
+S—)
+
+===== PAGE 2 =====
+Rad - - = air pane HERHH IR] " '
+Ta, tim ha
+h - inl
+VE ”
+, 1
+hd Ll
+Near LJ F [1i] eld Shad- ing : . : = i at
+Overhangs, I
+balconies, and
+x
+street-level trees.
+Shading:
+Far-Field
+| Shadows cast by
+neighboring
+skyscrapers blocking
+he sun's trajectory. |
+A
+e
+e
+d
+)
+A
+A
+d
+h
+A m
+A
+E
+R
+N
+a N
+E
+a
+E
+e
+y
+S
+E
+E
+G
+A
+N
+Ee
+AL
+EEA
+LC
+e e
+C
+R
+n
+"
+CE
+ap
+--
+—.
+bBeh
+§
+BS
+3}
+PE
+ELL
+ELT
+LL
+ee
+=
+ALAE
+Th
+er BEAK
+af
+ARE
+—-
+Ah
+Teal
+SO
+Be]
+n
+o
+E
+E
+E
+E
+E
++
+J
+I.
+-
+S —
+W
+I
+N
+G
+R
+Y
+\ A
+\
+VR
+Fares
+”
+po
+a —
+w
+/
+i
+i
+N
+G
+o
+%
+0
+a
+k
+I
+p
+A
+N
+N
+"8 . X
+. i
+h if -
+3
+>
+il aE
+a
+T
+YL h 7
+2
+|
+<C
+gan
+Q
+> P
+a LL] > Z
+10
+—
+P
+e
+i
+LJ nd — O <T —l 0p O
+|
+<C ad LL <
+—
+—
+o
+o yE r b
+A
+)
+w
+y
+C
+n
+n
+Vr
+J
+d
+’
+/
+m
+n L R ]
+C y ]
+I
+a,
+FELAT
+ROOFTOP SOLAR FARM
+* Unimpeded Solar Access: Direct vertical irradiance.
+LT OPERATES IN A DYNAMICALLY SHIFTING LANDSCAPE OF SHADOWS.
+
+===== PAGE 3 =====
+Eo - o A ! . IL:
+‘The 5%= 80% P a r a d o§x
+och So FF In a standard crystalline Yj
+i
+J L )
+CE
+= o Area Shaded = E R | silicon array, a mere 5%
+Si
+| ¥ E N r a | shadow covering just a
+|
+: A N F | fraction of a module can
+trigger a catastrophic
+. | 80% drop in total power
+generation,
+a h
+
+===== PAGE 4 =====
+Agi
+- ,
+s
+i
+S
+~
+Unshaded
+)
+osFRC
+I
+Reduced System output §
+Cha
+| (Trerickle Flow) R E
+]
+Wide
+(
+BE iol tr
+h
+. yi i =
+. hErs TY
+1
+hei lh -
+« RwH
+f e o 2 Y o u i
+are
+"3. The shaded cell acts asa
+a ICrystalline solar c e l l sa . 2. Because they share a single 2
+connectedin seriest o # 4 continuous circuit, the entire strict bottleneck, dictating and %
+string is only as strong asits J i
+d l
+i weakest, least-illuminated cell. J i
+Aoi | +
+Eres vende
+1 h
+
+===== PAGE 5 =====
+PEERYI TEL« A X
+4 4 4 «4
+|
+4
+am lala: Nv alec NR a) Wa = = er ro
+a a FR
+ENR 15
+% + EE Fr Rr rye rue N r : R Er TS TE , T SS, .
+Jo
+o w ) hx
+I 2 1 Bb l y
+s m n
+N E N R A a t , foua S ST CR iS OR
+Cie
+7 d J FI TTT TTI IIIT EDIE TE TIT T 5 I
+wl JNSHADED CELL
+“gp
+W h e n forced to pass a current higher than h I
+#
+its generation capability, the shaded cell
+| becomes reverse-biased. It stops sourcing s JES
+-|
+J
+p i l power and begins forcefully sinking i t
+iE
+
+===== PAGE 6 =====
+Sr Ye
+he series string pushes,massive current
+rough thelinactivceell
+Hat
+pr
+
+===== PAGE 7 =====
+I*FI n t e n s e Local Heating
+°
+Temperatures rapidly spike to [=ig
+150°C+ at the breakdown site. J i
+4
+Material Degradation
+At these temperatures, the EVA 1
++ lamination/encapsulation material
+|
+deteriorates irreversibly.
+al
+Ik
+| System Failure
+Prolonged reverse bias leads to cracke-d
+#
+|
+| cells, melted backsheets, and severe
+I }
+a fire risks in building facades.
+
+===== PAGE 8 =====
+Ru vos
+Ee =
+LL - Ry
+vo Liga”
+ol »
+»
+,
+f
+The
+Bypass Diode “Band-Aid”
+A
+| § |
+VE n ui a | , + Cl Fig : ar Ed
+i To prevent catastrophic hot spots,
+!
+a
+F \ — . standard modules integrate bypass diodes
+|
+E I N
+iE
+| { I i (typically one for every 20-24 cells).
+vm b
+wu
+caus)
+| | ShADED/BL0CKED - . 4
+B b
+When reverse bias equals the diode’s
+threshold, it activates—rerouting the
+current around the blocked cells and
+§
+|
+| keeping the rest of the string alive.
+| '
+A D NCE
+“ d H B E
+
+===== PAGE 9 =====
+The Voltage Sacrifice7 |] Conduction Losses ~~ | | Burnout Risk
+|
+Bridging the gap saves the cell from fire, E Diodes require a forward voltage drop (e.g., | In an urban canopy with constant, dynamic
+but completely sacrifices the voltage B Y 1V). At 7 Amps, this introduces 7W of pure shading, diodes are overworked. Constant
+1
+contribution of that entire 20-24 cell q g k conduction loss, generating localized heat. switching can cause diode failure,
+sub-string. a d i l a 208 compromising the entire string.
+|
+DYNAMIC
+. N DIODE FAILURE -
+SYSTEM COMPROMISED
+& .
+
+===== PAGE 10 =====
+ay ha -
+1
+~ 1
+eBla inpl
+dS pot of Centralized MPPT
+S
+—
+SARA
+onl
+WE
+TE.
+NE
+SE
+TE
+-
+a
+S
+A
+T
+EE
+LA RR
+RN
+Y
+hl
+Bt”
+my
+pends OL Ole le ML ER. —-
+Tr
+i em
+— r=
+. —
+——
+| ee A AT == -—— o NT O T E T R N R o B R T o
+eS
+E
+TI
+D
+A
+ON
+gR T
+l
+, A
+R A
+NR
+a,
+m
+I
+R r n N r A W \ L T W l p y A¥ ASA m — O N R E T A n e — — — R N A T N A EY . e u— — a a a } a S
+= E
+— W a
+lle
+d
+mks
+“TE
+TPE
+EE
+wl
+WE EE
+—
+S—
+VE
+YE —a—
+TE
+y
++
+1 1
+9
+—
+—
+a
+e
+h —
+e —
+— — p —
+—p
+R y , a u n t
+k
+t
+[Trp
+ye"
+——
+Er
+a Fh
+WE
+ES
+WE
+— E— — —, p a m e n
+e e R
+e
+e C
+—
+le py
+——
+ee
+ee
+me
+a
+— — —
+S—
+—
+—
+—
+—
+—1,
+hh
+%
+8h
+1
+1
+-
+d Maximum Power Point Tracking applies IZ¢€
+a single mathematical algorithm to the entire array.
+In an unshaded field, this works flawlessly. In a
+highly shaded urban BIPV facade, it creates severe
+"Misrepresentative Power Losses".
+Fra.
+wri
+very
+eS
+vw
+TE
+——————
+oO 0 = = — Oo
+th
+~
+
+===== PAGE 11 =====
+Partial shading creates a multi-peak P-V curve. The centralized inverter gets “stuck”
+3
+| racking a false local peak. Because it cannot adjust module-by-module, it squanders J
+, the energy that the unshaded modules are fully capable of p r o d u c i n g .
+:
+
+===== PAGE 12 =====
+m y o u c a n n o tf
+‘ e l i m i n a t e t h e s h a d o w , 4
+y o u m u s t I s o l a t e i t . ”
+
+===== PAGE 13 =====
+J
+!
+0
+,
+y
+a
+4
+A
+A S
+T
+L
+Y
+K
+5
+o
+a
+!
+.
+o
+T
+k a
+y
+.
+lT
++
+yf
+%
+e
+Distributed Maximum Power Point Tracking breaks the array down into
+independent zones. By placing the ‘brain’ at the module (or string) level, the
+system ensures that a shadow on a single window isolates the power
+drop to only that window.
+
+===== PAGE 14 =====
+"uP = =
+N
+A SR . - CoE a. - i
+Ba
+sem v H g " : a “ in " I : La . : . : : . . T . e o a - . e r . e l - - “ a r d T * S S R e h Y e L f gH n i e i e o l t y n o>. e Ba t l t ' i n < ~h 5 i ” % ;
+ay:p Bl:
+- nt . Tae
+' RA
+[ok
+-
+e y -
+Lal]
+"
+' bE)
+Cho
+i s e
+Microinverters (Module-to-AC) | § Power Optimizers (DC-to-DC)
+=
+Mechanism: Directly converts 22-45V DC te AC atg "Mechanism: Modulates the output of each module J
+the module itself. CY independently on a common DC bus, before hitting 3
+a central AC inverter. E
+og
+p w
+Advantage: Ultimate independence. Connectedin;
+i parallel directly to the AC network. | i Advantage: High efficiency, often lower components
+— m cost than full microinverters.
+h i d Ee
+
+===== PAGE 15 =====
+p The Granularity Spectrum
+- | fee 5 rer
+FT
+LI- gl
+> Array Level iA g ”m Module Level o l Sub-Module/Cell Level “ i g
+§
+R F
+a (Central Inverter) E B B " (Microinverters/Optimizers) | (On-Chip MPPT) I
+|
+‘®t.
+BiFighly vulnerable. One shadow l l E.-Marginally better, but strings The BIPV Standard. Isolates \ The Frontier. Synchronous DC/DC"—%
+J l : |
+mE: cripples the system. L e still suffer bottleneck effects. shading to individual facade 1-1 boost converters operatingat
+|
+«3 m e J . elements.» | | _a=t— 500 kHz, eliminating partial
+|
+S S E . shading mismatch entirely at
+|
+the microscopic level.
+E.
+I——
+A am . pI “a
+
+===== PAGE 16 =====
+f High reliance on stressed 1 Minimized via granular
+h bypass diodes = voltage control
+® )
+id
+byh |
+eee
+Mandatory for urban
+integration
+
+===== PAGE 17 =====
+JR-S [
+{|
+F
+collection of
+static od
+panels; it is a living | ESS a PI | HITE
+fi——— —r
+electrical
+skin."
+u d
+To survive the chaotic shading of the =
+u r b a n canopy, it cannot rely on a single§,
+yr
+5 centralized brain. It requires the
+~ distributed nervous system of DMPPT4
+3
+whem on 2 Ach iThHIET LR
+Sn
+Co
+ro
+e R
+=
+adres

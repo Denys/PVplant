@@ -1,0 +1,1020 @@
+
+===== PAGE 1 =====
+     OptimOptimOptimOptimIZIZIZIZIngIngIngIngthe Shadothe Shadothe Shadothe Shado
+  I" A Diagnostic Guide to “eeeI" A Diagnostic Guide to “eeeI" A Diagnostic Guide to “eeeI" A Diagnostic Guide to “eee4 4 4 4 ' ' ' '
+
+
+                                               era era era era
+                                             ....andaandaandaanda
+     Distributed MPPT ArchitectDistributed MPPT ArchitectDistributed MPPT ArchitectDistributed MPPT Architect
+
+
+   ||||
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+wes
+
+===== PAGE 2 =====
+                                                                                                ===
+
+
+             4AVAVAVAVAVAVAVA4AVAVAVAVAVAVAVA4AVAVAVAVAVAVAVAPOVAVAVAVAVAVAVAPOVAVAVAVAVAVAVAPOVAVAVAVAVAVAVABAVA BAVA BAVA \WAVAVAY,\WAVAVAY,\WAVAVAY,AAVAVAVAVAVAVAVAVAAVAVAVAVAVAVAVAVAAVAVAVAVAVAVAVAVSAVAVAVAVAVAVAVAVAV/SAVAVAVAVAVAVAVAVAV/SAVAVAVAVAVAVAVAVAV/3 3 3
+                    ¥VAVAVAYAVAYS¥VAVAVAYAVAYS¥VAVAVAYAVAYS                                                      AVS,AVS,AVS,
+
+                                                                                                 AVAVAVAVAYaAVAVAVAVAYaAVAVAVAVAYa
+                             AKAKAK
+
+                                                                                                  va via va via va via555
+                                                                                                              555
+                                                                                                  dada: dada: dada:
+
+
+
+                                                                                                 ayayay
+
+
+
+
+           InIn BIPV Shading Devices (PVSDs]BIPV Shading Devices (PVSDs]shading is not an anomaly. It is an intentional, continuous, andshading is not an anomaly. It is an intentional, continuous, andshading is not an anomaly. It is an intentional, continuous, and
+           dynamic operational state.dynamic operational state.
+InBIPV Shading Devices (PVSDs]dynamic  operational   state.
+
+===== PAGE 3 =====
+                      ---FillFillFill
+
+
+                   >>>
+                  >>>     AVAVAVAVA) AVAVAVAVA) AVAVAVAVA)                               —&2 Step 2: Cellular Mismatch|—&2 Step 2: Cellular Mismatch|—&2 Step 2: Cellular Mismatch|
+                   <<<
+                  ccc
+                                                                                                 Step 3: Electrical Bottleneck aStep 3: Electrical Bottleneck aStep 3: Electrical Bottleneck a
+                   SSS                                                                           Series connection forces the entire string’s current to drop GillSeries connection forces the entire string’s current to drop GillSeries connection forces the entire string’s current to drop Gill
+                                                                                                 to the level of the lowest illuminated cell.       BPEto the level of the lowest illuminated cell.       BPEto the level of the lowest illuminated cell.       BPE
+                   >>>
+                   aaa
+                                                                                                 Step 4: Thermal Consequence          :Step 4: Thermal Consequence          :Step 4: Thermal Consequence          :
+                        krr TAVAYAVAVAAVAVAVAVAVAYkrr TAVAYAVAVAAVAVAVAVAVAYkrr TAVAYAVAVAAVAVAVAVAVAYReverse-bias occurs as unshaded cells force current through # .          |Reverse-bias occurs as unshaded cells force current through # .          |Reverse-bias occurs as unshaded cells force current through # .          |
+                      = = =                                                                      the shaded cell, dissipating power as destructive heat.   411the shaded cell, dissipating power as destructive heat.   411
+the shaded cell, dissipating power as destructive heat.            411
+
+===== PAGE 4 =====
+                       Cel  SEECel  SEECel  SEE
+ Bypass Diodes and the Fractured Power CurveBypass Diodes and the Fractured Power CurveBypass Diodes and the Fractured Power Curve
+
+
+
+                                  .  w=  nshaded Ideal PV.  w=  nshaded Ideal PV.  w=  nshaded Ideal PV
+                                  1      | LocalPeaks (Deceptive)1      | LocalPeaks (Deceptive)1      | LocalPeaks (Deceptive)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    | il      | Bypass diodes prevent hotspots by short-circuiting shaded sub-strings. However, this fractures the P-V| il      | Bypass diodes prevent hotspots by short-circuiting shaded sub-strings. However, this fractures the P-V| il      | Bypass diodes prevent hotspots by short-circuiting shaded sub-strings. However, this fractures the P-V
+  |  |  curve into multiple peaks, confusing standard centralized inverters and causing misrepresentative losses.|  |  curve into multiple peaks, confusing standard centralized inverters and causing misrepresentative losses.|  |  curve into multiple peaks, confusing standard centralized inverters and causing misrepresentative losses.CCC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                     —] EIR—] EIR
+                                                                        ELT,ELT,
+"8 NotebookELT,rly—]    EIRA      I.                                                                   rlyrlyA  I.A  I.     "8 Notebook"8 Notebook
+
+===== PAGE 5 =====
+      ——iaiaiaalalalC)C)C)i =i =i =EEEPar’Par’Par’----.-.-.oAoAoAafdafdafdprprpr000===otototalalalJJJ===0.0.0.OLOLOL---======ananan000fofofo
+
+
+                                                                    Ing,Ing,Ing,MPPT must be pushed to a
+      To extract the Global Peak under complex BIPV shadTo extract the Global Peak under complex BIPV shadMPPT must be pushed to aMPPT must be pushed to a
+     the module levelthe module levelThe decThe decThe deciSiSI0N NOW SPI0N NOW SPI0N NOW SPts between two distinct electrical archts between two distinct electrical archts between two distinct electrical architectures.itectures.itectures.
+
+
+
+     AEE AEE AEE
+        " Phase" Phase" PhaseCentralCentralCentralizeizeized MPPTd MPPTPhase 2Phase 2Phase 2StStString-ring-ring-Level MPPT )  yLevel MPPT )  yLevel MPPT )  yPhase 3Phase 3Phase 3Module-Level DMPPT > PsModule-Level DMPPT > PsModule-Level DMPPT > Ps
+
+
+
+      AAAAAA
+                                                                                                                            The   iThe   iThe   i
+                                                                                                                        ‘Contenders §/*   48‘Contenders §/*   48‘Contenders §/*   48
+
+
+                                                                      dbo dbo dbo
+
+                                                                      LLLLLL
+
+
+          = = =
+
+
+
+
+
+          wh wh wh TEs TEs TEs
+          i, i, i,
+
+          2 2 2
+          A, A, A,
+
+
+
+
+          Ao Ao Ao
+          EN EN EN
+             wewewe
+
+           111
+iSd MPPTTo extract the Global Peak under complex BIPV shadthe module level—
+
+===== PAGE 6 =====
+  Contender A: Microinverters  —_—   1Contender A: Microinverters  —_—   1Contender A: Microinverters  —_—   1             CACACA
+       (Module:-Integratec Parallel |inverts]    8 .(Module:-Integratec Parallel |inverts]    8 .(Module:-Integratec Parallel |inverts]    8 .
+
+
+
+
+                                                                                The Grid TieThe Grid TieThe Grid Tie       AAA AAA AAA
+                                                                                AC outputs are wired in parallel directly |}AC outputs are wired in parallel directly |}AC outputs are wired in parallel directly |}
+                                                                                to the building's main AC bus.    .to the building's main AC bus.    .to the building's main AC bus.    .
+
+
+                                                                        |||
+                                                                                Architecture DetailsArchitecture DetailsArchitecture Details
+                                                                                - Conversion: Direct DC-to-AC.  |- Conversion: Direct DC-to-AC.  |- Conversion: Direct DC-to-AC.  |
+                                                                                - Stringing: Parallel (No high-voltage   pr- Stringing: Parallel (No high-voltage   pr- Stringing: Parallel (No high-voltage   pr
+                                                                                 DC strings).        1DC strings).        1DC strings).        1
+                                                                                - Semiconductors: Frequently utilize- Semiconductors: Frequently utilize- Semiconductors: Frequently utilize
+                                                                                 Wide-Bandgap (WBG) materials likeWide-Bandgap (WBG) materials likeWide-Bandgap (WBG) materials like
+                                                                                 Silicon Carbide (SiC) or Gallium 4%Silicon Carbide (SiC) or Gallium 4%Silicon Carbide (SiC) or Gallium 4%
+                                                                                 Nitride (GaN) for efficiency. ulNitride (GaN) for efficiency. ulNitride (GaN) for efficiency. ul
+
+[=
+
+===== PAGE 7 =====
+       Contender BContender BContender BPower OptPower OptPower Opt
+   | (Module-Integrated Converters]| (Module-Integrated Converters]
+                      BS BS BS                                             The StringThe StringThe String
+                                                                           Optimizers are wired in series to forma % aOptimizers are wired in series to forma % aOptimizers are wired in series to forma % a
+                      Ira2Ira2Ira2                                   LoLoLocentral hub.  acentral hub.  acentral hub.  a
+                                                                ya ya ya
+
+                                                                Ee Ee Ee
+                                                                                DC-AC [central level).DC-AC [central level).DC-AC [central level).
+                                                              y Poy Poy Po    - Stringing: Series.           EF   a- Stringing: Series.           EF   a- Stringing: Series.           EF   a
+                                                                AN AN AN
+                                                                VATAVATAVATA
+                                                              yhyhyhTT TT TT  - Mechanism: Buck/boost capability- Mechanism: Buck/boost capability- Mechanism: Buck/boost capability
+
+
+
+                                                                _—- _—- _—-
+                                                                Aa Aa Aa        regulates output voltage independently ofregulates output voltage independently ofregulates output voltage independently of
+                                                                                module current, maintaining ideal stringmodule current, maintaining ideal stringmodule current, maintaining ideal string
+                                                                                voltage while maximizing individualvoltage while maximizing individualvoltage while maximizing individual
+                                                                ——————
+
+
+
+                                                                                                                          oat        .   .    LEE IL.     hd   Walkoat        .   .    LEE IL.     hd   Walkoat        .   .    LEE IL.     hd   Walk
+                                                                ae5CEae5CEae5CEa  module yield.a  module yield.              i           b    Paki  ti           b    Paki  ti           b    Paki  t
+                                                                          a  module yield.
+
+
+
+
+                                                                                                             ou  Afr    rt        Ta TLou  Afr    rt        Ta TLou  Afr    rt        Ta TL
+
+
+
+
+
+
+                                                                                                                     LanLanLanrdrdrd
+
+                                                                                                                      hhh
+| (Module-Integrated Converters]
+
+===== PAGE 8 =====
+                                                                                                                                                             SaSa
+
+                                                                                                                                                             7 7
+
+
+
+
+                                          2-Stage (DC-DC at louver, DC-AC at2-Stage (DC-DC at louver, DC-AC at2-Stage (DC-DC at louver, DC-AC at1-Stage (DC-AC immediately at the:AAAA
+                                                                                                 1-Stage (DC-AC immediately at the:1-Stage (DC-AC immediately at the:
+                                         central mechanical roam).central mechanical roam).central mechanical roam).louver].                          )louver].                          )louver].                          )= =
+                                                                                                                                                             A A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                             =    [I=    [I=    [I
+
+
+                           a                  -            aa                  -            aa                  -            a
+           SystemSystemSystem            Maintains high-voltage DC within theMaintains high-voltage DC within theMaintains high-voltage DC within theEliminates high-voltage DC; onlyEliminates high-voltage DC; onlyEliminates high-voltage DC; onlyBRN BRN
+                           1       PY1       PY1       PY
+                           N    LETN    LETN    LET...
+                            aT   ey ArT =ey ArT =ey ArT =
+                            aTaT===
+
+
+
+                            [BN  -T
+                            [BN  -T[BN  -T
+                             wtwtwt       building facade.building facade.building facade.        standard AC runs through the facade.standard AC runs through the facade.standard AC runs through the facade.
+                            JEJEJE
+
+                             AAA
+                         .       A.       A.       A---
+         .                                                   fi.                                                   fi.                                                   fi
+           Shading jeShading jeShading jeHIGH: Decouples voltage and currentHIGH: Decouples voltage and currentHIGH: Decouples voltage and currentHIGH: Complete independence; a ij SXESHIGH: Complete independence; a ij SXESHIGH: Complete independence; a ij SXES
+           Mitigation SEEMitigation SEEMitigation SEEin the series string, bypassing shadedin the series string, bypassing shadedin the series string, bypassing shadedshaded louver has exactly zeroshaded louver has exactly zeroshaded louver has exactly zero
+                                          louvers without dropping total stringlouvers without dropping total stringlouvers without dropping total stringelectrical impact on its neighbor. S230electrical impact on its neighbor. S230electrical impact on its neighbor. S230
+                                    . |. current.. |. current.. |. current.
+BRN    A  =  AA                 7       Sa
+
+===== PAGE 9 =====
+                                                                                                                                                                                        EEE LSEEE LSEEE LS
+                                                                                                                                            inthaEnveI0pedinthaEnveI0pedinthaEnveI0ped
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                      ub   & EEEiub   & EEEiub   & EEEi
+                                                                                                                                                                       Hl  bem   2.Hl  bem   2.Hl  bem   2.
+                                                                                                                         boyboyboy
+                                                                                                                         PePePe~uil~uil~uil
+                                                                                                                         [=[=[=iEiEiE
+                                                                                                                         enenen
+                                                                                                                         =a=a=a
+                                                                                                                         LnLnLn
+                                                                                                               |       gn|       gn|       gn
+                                                                                                                         pepepefofofoall}all}all}
+                                                                                                                         PimPimPimiii
+                                                                                                                         oeoeoeiii
+                                                                                                                         fffillillill
+                                                                                                                         iyiyiy
+
+                                                                                                                         |    WF|    WF|    WF
+
+
+
+
+                                                              The BIPV Heat Problem:Unlike open-Tracksolar, BIPV jacks baclventilation. COE edThe BIPV Heat Problem:Unlike open-Tracksolar, BIPV jacks baclventilation. COE edThe BIPV Heat Problem:Unlike open-Tracksolar, BIPV jacks baclventilation. COE ed
+                                                               Component temperatures routinely exceed 60°C, accelerating degradation.  iLComponent temperatures routinely exceed 60°C, accelerating degradation.  iLComponent temperatures routinely exceed 60°C, accelerating degradation.  iL
+                                                                                                                             TE  SE    TeTE  SE    TeTE  SE    Te
+                                     Microinverter PT E——       1 Optimizer Robustness                                                                                                                                                                                                                 |Microinverter PT E——       1 Optimizer Robustness                                                                                                                                                                                                                 |Microinverter PT E——       1 Optimizer Robustness                                                                                                                                                                                                                 |
+                                  . The Capacitance Flaw: Dutputting to a single-phase  J Solid-State Resilience: Power optimizers process DC-. The Capacitance Flaw: Dutputting to a single-phase  J Solid-State Resilience: Power optimizers process DC-. The Capacitance Flaw: Dutputting to a single-phase  J Solid-State Resilience: Power optimizers process DC-
+                                  r AC grid requires large internal electrolytic capacitors to] DC and do not require massive electrolytic capacitors.r AC grid requires large internal electrolytic capacitors to] DC and do not require massive electrolytic capacitors.r AC grid requires large internal electrolytic capacitors to] DC and do not require massive electrolytic capacitors.
+                                     mitigate double-line frequency voltage ripples. These § They rely entirely on solid-state electronics, makingmitigate double-line frequency voltage ripples. These § They rely entirely on solid-state electronics, makingmitigate double-line frequency voltage ripples. These § They rely entirely on solid-state electronics, making
+                                     are highly sensitive to thermal degradation, risking  -@& them significantly more durable under extreme BIPVare highly sensitive to thermal degradation, risking  -@& them significantly more durable under extreme BIPVare highly sensitive to thermal degradation, risking  -@& them significantly more durable under extreme BIPV
+                         SiSi        early fallure behind hot BIPV glass.   IPE  , thermal loads.early fallure behind hot BIPV glass.   IPE  , thermal loads.early fallure behind hot BIPV glass.   IPE  , thermal loads.
+Si
+
+===== PAGE 10 =====
+                                                                               o-o-o-d   |d   |d   |
+                                                                                   Earn
+                                                                                   EarnEarn
+      DiagnostDiagnostICICICMatrMatrMatrIXIXIX                                     ononon
+
+
+
+
+
+
+
+
+                                                                                          :—:—:—
+
+
+
+
+
+
+
+
+
+
+        MICROINVERTERSMICROINVERTERS                                           " OPTIMIZERS:" OPTIMIZERS:" OPTIMIZERS:
+         00 ICUICUIt to conceal withIt to conceal withIt to conceal withininin   Streamlined solid-stateStreamlined solid-stateStreamlined solid-state
+        standard slstandard slim arcim arcim archhhtecturaltecturaltectural      profile allows far seamlessprofile allows far seamlessprofile allows far seamless
+        profprofiles due to complexiles due to complexiles due to complex        InInIntegration hiddentegration hiddentegration hiddeninsideinsideinside
+         OcOc-AC electronics an-AC electronics anddd                             structural mullions, hollowstructural mullions, hollowstructural mullions, hollow
+        heat sinks. Often requheat sinks. Often requheat sinks. Often requiresiresireslouvers, or directly laminatedlouvers, or directly laminatedlouvers, or directly laminated
+          ulky external mounting.ulky external mounting.                         into the module frame.into the module frame.into the module frame.
+DiagnostMICROINVERTERSICUulky external mounting.profOc0-AC electronics anstandard  sl
+
+===== PAGE 11 =====
+                                                                                       ——  _——  _
+                                                                                       ——  _
+         |Pushing Deeper Sub- Module ProcessingTopologies’|Pushing Deeper Sub- Module ProcessingTopologies’|Pushing Deeper Sub- Module ProcessingTopologies’
+
+                                                                                                 CnCnCn
+                                                                                         ___
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       &.  |B The Concept&.  |B The Concept&.  |B The ConceptTY TheProcess      {TY TheProcess      {TY TheProcess      {
+       E> fl Instead of optimizing the whole louver,E> fl Instead of optimizing the whole louver,E> fl Instead of optimizing the whole louver,# Processes only the ‘mismatch.# Processes only the ‘mismatch.# Processes only the ‘mismatch.
+            i} optimization happens at the cell-string level§i} optimization happens at the cell-string level§i} optimization happens at the cell-string level§power’ on a parallel path,power’ on a parallel path,power’ on a parallel path,J moving shadow lines [e.g., aJ moving shadow lines [e.g., a
+            #2 inside the lamination using Sub-Module                                     diagonal shadow from andiagonal shadow from an
+            #2 inside the lamination using Sub-Module#2 inside the lamination using Sub-Module[f drastically reducing energy[f drastically reducing energy[f drastically reducing energy
+            if Integrated Converters (Sub-MISC) orif Integrated Converters (Sub-MISC) orif Integrated Converters (Sub-MISC) or4 conversion losses comparedto 44 conversion losses comparedto 44 conversion losses comparedto 4adjacent building) slice acrossadjacent building) slice across
+               Differential Power Processors (Sub-IDPP).Differential Power Processors (Sub-IDPP).Differential Power Processors (Sub-IDPP).full-time module-level conversion. §full-time module-level conversion. §full-time module-level conversion. §| a single module's surface.| a single module's surface.
+J   moving shadow lines [e.g., a|  a single module's surface.adjacent building) slice acrossdiagonal shadow from an
+
+===== PAGE 12 =====
+                                                                                          LEA  alm  fhLEA  alm  fhLEA  alm  fh
+                                                                                                Sy TeSy TeSy Te
+                                                                              sni cE  ET  I            =           | Be  Af   2sni cE  ET  I            =           | Be  Af   2sni cE  ET  I            =           | Be  Af   2
+
+
+                                                                          ]]]
+
+
+                                                                          2ml2ml2ml
+                                                                       Patten 2Short Narrow(SN)Patten 2Short Narrow(SN)Patten 2Short Narrow(SN)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                    y1    EIEN   Ay1    EIEN   A
+                                                                       Patten 4 Large Narrow(AN)Patten 4 Large Narrow(AN)
+                                                                          ElElEl
+
+
+
+
+
+                Key Ty Horizontal shading on , louvers activates bypass diodes predictably, whereas diagonal or £Key Ty Horizontal shading on , louvers activates bypass diodes predictably, whereas diagonal or £Key Ty Horizontal shading on , louvers activates bypass diodes predictably, whereas diagonal or £
+                       Sombre shading creates highly volatile           PP-V curves that mandate distributed MPPT.Sombre shading creates highly volatile           PP-V curves that mandate distributed MPPT.
+Sombre    shading creates highly volatile                                          PP-V curves that mandate distributed MPPT.Patten   4 Large Narrow(AN)y1                   EIEN           A
+
+===== PAGE 13 =====
+                                                                                                                                                              iii
+
+                                                                                                                                                                  +++
+
+
+
+
+                                                                                                                                                              AE AE AE I I I
+
+
+
+                                                                                                                                                              aE aE aE
+
+                                                                                                                                                              ily ily ily oF JX oF JX oF JX
+
+
+
+                                                                                                                                                                  H H H
+                                                     IE Central StringIE Central StringIE Central String
+                                                                 InverterInverterInverter
+
+                                                                                                                                                                      ---
+                                                                                                                                                                    a,a,a,
+                                                                                                                                                                       :::
+
+                                                                                                                                                                       = = =
+                                                                                                                                                                    ---
+                                                                                                                                                                      . . .
+
+
+
+                                                                                                                                                                    ‘ ‘ ‘
+                                                          IDEAL: PredictableIDEAL: PredictableIDEAL: Predictable              Overkill unlessOverkill unlessOverkill unless“ “ “
+                                                                                                                                                                    3 3 3
+                                                                                                                                                                    Lh Lh Lh
+                             Fixed BIPVFixed BIPVFixed BIPV shading, simpleshading, simpleshading, simpleFeasible for smallFeasible for smallFeasible for smallspecific roofspecific roofspecific roofoy oy oy Lr Lr Lr
+                           Roof/AwningRoof/AwningRoof/Awning  form factor.form factor.form factor.residential setups.residential setups.residential setups.obstructions exist.obstructions exist.
+                                                                                                                           obstructions exist.
+
+
+
+
+
+
+                                                                                                                                                                    - - -
+                                                                                                                                                                      a a a ]]]¥ ¥ ¥
+
+                                                                                                                                                                    EE EE EE
+                           Double-SkinDouble-SkinDouble-SkinPoor: Susceptible toPoor: Susceptible toPoor: Susceptible toWarning: High    IDEAL: ThermalWarning: High    IDEAL: ThermalWarning: High    IDEAL: ThermalHUHUHU
+                                                                                             heat degrades   resilience & stringheat degrades   resilience & stringheat degrades   resilience & string
+                               FacadeFacadeFacade          string mismatch.string mismatch.string mismatch.capacitors.     balancing.capacitors.     balancing.capacitors.     balancing.“. “. “.
+
+                                                                                                                                                              t+— t+— t+—
+                              DynamicDynamicDynamic      Fails under shiftingFails under shiftingToo bulky to fit   IDEAL: Slim profileToo bulky to fit   IDEAL: Slim profileToo bulky to fit   IDEAL: Slim profile
+                          Sun-TrackingSun-TrackingSun-Tracking                             mechanical pivot   fits mullions, tracksmechanical pivot   fits mullions, tracks
+    ee,                            anee,                            anee,                            an
+
+       Re                               H  roRe                               H  roRe                               H  ro
+                                                             shadow lines.shadow lines.
+         “on                             :“on                             :“on                             :5                                                                       ;    .5                                                                       ;    .5                                                                       ;    .
+                                                                                                 cavities.     dynamic GMPP.cavities.     dynamic GMPP.
+      Tie      aE.Tie      aE.Tie      aE.
+
+                     EN i   iEN i   iEN i   iEy     vEy     vEy     v
+                                                                                                                                                              ——————————————————
+
+                                                                                                                                                               ...
+                                                                                                                                                               *) *) *)
+
+
+
+
+                                                                                                                                                               - - -
+Fails under shiftingmechanical pivot         fits mullions,  trackscavities.                  dynamic GMPP.shadow lines.
+
+===== PAGE 14 =====
+                                                                                                                                                                                                                                                                                                                                                                                                                                 E— E— E—
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                  —  —  —
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                 = = =
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                 ~ ~ ~
+                                                                                                                                                                                                                                                                                                                                                                                                                                          | | |
+
+
+           555
+
+             TaTaTahEhEhE
+
+            ®®®    ¥ ¥ ¥
+
+                                                                                                                                                                                                                                                                                                                                                 JJJ
+
+
+
+
+
+                    LL LL LL
+
+
+
+
+
+
+
+
+
+
+                    : : :
+
+
+                    EI EI EI
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              aaa
+                    0 0 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Lis LELis LELis LE
+
+
+
+
+                    wy wy wy
+                    ig ig ig                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  LLL
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                  w w w
+                    t. t. t.
+
+                    RE RE RE                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ALLELALLELALLEL
+
+                    ErErEr
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                  FRE FRE FRE arararSr Sr Sr
+
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                  >>>
+                                                                                                                                                                                                                                                                                                                                                                                                                                           wrwrwr
+
+
+                                                                                                                                                                                                                                             ISTE  mpmISTE  mpmISTE  mpmry thery thery the
+                                                                                                       er  fcr      [hner  fcr      [hner  fcr      [hn                                               ERO                    0    ory 2rdERO                    0    ory 2rdERO                    0    ory 2rd                                                                                                                  "le"le"le
+
+                                                                                                        ---                                                                                          an          [LL    SE,    -    .an          [LL    SE,    -    .an          [LL    SE,    -    .                                                                                                                                 II
+                                                                                            =m gd=m gd--aaa===EE  PhanEE  PhanEE  Phan   rhrh                                   aaa                ==                                                                                                                                                                                                                                   SnrSnr                          AaAaAa
+
+                                                                                                                                                                                  Bi       = =Bi       = =                                                                         Tah LR  RYTah LR  RY
+Bi                             =    =rhI=m  gd=Snr-Tah    LR        RY
+
+===== PAGE 15 =====
+                                                                              “a     '     Hi“a     '     Hi“a     '     Hi
+
+
+                                                       od                                       'od                                       'od                                       '.       :        H.       :        H.       :        H
+                                                                             :                      H:                      H:                      H'''
+
+
+
+                                                              111
+                                                                EE)     Com,  nt   =e    -EE)     Com,  nt   =e    -EE)     Com,  nt   =e    -
+                                                               )     =     EEE                     LI)     =     EEE                     LI)     =     EEE                     LI
+                                                          ]]]
+
+
+
+
+
+                                                              ...  ededed
+                                                          -     Ft-     Ft-     Ft
+                                                     -  LEI   fe-  LEI   fe-  LEI   femL   Te,  =mL   Te,  =mL   Te,  =—-=—-=—-=
+
+                                                     a  -   an TEa  -   an TEa  -   an TEnrnrnr
+                                                 i"    rl  =a}i"    rl  =a}i"    rl  =a}-      a-      a-      aTRTRTRJaJa
+                                                        I  .  --.I  .  --.I  .  --.Ja
+                                                                   frre:frre:
+                                                                   frre:
+                                                                rT Pit                anrT Pit                anrT Pit                an
+
+
+
+
+
+
+                                                                             vvv
+
+
+
+
+
+                                                                                             AAA
+                                                                                              to,to,to,
+                                                                                            ARNARNARN
+
+                                                                                             aa aa aa ani ani ani
+                                                                                            / / /
+
+                                                                                             TT TT TT
+                                                                                              AN AN AN
+
+                                                                                              Lo Lo Lo
+
+
+                                                                                              rn rn rn
+                                                                                            ANNE ANNE ANNE
+
+
+
+
+                 Irs BIPV Shading Devices, the architectural form—the physical movement, layout,Irs BIPV Shading Devices, the architectural form—the physical movement, layout,Irs BIPV Shading Devices, the architectural form—the physical movement, layout,
+                        and thermal constraints of the envelope—must dictate the electrical topology.and thermal constraints of the envelope—must dictate the electrical topology.and thermal constraints of the envelope—must dictate the electrical topology.
+
+
+
+
+
+
+
+
+
+
+
+
+               } Microinverters provide ultimate module independence | “¥|    Power Optimizers offer the ideal balance of solid-state ' {SIR} Microinverters provide ultimate module independence | “¥|    Power Optimizers offer the ideal balance of solid-state ' {SIR} Microinverters provide ultimate module independence | “¥|    Power Optimizers offer the ideal balance of solid-state ' {SIR
+                 and eliminate DC voltage risks, but struggle with thermal |— thermal resilience, form-factor integration, and string-level iE shand eliminate DC voltage risks, but struggle with thermal |— thermal resilience, form-factor integration, and string-level iE shand eliminate DC voltage risks, but struggle with thermal |— thermal resilience, form-factor integration, and string-level iE sh
+                 degradation and spatial constraints inside tight mullions.) af:   mismatch mitigation for complex facades.        RBdegradation and spatial constraints inside tight mullions.) af:   mismatch mitigation for complex facades.        RBdegradation and spatial constraints inside tight mullions.) af:   mismatch mitigation for complex facades.        RB
+Harmonizing the architectural envelope with distributed MPPT is the key to unlocking zero-emission buildings.Harmonizing the architectural envelope with distributed MPPT is the key to unlocking zero-emission buildings.Harmonizing the architectural envelope with distributed MPPT is the key to unlocking zero-emission buildings.

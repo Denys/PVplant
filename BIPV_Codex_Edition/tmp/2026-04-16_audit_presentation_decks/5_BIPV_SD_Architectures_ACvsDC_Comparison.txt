@@ -1,0 +1,2678 @@
+
+===== PAGE 1 =====
+[Gn
++4
+PRE
+LY
+[a
+Oe
+-
+4
+4
+'
+e
+. ra
+a
+n
+d
+a
+0 o > Nn i
+©
+0 £
+Oh
+Ol
+a >
+O
+a
+EAL
+Fl
+B
+Optim Ing t h e Shado
+I Z
+I" A Diagnostic Guide to “ e e e
+D i s t r i b u t e d MPPT A r c h i t e c t
+|
+wes
+[Gn
++4
+PRE
+LY
+[a
+Oe
+-
+4
+4
+'
+e
+. ra
+a
+n
+d
+a
+0 o > Nn i
+©
+0 £
+Oh
+Ol
+a >
+O
+a
+EAL
+Fl
+B
+Optim Ing t h e Shado
+I Z
+I" A Diagnostic Guide to “ e e e
+D i s t r i b u t e d MPPT A r c h i t e c t
+|
+wes
+[Gn
++4
+PRE
+LY
+[a
+Oe
+-
+4
+4
+'
+e
+. ra
+a
+n
+d
+a
+0 o > Nn i
+©
+0 £
+Oh
+Ol
+a >
+O
+a
+EAL
+Fl
+B
+Optim Ing t h e Shado
+I Z
+I" A Diagnostic Guide to “ e e e
+D i s t r i b u t e d MPPT A r c h i t e c t
+|
+wes
+[Gn
++4
+PRE
+LY
+[a
+Oe
+-
+4
+4
+'
+e
+. ra
+a
+n
+d
+a
+0 o > Nn i
+©
+0 £
+Oh
+Ol
+a >
+O
+a
+EAL
+Fl
+B
+Optim Ing t h e Shado
+I Z
+I" A Diagnostic Guide to “ e e e
+D i s t r i b u t e d MPPT A r c h i t e c t
+|
+wes
+
+===== PAGE 2 =====
+4 S S 3
+A
+A A V
+V AA
+V
+A V
+A V A V V
+A V A
+VS V
+A A
+A V
+V A,
+V
+V
+A A A
+V
+V V A
+A V
+A
+A
+V V
+V
+A /
+5
+V A
+A
+V
+A
+V
+A
+Y
+Oh - QD = h", QD = — L 0) al (0
+-
+(0 oO - xX - C- Jr L 1h al i - wd oO pl oO es 0 9 on L O [=
+A
+A
+V
+A
+V A
+V
+A
+V
+A
+V
+A
+V
+A
+V
+A
+V
+5
+R
+O
+E
+avAe
+A
+A
+\ W
+A
+V
+A
+V
+A Y
+,
+A
+V
+A
+V
+A
+V
+A
+V
+A
+Y
+a
+v
+a
+v
+i a
+d
+a
+d
+a
+:
+a
+y
+SE
+SEL
+AN
+AS
+ANS
+AS
+NO
+AO
+sO
+0
+55
+AT
+AT.
+LAY
+4 P B S S 3
+A
+AO A V
+A
+V V ¥ AA
+V
+AAV V
+V A VVA A V V
+AA V A
+V A
+VS VV
+A A A
+AA V
+V V A,
+V V
+V
+A
+AA A
+A A
+VY V
+V K V A
+A A A V
+A
+V A
+V V V
+A V
+A /
+A 5 V
+V A
+AY
+A
+V
+S
+A
+V
+A
+Y
+In BIPV Shading Devices (PVSDs] shading is not an anomaly. It is an intentional, continuous, and
+dynamic operational state.
+Oh - QD = h", QD = — L 0) al (0
+-
+(0 oO - xX - C- Jr L 1h al i - wd oO pl oO es 0 9 on L O [=
+A
+A
+V
+A
+V A
+V
+A
+V
+A
+V
+A
+V
+A
+V
+A
+V
+5
+R
+O
+E
+avAe
+A
+A
+\ W
+A
+V
+A
+V
+A Y
+,
+A
+V
+A
+V
+A
+V
+A
+V
+A
+Y
+a
+v
+a
+v
+i a
+d
+a
+d
+a
+:
+a
+y
+SE
+SEL
+AN
+AS
+ANS
+AS
+NO
+AO
+sO
+0
+55
+AT
+AT.
+LAY
+4 P B S S 3
+A
+AO A V
+A
+V V ¥ AA
+V
+AAV V
+V A VVA A V V
+AA V A
+V A
+VS VV
+A A A
+AA V
+V V A,
+V V
+V
+A
+AA A
+A A
+VY V
+V K V A
+A A A V
+A
+V A
+V V V
+A V
+A /
+A 5 V
+V A
+AY
+A
+V
+S
+A
+V
+A
+Y
+In BIPV Shading Devices (PVSDs] shading is not an anomaly. It is an intentional, continuous, and
+dynamic operational state.
+Oh - QD = h", QD = — L 0) al (0
+-
+(0 oO - xX - C- Jr L 1h al i - wd oO pl oO es 0 9 on L O [=
+A
+A
+V
+A
+V A
+V
+A
+V
+A
+V
+A
+V
+A
+V
+A
+V
+5
+R
+O
+E
+avAe
+A
+A
+\ W
+A
+V
+A
+V
+A Y
+,
+A
+V
+A
+V
+A
+V
+A
+V
+A
+Y
+a
+v
+a
+v
+i a
+d
+a
+d
+a
+:
+a
+y
+SE
+SEL
+AN
+AS
+ANS
+AS
+NO
+AO
+sO
+0
+55
+AT
+AT.
+LAY
+B P
+O
+A
+¥ V
+AV
+V VA
+A
+V A
+V
+A
+A
+V
+V
+AA A
+VY
+K
+A A
+V
+V
+A
+A V
+AY
+S
+In BIPV Shading Devices (PVSDs] shading is not an anomaly. It is an intentional, continuous, and
+dynamic operational state.
+
+===== PAGE 3 =====
+3 :yh .N
+R :
+x
+.
+y
+S
+.
+»
+y w
+E
+B
+g
+t e lf N a
+h L A e A R F
+E s R A ri A
+1 sl a iK i r w X
+. d e l
+ee
+,
+k
+et ct FA
+La
+eyaT
+x —
+k"
+.
+.-
+, n
+;
+S F I
+)L
+d a o L
+yN
+rh L U T
+p + YAJ
+C
+)7 ” ]FL n<
+e a R W rK
+rT yb
+L E S
+:.v
+3 y b
+.rT
+iP
+a
+i 1
+T L
+ln
+-
+L
+A
+H
+h s PE
+M
+i
+N
+W
+A
+W
+A
+Y
+A
+W
+A >
+W
+> A
+J
+—&2 Step 2: Cellular M i s m a t c|h
+A
+W
+<
+A
+c
+Step 3: Electrical Bottleneck
+a
+S
+drop Gill
+Series connection forces the entire string’s current to
+to the level of the lowest illuminated cell. BPE
+>
+a
+/X
+3 :yh .N
+R :
+l
+x
+l
+.
+-i
+F y
+S
+.
+»
+y w
+E
+B
+g
+t e ) lf NA a
+h L A e A R F V
+E R A s ri A A
+1 sl a iK i r w XV
+. d e A l V
+ee
+A
+V
+A
+, Y
+A
+V
+A
+V
+A
+V
+A
+V
+A
+V
+A
+A
+V
+A
+V
+A
+Y
+A
+V
+A
+T
+Step 4: Thermal Consequence
+:
+r
+r Reverse-bias occurs as unshaded cells force current through # .
+k |
+= the shaded cell, dissipating power as destructive heat.
+411
+k
+et ct FA
+La
+eyaT
+x —
+k"
+.
+.-
+, n
+;
+S F I
+)L
+d a o L
+yN
+rh L U T
+p + YAJ
+C
+)7 ” ]FL n<
+e a R W rK
+rT yb
+L E S
+:.v
+3 y b
+.rT
+iP
+a
+i 1
+T L
+ln
+-
+L
+A
+H
+h s PE
+M
+i
+N
+W
+A
+W
+A
+Y
+A
+W
+A >
+W
+> A
+J
+—&2 Step 2: Cellular M i s m a t c|h
+A
+W
+<
+A
+c
+Step 3: Electrical Bottleneck
+a
+S
+drop Gill
+Series connection forces the entire string’s current to
+to the level of the lowest illuminated cell. BPE
+>
+a
+/X
+3 :yh .N
+R :
+l
+x
+l
+.
+-i
+F y
+S
+.
+»
+y w
+E
+B
+g
+t e ) lf NA a
+h L A e A R F V
+E R A s ri A A
+1 sl a iK i r w XV
+. d e A l V
+ee
+A
+V
+A
+, Y
+A
+V
+A
+V
+A
+V
+A
+V
+A
+V
+A
+A
+V
+A
+V
+A
+Y
+A
+V
+A
+T
+Step 4: Thermal Consequence
+:
+r
+r Reverse-bias occurs as unshaded cells force current through # .
+k |
+= the shaded cell, dissipating power as destructive heat.
+411
+k
+et ct FA
+La
+eyaT
+x —
+k"
+.
+.-
+, n
+;
+S F I
+)L
+d a o L
+yN
+rh L U T
+p + YAJ
+C
+)7 ” ]FL n<
+e a R W rK
+rT yb
+L E S
+:.v
+3 y b
+.rT
+iP
+a
+i 1
+T L
+ln
+-
+L
+A
+H
+h s PE
+M
+i
+N
+W
+A
+W
+A
+Y
+A
+W
+A >
+W
+> A
+J
+—&2 Step 2: Cellular M i s m a t c|h
+A
+W
+<
+A
+c
+Step 3: Electrical Bottleneck
+a
+S
+drop Gill
+Series connection forces the entire string’s current to
+to the level of the lowest illuminated cell. BPE
+>
+a
+/X
+l
+l
+-i
+F
+) A
+V
+A
+V
+A V
+A
+V
+A
+Y
+A
+V
+A
+V
+A
+V
+A
+V
+A
+V
+A
+A
+V
+A
+V
+A
+Y
+A
+V
+A
+T
+Step 4: Thermal Consequence
+:
+r
+r Reverse-bias occurs as unshaded cells force current through # .
+k |
+= the shaded cell, dissipating power as destructive heat.
+411
+
+===== PAGE 4 =====
+SSSEEEEEE
+CCCeeelll
+BBByyypppaaassssss DDDiiiooodddeeesss aaannnddd ttthhheee FFFrrraaaccctttuuurrreeeddd PPPooowwweeerrr CCCuuurrrvvveee
+... www === nnnssshhhaaadddeeeddd IIIdddeeeaaalll PPPVVV
+LLLooocccaaalll
+PPPeeeaaakkksss
+111
+(((DDDeeeccceeeppptttiiivvveee)))
+|||
+iiilll BBByyypppaaassssss dddiiiooodddeeesss ppprrreeevvveeennnttt hhhoootttssspppoootttsss bbbyyy ssshhhooorrrttt---ccciiirrrcccuuuiiitttiiinnnggg ssshhhaaadddeeeddd sssuuubbb---ssstttrrriiinnngggsss... HHHooowwweeevvveeerrr,,, ttthhhiiisss fffrrraaaccctttuuurrreeesss ttthhheee PPP---VVV
+||| |||
+||| ||| cccuuurrrvvveee iiinnntttooo mmmuuullltttiiipppllleee pppeeeaaakkksss,,, cccooonnnfffuuusssiiinnnggg ssstttaaannndddaaarrrddd ccceeennntttrrraaallliiizzzeeeddd iiinnnvvveeerrrttteeerrrsss aaannnddd cccaaauuusssiiinnnggg mmmiiisssrrreeeppprrreeessseeennntttaaatttiiivvveee lllooosssssseeesss...
+CCC
+EEEIIIRRR
+———]]]
+EEELLLTTT,,,
+"""888 NNNooottteeebbbooooookkk
+AAA III ...
+rrrlllyyy
+
+===== PAGE 5 =====
+wd
+Lal
+"
+1
+-
+o n
+.
+A
+l
+|
+e
+LA
+]
+Gi
+I
+=
+—,
+to
+MPPT must be pushed
+a
+itectures.
+Ps
+Phase 3 Module-Level DMPPT >
+The i
+‘Contenders
+§/* 48
+C
+N
+[
+N
+S
+dA
+IE
+qi
+Ab
+d
+b
+o
+L
+L
+OY
+ok
+|
+|
+3)
+7
+dig
+E
+CC
+AECIENES
+ESE E31
+EIEd
+Ing,
+ts between two distinct electrical arch
+MPPT
+String-Level
+) y
+C
+A
+L
+E
+E
+P
+.
+—
+;
+: =e
+bs
+%
+The dec
+I0N NOW SP
+Phase
+2 Centralize
+-
+Phase A "
+E
+E
+A
+A
+=
+w T h
+i, E
+s
+2
+A
+,
+A
+o
+E
+N
+w
+1 e
+J
+B
+a
+k
+a
+e
+l
+R
+S
+H
+)
+.F
+— ia C i E P -o a p0 o J =0O -==a0 f
+a l ) = a r - .Af d r = t a l .L n o
+’
+To extract the Global Peak under complex BIPV shad
+the module level iS
+d MPPT
+wd
+Lal
+"
+1
+-
+o n
+.
+A
+l
+|
+e
+LA
+]
+Gi
+I
+=
+—,
+to
+MPPT must be pushed
+a
+itectures.
+Ps
+Phase 3 Module-Level DMPPT >
+The i
+‘Contenders
+§/* 48
+C
+N
+[
+N
+S
+dA
+IE
+qi
+Ab
+d
+b
+o
+L
+L
+OY
+ok
+|
+|
+3)
+7
+dig
+E
+CC
+AECIENES
+ESE E31
+EIEd
+Ing,
+ts between two distinct electrical arch
+MPPT
+String-Level
+) y
+C
+A
+L
+E
+E
+P
+.
+—
+;
+: =e
+bs
+%
+The dec
+I0N NOW SP
+Phase
+2 Centralize
+-
+Phase A "
+E
+E
+A
+A
+=
+w T h
+i, E
+s
+2
+A
+,
+A
+o
+E
+N
+w
+1 e
+J
+B
+a
+k
+a
+e
+l
+R
+S
+H
+)
+.F
+— ia C i E P -o a p0 o J =0O -==a0 f
+a l ) = a r - .Af d r = t a l .L n o
+’
+To extract the Global Peak under complex BIPV shad
+the module level iS
+d MPPT
+wd
+Lal
+"
+1
+-
+o n
+.
+A
+l
+|
+e
+LA
+]
+Gi
+I
+=
+—,
+to
+MPPT must be pushed
+a
+itectures.
+Ps
+Phase 3 Module-Level DMPPT >
+The i
+‘Contenders
+§/* 48
+C
+N
+[
+N
+S
+dA
+IE
+qi
+Ab
+d
+b
+o
+L
+L
+OY
+ok
+|
+|
+3)
+7
+dig
+E
+CC
+AECIENES
+ESE E31
+EIEd
+Ing,
+ts between two distinct electrical arch
+MPPT
+String-Level
+) y
+C
+A
+L
+E
+E
+P
+.
+—
+;
+: =e
+bs
+%
+The dec
+I0N NOW SP
+Phase
+2 Centralize
+-
+Phase A "
+E
+E
+A
+A
+=
+w T h
+i, E
+s
+2
+A
+,
+A
+o
+E
+N
+w
+1 e
+J
+B
+a
+k
+a
+e
+l
+R
+S
+H
+)
+.F
+— ia C i E P -o a p0 o J =0O -==a0 f
+a l ) = a r - .Af d r = t a l .L n o
+’
+To extract the Global Peak under complex BIPV shad
+the module level iS
+d MPPT
+
+===== PAGE 6 =====
+C o n t e n d e r A: M i c r o i n v e r t e r s 1 A
+C
+— _ —
+( M o d u l e-:I n t e g r a t e c Parailnlevl |e r t s ] 8 .
+!
+A
+W
+A
+W
+A
+A A
+V The Grid Tie A
+N
+A AC outputs are wired in parallel directly | }
+W
+to the building's main AC bus.
+N .
+A
+|
+T
+N
+Architecture Details
+A
+N - Conversion: Direct DC-to-AC. |
+A
+- Stringing: Parallel (No high-voltage
+pr
+DC strings). 1
+a
+N
+- Semiconductors: Frequently utilize
+Wide-Bandgap (WBG) materials like
+Silicon Carbide (SiC) or Gallium 4%
+Nitride (GaN) for efficiency. u l
+a
+a
+.
+N
+R
+E
+S
+L
+E
+E
+F
+N
+E
+E
+S
+.
+E
+E
+S
+Y
+S
+E
+E
+S
+,
+a
+=
+)EB
+~
+reT
+k
+aE
+-
+no
+«
+Er
+C o n t e n d e r A: M i c r o i n v e r t e r s 1 A
+C
+— _ —
+( M o d u l e-:I n t e g r a t e c Parailnlevl |e r t s ] 8 .
+!
+A
+W
+A
+W
+A
+A A
+V The Grid Tie A
+N
+A AC outputs are wired in parallel directly | }
+W
+to the building's main AC bus.
+N .
+A
+|
+T
+N
+Architecture Details
+A
+N - Conversion: Direct DC-to-AC. |
+A
+- Stringing: Parallel (No high-voltage
+pr
+DC strings). 1
+a
+N
+- Semiconductors: Frequently utilize
+Wide-Bandgap (WBG) materials like
+Silicon Carbide (SiC) or Gallium 4%
+Nitride (GaN) for efficiency. u l
+=
+[
+a
+a
+.
+N
+R
+E
+S
+L
+E
+E
+F
+N
+E
+E
+S
+.
+E
+E
+S
+Y
+S
+E
+E
+S
+,
+a
+=
+)EB
+~
+reT
+k
+aE
+-
+no
+«
+Er
+C o n t e n d e r A: M i c r o i n v e r t e r s 1 A
+C
+— _ —
+( M o d u l e-:I n t e g r a t e c Parailnlevl |e r t s ] 8 .
+!
+A
+W
+A
+W
+A
+A A
+V The Grid Tie A
+N
+A AC outputs are wired in parallel directly | }
+W
+to the building's main AC bus.
+N .
+A
+|
+T
+N
+Architecture Details
+A
+N - Conversion: Direct DC-to-AC. |
+A
+- Stringing: Parallel (No high-voltage
+pr
+DC strings). 1
+a
+N
+- Semiconductors: Frequently utilize
+Wide-Bandgap (WBG) materials like
+Silicon Carbide (SiC) or Gallium 4%
+Nitride (GaN) for efficiency. u l
+=
+[
+a
+a
+.
+N
+R
+E
+S
+L
+E
+E
+F
+N
+E
+E
+S
+.
+E
+E
+S
+Y
+S
+E
+E
+S
+,
+a
+=
+)EB
+~
+reT
+k
+aE
+-
+no
+«
+Er
+=
+[
+
+===== PAGE 7 =====
+The String
+Optimizers are wired in series to forma % a
+central hub.
+a
+L
+T
+R
+o
+DC-AC [central level).
+N - Stringing: Series.
+EF a
+- Mechanism: Buck/boost capability
+regulates output voltage independently of
+module current, maintaining ideal string
+voltage while maximizing individual
+module yield.
+a oat i . . LEE b IL. hd Pak W i a lk t
+C
+a
+ou Afr rt Ta TL
+d
+Larnd
+h
+Sg
+iy
+y
+a
+E
+e
+y
+P
+A
+o N
+V
+T
+y AT
+h
+T
+_
+—
+A
+-
+A
+a
+—
+— a
+e
+5
+C
+E
+= ™ 1h nN
+Contender B
+P o w e r Opt
+| (Module-Integrated Converters]
+The String
+B
+Optimizers are wired in series to forma % a
+S
+central hub.
+a
+L
+T
+Ii
+R
+ag o
+r
+2!
+DC-AC [central level).
+N - Stringing: Series.
+EF a
+- Mechanism: Buck/boost capability
+regulates output voltage independently of
+module current, maintaining ideal string
+voltage while maximizing individual
+module yield.
+a oat i . . LEE b IL. hd Pak W i a lk t
+C
+a
+ou Afr rt Ta TL
+d
+Larnd
+h
+Sg
+iy
+y
+a
+E
+e
+y
+P
+A
+o N
+V
+T
+y AT
+h
+T
+_
+—
+A
+-
+A
+a
+—
+— a
+e
+5
+C
+E
+= ™ 1h nN
+Contender B
+P o w e r Opt
+| (Module-Integrated Converters]
+The String
+B
+Optimizers are wired in series to forma % a
+S
+central hub.
+a
+L
+T
+Ii
+R
+ag o
+r
+2!
+DC-AC [central level).
+N - Stringing: Series.
+EF a
+- Mechanism: Buck/boost capability
+regulates output voltage independently of
+module current, maintaining ideal string
+voltage while maximizing individual
+module yield.
+a oat i . . LEE b IL. hd Pak W i a lk t
+C
+a
+ou Afr rt Ta TL
+d
+Larnd
+h
+Sg
+iy
+y
+a
+E
+e
+y
+P
+A
+o N
+V
+T
+y AT
+h
+T
+_
+—
+A
+-
+A
+a
+—
+— a
+e
+5
+C
+E
+= ™ 1h nN
+Contender B
+P o w e r Opt
+| (Module-Integrated Converters]
+B
+S
+Ii
+ag
+r
+2!
+
+===== PAGE 8 =====
+2-Stage (DC-DC at louver, DC-AC at 1-Stage (DC-AC immediately at the:
+central mechanical roam). louver].
+)
+System
+Maintains high-voltage DC within the Eliminates high-voltage DC; only
+= [I
+a - a
+1 LE PY T.
+N
+aT ey ArT = building facade. standard AC runs through the facade.
+=
+[BN -Twt
+JE
+A
+-
+.
+. A
+fi
+Shading j e HIGH: Decouples voltage and current
+HIGH: Complete independence; a ij SXES
+in the series string, bypassing shaded
+Mitigation
+SEE
+shaded louver has exactly zero
+louvers without dropping total string
+electrical impact on its neighbor. S 2 3 0
+. current.
+|.
+4
+LA
+’
+a
+S
+7
+A
+2-Stage (DC-DC at louver, DC-AC at 1-Stage (DC-AC immediately at the:
+A
+central mechanical roam). louver].
+=
+)
+A
+N
+R
+System
+Maintains high-voltage DC within the Eliminates high-voltage DC; only
+= [I B
+a - a
+1 LE PY T.
+N
+aT ey ArT = building facade. standard AC runs through the facade.
+=
+[BN -Twt
+JE
+A
+-
+.
+. A
+fi
+Shading j e HIGH: Decouples voltage and current
+HIGH: Complete independence; a ij SXES
+in the series string, bypassing shaded
+Mitigation
+SEE
+shaded louver has exactly zero
+louvers without dropping total string
+electrical impact on its neighbor. S 2 3 0
+. current.
+|.
+4
+LA
+’
+a
+S
+7
+A
+2-Stage (DC-DC at louver, DC-AC at 1-Stage (DC-AC immediately at the:
+A
+central mechanical roam). louver].
+=
+)
+A
+N
+R
+System
+Maintains high-voltage DC within the Eliminates high-voltage DC; only
+= [I B
+a - a
+1 LE PY T.
+N
+aT ey ArT = building facade. standard AC runs through the facade.
+=
+[BN -Twt
+JE
+A
+-
+.
+. A
+fi
+Shading j e HIGH: Decouples voltage and current
+HIGH: Complete independence; a ij SXES
+in the series string, bypassing shaded
+Mitigation
+SEE
+shaded louver has exactly zero
+louvers without dropping total string
+electrical impact on its neighbor. S 2 3 0
+. current.
+|.
+4
+LA
+’
+a
+S
+7
+A
+A
+=
+A
+N
+R
+B
+
+===== PAGE 9 =====
+EEEEEEEEE LLLSSS
+iii nnn ttt hhh aaa EEEnnnvvveeeIII 000ppp eee ddd
+uuubbbHHH lll &&& bbb EEE eee EEE mmm EEE iii 222...
+PPPbbboooeeeyyy
+~~~uuuiiilll
+[[[===
+iiiEEE
+===eeennnaaa
+LLLnnn
+||| gggnnn
+pppeee
+fffoooaaallllll}}}
+iii
+PPPiiimmm
+iii
+oooeee
+iiillllll
+fff
+111 iiiyyy
+{{{ ||| WWWFFF
+777
+... ooopppeeennn---
+TTThhheee BBBIIIPPPVVV HHHeeeaaattt PPPrrrooobbbllleeemmm:::UUUnnnllliiikkkeee TTTrrraaaccckkk sssooolllaaarrr,,, BBBIIIPPPVVV jjjaaaccckkksss bbbaaaccclllvvveeennntttiiilllaaatttiiiooonnn... CCC OOO EEE eee ddd
+;;;ooo ... aaa
+CCCooommmpppooonnneeennnttt ttteeemmmpppeeerrraaatttuuurrreeesss rrrooouuutttiiinnneeelllyyy eeexxxccceeeeeeddd 666000°°°CCC,,, aaacccccceeellleeerrraaatttiiinnnggg dddeeegggrrraaadddaaatttiiiooonnn...
+fff iiiLLL
+rrr XXX ”””rrriii TTTEEE SSSEEE TTTeee
+;;;
+MMMiiicccrrroooiiinnnvvveeerrrttteeerrr PPPTTT EEE ——— ——— 111 OOOppptttiiimmmiiizzzeeerrr RRRooobbbuuussstttnnneeessssss
+|||
+... TTThhheee CCCaaapppaaaccciiitttaaannnccceee FFFlllaaawww::: DDDuuutttpppuuuttttttiiinnnggg tttooo aaa sssiiinnngggllleee---ppphhhaaassseee JJJ SSSooollliiiddd---SSStttaaattteee RRReeesssiiillliiieeennnccceee::: PPPooowwweeerrr oooppptttiiimmmiiizzzeeerrrsss ppprrroooccceeessssss DDDCCC---
+AAACCC gggrrriiiddd rrreeeqqquuuiiirrreeesss lllaaarrrgggeee iiinnnttteeerrrnnnaaalll eeellleeeccctttrrrooolllyyytttiiiccc cccaaapppaaaccciiitttooorrrsss tttooo]]] DDDCCC aaannnddd dddooo nnnooottt rrreeeqqquuuiiirrreee mmmaaassssssiiivvveee eeellleeeccctttrrrooolllyyytttiiiccc cccaaapppaaaccciiitttooorrrsss...
+rrr
+mmmiiitttiiigggaaattteee dddooouuubbbllleee---llliiinnneee fffrrreeeqqquuueeennncccyyy vvvooollltttaaagggeee rrriiippppppllleeesss... TTThhheeessseee TTThhheeeyyy rrreeelllyyy eeennntttiiirrreeelllyyy ooonnn sssooollliiiddd---ssstttaaattteee eeellleeeccctttrrrooonnniiicccsss,,, mmmaaakkkiiinnnggg
+§§§
+... aaarrreee hhhiiiggghhhlllyyy ssseeennnsssiiitttiiivvveee tttooo ttthhheeerrrmmmaaalll dddeeegggrrraaadddaaatttiiiooonnn,,, rrriiissskkkiiinnnggg ttthhheeemmm sssiiigggnnniiifffiiicccaaannntttlllyyy mmmooorrreee ddduuurrraaabbbllleee uuunnndddeeerrr eeexxxtttrrreeemmmeee BBBIIIPPPVVV
+---@@@&&&
+vvvSSS iii eeeaaarrrlllyyy fffaaalllllluuurrreee bbbeeehhhiiinnnddd hhhooottt BBBIIIPPPVVV ggglllaaassssss... III PPP EEE ,,, ttthhheeerrrmmmaaalll llloooaaadddsss...
+mmm
+
+===== PAGE 10 =====
+:
+)
+:—
+i
+inside
+;
+.
+i
+[]
+L
+EiN
+LN
+Ts 1
+-
+--
+———
+Lh
+=
+o- od | n Earn
+eh
+bYA
+AL
+fl
+OPTIMIZERS:
+"
+Streamlined solid-state
+profile allows far seamless
+tegration hidden In
+structural mullions, hollow
+louvers, or directly laminated
+into the module frame.
+LL - = LL
+RNC,
+ah
+)
+0 - afd - du aN C
+l
+D i a g n o s t IC M a t r IX
+:
+)
+:—
+i
+MICROINVERTERS
+0 ICU It to conceal with in
+standard slim arch tectural
+profiles due to complex inside
+Oc-AC electronics and
+heat sinks. Often requires
+ulky external mounting.
+;
+.
+i
+[]
+L
+EiN
+LN
+Ts 1
+-
+--
+———
+Lh
+=
+o- od | n Earn
+eh
+bYA
+AL
+fl
+OPTIMIZERS:
+"
+Streamlined solid-state
+profile allows far seamless
+tegration hidden In
+structural mullions, hollow
+louvers, or directly laminated
+into the module frame.
+LL - = LL
+RNC,
+ah
+)
+0 - afd - du aN C
+l
+D i a g n o s t IC M a t r IX
+:
+)
+:—
+i
+MICROINVERTERS
+0 ICU It to conceal with in
+standard slim arch tectural
+profiles due to complex inside
+Oc-AC electronics and
+heat sinks. Often requires
+ulky external mounting.
+;
+.
+i
+[]
+L
+EiN
+LN
+Ts 1
+-
+--
+———
+Lh
+=
+eh
+AL
+fl
+bY A
+o- od | n Earn
+OPTIMIZERS:
+"
+Streamlined solid-state
+profile allows far seamless
+tegration hidden In
+structural mullions, hollow
+louvers, or directly laminated
+into the module frame.
+LL - = LL
+RNC,
+ah
+)
+0 - afd - du aN C
+l
+D i a g n o s t IC M a t r IX
+MICROINVERTERS
+0 ICU It to conceal with in
+standard slim arch tectural
+profiles due to complex
+Oc-AC electronics and
+heat sinks. Often requires
+ulky external mounting.
+
+===== PAGE 11 =====
+—————— ___
+ooogggiiieeesss’’’
+||| PPPuuussshhhiiinnnggg DDDeeeeeepppeeerrr SSSuuubbb--- MMMoooddduuullleee PPP rrr ooo ccc eee sss sss iii nnnTTTgggoooppp ooo lll
+CCCnnn
+___
+TTTYYY TTThhheeePPPrrroooccceeessssss
+TTThhheee CCCooonnnccceeepppttt
+|||BBB
+&&&... {{{
+ffflll IIInnnsssttteeeaaaddd ooofff oooppptttiiimmmiiizzziiinnnggg ttthhheee wwwhhhooollleee lllooouuuvvveeerrr,,, ### PPPrrroooccceeesssssseeesss ooonnnlllyyy ttthhheee ‘‘‘mmmiiisssmmmaaatttccchhh...
+EEE>>>
+iii}}} oooppptttiiimmmiiizzzaaatttiiiooonnn hhhaaappppppeeennnsss aaattt ttthhheee ccceeellllll---ssstttrrriiinnnggg llleeevvveee§§§lll pppooowwweeerrr’’’ ooonnn aaa pppaaarrraaalllllleeelll pppaaattthhh,,, JJJ mmmooovvviiinnnggg ssshhhaaadddooowww llliiinnneeesss [[[eee...ggg...,,, aaa
+iiinnnsssiiidddeee ttthhheee lllaaammmiiinnnaaatttiiiooonnn uuusssiiinnnggg SSSuuubbb---MMMoooddduuullleee [[[fff dddrrraaassstttiiicccaaallllllyyy rrreeeddduuuccciiinnnggg eeennneeerrrgggyyy dddiiiaaagggooonnnaaalll ssshhhaaadddooowww fffrrrooommm aaannn
+###222
+IIInnnttteeegggrrraaattteeeddd CCCooonnnvvveeerrrttteeerrrsss (((SSSuuubbb---MMMIIISSSCCC))) ooorrr 444 cccooonnnvvveeerrrsssiiiooonnn lllooosssssseeesss cccooommmpppaaarrreeedddtttooo 444 aaadddjjjaaaccceeennnttt bbbuuuiiillldddiiinnnggg))) sssllliiiccceee aaacccrrrooossssss
+iiifff
+DDDiiiffffffeeerrreeennntttiiiaaalll PPPooowwweeerrr PPPrrroooccceeessssssooorrrsss (((SSSuuubbb---IIIDDDPPPPPP)))... fffuuullllll---tttiiimmmeee mmmoooddduuullleee---llleeevvveeelll cccooonnnvvveeerrrsssiiiooonnn... aaa sssiiinnngggllleee mmmoooddduuullleee'''sss sssuuurrrfffaaaccceee...
+|||
+§§§
+
+===== PAGE 12 =====
+LLLEEEAAA aaalllmmm fffhhh
+SSSyyy TTTeee
+sssnnn iii cccEEE EEETTT III === ||| BBBeee AAAfff 222
+]]]
+222 mmmlll
+PPP aaa ttt ttt eee nnn 222 SSShhhooorrrttt NNNaaarrrrrrooowww(((SSSNNN)))
+111 EEE III EEE NNN
+AAA
+yyy
+PPPaaatttttteeennn 444 LLLaaarrrgggeee NNNaaarrrrrrooowww(((AAANNN)))
+EEE lll
+TTT yyy bbbyyypppaaassssss
+KKKeeeyyy HHHooorrriiizzzooonnntttaaalll ssshhhaaadddiiinnnggg ooonnn ,,, lllooouuuvvveeerrrsss aaaccctttiiivvvaaattteeesss dddiiiooodddeeesss ppprrreeedddiiiccctttaaabbblllyyy,,, wwwhhheeerrreeeaaasss dddiiiaaagggooonnnaaalll ooorrr £££
+SSS ooo mmm bbb rrr eee ssshhhaaadddiiinnnggg cccrrreeeaaattteeesss hhhiiiggghhhlllyyy vvvooolllaaatttiiillleeePPP --- VVV cccuuurrrvvveeesss ttthhhaaattt mmmaaannndddaaattteee dddiiissstttrrriiibbbuuuttteeeddd MMMPPPPPPTTT...
+PPP
+
+===== PAGE 13 =====
+IE Central String
+Fixed BIPV
+Roof/Awning
+Double-Skin
+Facade
+Dynamic
+Sun-Tracking
+ee, Re a H n ro
+5 .
+“on : ;
+Tie aE.
+EN i i
+Ey v
+;
+YS
+aC
+)YR
+j
+Eb
+yo
+aF
+1 ]7
+oo
+yt
+yn
+”
+\
+EEE
+hW
+i
+E
+A
+E a
+y il
+yT
+NEEW
+kc
+YRT
+sF
+ne
++
+I
+X J oF
+H
+;
+if
+\
+I
+TB
+,-
+e
+d
+I
+:
+T E
+e
+p
+Inverter
+IDEAL: Predictable
+shading, simple
+form factor.
+i
+A7=/V\
+h L
+R Y A
+-
+aA
+SE
+et
+85 Yo
+ERTE
+ERE
+=a
+a,
+-
+‘
+3 Lh
+- E E
+\
+0
+SRP
+2
+.
+wal
+»
+4 ~
+-
+:
+=
+.
+“
+y o Lr
+a ¥
+NN
+Vi
+—
+rW
+XIT
+ll
+o
+’
+A
+S F
+Overkill unless
+Feasible for small
+specific roof
+residential setups.
+Y
+obstructions exist. N
+I
+Warning: High IDEAL: Thermal U
+Poor: Susceptible to
+H
+heat degrades resilience & string
+string mismatch.
+capacitors. balancing.
+—
+—
+=
+= +
+=
+—t
+—
+—
+—
+a
+—
+h E
+,so
+=
+-
+v
+.
+*)
+-
+.a
+:
+IL
+.
+:
+LB
+.vw
+]
+“.
+al
+SE
+IE Central String
+Fixed BIPV
+Roof/Awning
+Double-Skin
+Facade
+Dynamic
+Too bulky to fit IDEAL: Slim profile
+Fails under shifting
+Sun-Tracking mechanical pivot fits mullions, tracks
+shadow lines.
+ee, Re a H n ro cavities. dynamic GMPP.
+5 .
+“on : ;
+Tie aE.
+EN i i
+Ey v
+;
+YS
+aC
+)YR
+j
+Eb
+yo
+aF
+1 ]7
+oo
+yt
+yn
+”
+\
+EEE
+hW
+i
+E
+A
+E a
+y il
+yT
+NEEW
+kc
+YRT
+sF
+ne
++
+I
+X J oF
+H
+;
+if
+\
+I
+TB
+,-
+e
+d
+I
+:
+T E
+e
+p
+Inverter
+IDEAL: Predictable
+shading, simple
+form factor.
+i
+A7=/V\
+h L
+R Y A
+-
+aA
+SE
+et
+85 Yo
+ERTE
+ERE
+=a
+a,
+-
+‘
+3 Lh
+- E E
+\
+0
+SRP
+2
+.
+wal
+»
+4 ~
+-
+:
+=
+.
+“
+y o Lr
+a ¥
+NN
+Vi
+—
+rW
+XIT
+ll
+o
+’
+A
+S F
+Overkill unless
+Feasible for small
+specific roof
+residential setups.
+Y
+obstructions exist. N
+I
+Warning: High IDEAL: Thermal U
+Poor: Susceptible to
+H
+heat degrades resilience & string
+string mismatch.
+capacitors. balancing.
+—
+—
+=
+= +
+=
+—t
+—
+—
+—
+a
+—
+h E
+,so
+=
+-
+v
+.
+*)
+-
+.a
+:
+IL
+.
+:
+LB
+.vw
+]
+“.
+al
+SE
+IE Central String
+Fixed BIPV
+Roof/Awning
+Double-Skin
+Facade
+Dynamic
+Too bulky to fit IDEAL: Slim profile
+Fails under shifting
+Sun-Tracking mechanical pivot fits mullions, tracks
+shadow lines.
+ee, Re a H n ro cavities. dynamic GMPP.
+5 .
+“on : ;
+Tie aE.
+EN i i
+Ey v
+;
+YS
+aC
+)YR
+j
+Eb
+yo
+aF
+1 ]7
+oo
+yt
+yn
+”
+\
+EEE
+hW
+i
+E
+A
+E a
+y il
+yT
+NEEW
+kc
+YRT
+sF
+ne
++
+I
+X J oF
+H
+;
+if
+\
+I
+TB
+,-
+e
+d
+I
+:
+T E
+e
+p
+Inverter
+IDEAL: Predictable
+shading, simple
+form factor.
+i
+A7=/V\
+h L
+R Y A
+-
+aA
+SE
+et
+85 Yo
+ERTE
+ERE
+=a
+a,
+-
+‘
+3 Lh
+- E E
+\
+0
+SRP
+2
+.
+wal
+»
+4 ~
+-
+:
+=
+.
+“
+y o Lr
+a ¥
+NN
+Vi
+—
+rW
+XIT
+ll
+o
+’
+A
+S F
+Overkill unless
+Feasible for small
+specific roof
+residential setups.
+Y
+obstructions exist. N
+I
+Warning: High IDEAL: Thermal U
+Poor: Susceptible to
+H
+heat degrades resilience & string
+string mismatch.
+capacitors. balancing.
+—
+—
+=
+= +
+=
+—t
+—
+—
+—
+a
+—
+h E
+,so
+=
+-
+v
+.
+*)
+-
+.a
+:
+IL
+.
+:
+LB
+.vw
+]
+“.
+al
+SE
+Too bulky to fit IDEAL: Slim profile
+Fails under shifting
+mechanical pivot fits mullions, tracks
+shadow lines.
+cavities. dynamic GMPP.
+
+===== PAGE 14 =====
+|
+a
+Lis LE
+L
+ALLEL
+a
+rS
+r
+w
+r
+ny
+=
+-
+ru
+[ol
+E
+—
+—
+=
+~
+J
+w
+F
+R E
+>
+-
+—
+E———
+Ea
+rr
+H
+|
+5
+Ta
+hE
+®
+¥
+L
+L
+:
+E
+I
+a
+0 Lis LE
+w
+y
+L
+i
+g
+t
+.
+ALLEL
+R
+E
+E
+r
+a
+rS
+r
+w
+r
+ry the
+er fcr [hn ERO 0 ory 2rd ISTE mpm "le
+=m gd -= EE Phan rh a an [LL SE, - . I Aa
+- a = Snr
+Bi = = Tah LR RY
+ny
+=
+-
+ru
+[ol
+E
+—
+—
+=
+~
+J
+w
+F
+R E
+>
+-
+—
+E———
+Ea
+rr
+H
+|
+5
+Ta
+hE
+®
+¥
+L
+L
+:
+E
+I
+a
+0 Lis LE
+w
+y
+L
+i
+g
+t
+.
+ALLEL
+R
+E
+E
+r
+a
+rS
+r
+w
+r
+ry the
+er fcr [hn ERO 0 ory 2rd ISTE mpm "le
+=m gd -= EE Phan rh a an [LL SE, - . I Aa
+- a = Snr
+Bi = = Tah LR RY
+ny
+=
+-
+ru
+[ol
+E
+—
+—
+=
+~
+J
+w
+F
+R E
+>
+-
+—
+E———
+Ea
+rr
+H
+5
+Ta
+hE
+®
+¥
+L
+L
+:
+E
+I
+0
+w
+y
+i
+g
+t
+.
+R
+E
+E
+r
+ry the
+er fcr [hn ERO 0 ory 2rd ISTE mpm "le
+=m gd -= EE Phan rh a an [LL SE, - . I Aa
+- a = Snr
+Bi = = Tah LR RY
+
+===== PAGE 15 =====
+“a ' Hi
+od . : 'H
+: ' H
+1
+) EE) = C E o EE m , nt LI =e -
+]
+- LEI - feFt . —-= ed
+i" - a a rl m-L = Ta a en T , } RT = E Ja nr
+I . --. rT Pit frre: an
+v
+LL
+’
+ao
+raH
+5
+“a ' Hi
+od . : 'H
+: ' H
+1
+) EE) = C E o EE m , nt LI =e -
+]
+- LEI - feFt . —-= ed
+i" - a a rl m-L = Ta a en T , } RT = E Ja nr
+I . --. rT Pit frre: an
+v
+N
+R
+A
+o,
+A t
+a a
+a
+ni
+/
+T
+T
+E
+N
+A
+N
+o
+L
+N
+n
+r
+A
+I r s BIPV Shading Devices, the architectural form—the physical movement, layout,
+and thermal constraints of the envelope—must dictate the electrical topology.
+Microinverters provide ultimate module independence | “¥| Power Optimizers offer the ideal balance of solid-state { S I R
+} '
+and eliminate DC voltage risks, but struggle with thermal |— thermal resilience, form-factor integration, and string-level iE s h
+degradation and spatial constraints inside tight mullions.) af: mismatch mitigation for complex facades.
+RB
+Harmonizing the architectural envelope with distributed MPPT is the key to unlocking zero-emission buildings.
+LL
+’
+ao
+raH
+5
+“a ' Hi
+od . : 'H
+: ' H
+1
+) EE) = C E o EE m , nt LI =e -
+]
+- LEI - feFt . —-= ed
+i" - a a rl m-L = Ta a en T , } RT = E Ja nr
+I . --. rT Pit frre: an
+v
+N
+R
+A
+o,
+A t
+a a
+a
+ni
+/
+T
+T
+E
+N
+A
+N
+o
+L
+N
+n
+r
+A
+I r s BIPV Shading Devices, the architectural form—the physical movement, layout,
+and thermal constraints of the envelope—must dictate the electrical topology.
+Microinverters provide ultimate module independence | “¥| Power Optimizers offer the ideal balance of solid-state { S I R
+} '
+and eliminate DC voltage risks, but struggle with thermal |— thermal resilience, form-factor integration, and string-level iE s h
+degradation and spatial constraints inside tight mullions.) af: mismatch mitigation for complex facades.
+RB
+Harmonizing the architectural envelope with distributed MPPT is the key to unlocking zero-emission buildings.
+LL
+’
+ao
+raH
+5
+N
+R
+A
+o,
+A t
+a a
+a
+ni
+/
+T
+T
+E
+N
+A
+N
+o
+L
+N
+n
+r
+A
+I r s BIPV Shading Devices, the architectural form—the physical movement, layout,
+and thermal constraints of the envelope—must dictate the electrical topology.
+Microinverters provide ultimate module independence | “¥| Power Optimizers offer the ideal balance of solid-state { S I R
+} '
+and eliminate DC voltage risks, but struggle with thermal |— thermal resilience, form-factor integration, and string-level iE s h
+degradation and spatial constraints inside tight mullions.) af: mismatch mitigation for complex facades.
+RB
+Harmonizing the architectural envelope with distributed MPPT is the key to unlocking zero-emission buildings.

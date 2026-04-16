@@ -4,6 +4,7 @@
 Use this repository as a decision-grade pre-design companion for **iWin-type glazing-integrated photovoltaic venetian-blind systems**. Optimize for architecture framing, standards mapping, control logic, electrical envelope, thermal risk, reliability, commissioning, and vendor-data closure rather than generic BIPV commentary.
 
 ## Always-on working rules
+- If a conversation needs temporary or generated files, create and use a dedicated per-conversation subfolder inside the current thread/worktree folder, but only at the moment the first chat-related file must actually be saved. Do not pre-create empty folders, and do not scatter such files across the repo unless the task explicitly targets tracked project files.
 - Classify every non-trivial claim as one of:
   - **Verified public fact**
   - **Standards-backed framing**

@@ -1,0 +1,631 @@
+
+===== PAGE 1 =====
+     THE GRANULARITY PARADIGM
+     Isolating Performance Drops and Maximising
+
+
+
+
+
+
+
+
+
+
+
+ 1  Energy Yield with Distributed MPPT
+
+
+
+
+
+                                                                                   23TWBCTEYWPT HOBIEEHFRDTEDWRFT MOOBLE
+                                                                                   []
+                                                                                apilin   ul        a-  TI
+
+
+                                                                                Lg            Le
+                                                                              ly    El                    Ta     Eat  ~.
+                                                                              ,  Ea    a                   La    -
+                                                                              ” yo     wr              =   a-                           oo   a
+
+
+
+FETEDISTRIBUTED MPPT ARCHITECTURECENTRALISEDrpDATE: 2024-05-16DOCANAENT: WHITE PAPER SERIES VOL. 0307         ;         tie          22                                         ans            a
+
+===== PAGE 2 =====
+   THE LABORATORY ILLUSION:
+   STANDARD TEST CONDITIONS (STC)
+
+
+                                1% 16                    LA
+                                He                +
+                              «| I            |-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                              |                            |                            —
+                                                            i
+                                                                                             nl
+                                   t                                                  i
+                                                            |                                      N
+
+
+
+
+
+
+
+                               Anil                         | i          i
+                 1
+          UNIFORM IRRADIANCE            THERMAL STABILITY        SPECTRAL CONSISTENCY     :
+
+                                        @) 25°C—— reRea Wome.          som  S      3
+
+
+
+
+
+
+
+
+
+
+
+                                                   “upto   +35°C                    4
+                                                     ABOYE AMBIENT
+
+
+
+
+          1000 W/m? striking every cell with
+          absolute mathematical perfection.
+™— COOLING FIN                                                  CEFERANED _/                                                                —up to 35°C above ambient).Cell temperature locked artificially at                                       An unchanging AM1.5 global                        -25°C (ignoring real-world panels running                                               solar spectrum.                                 -
+
+===== PAGE 3 =====
+        THE FIELD REALITY:
+        ENVIRONMENTAL DISRUPTION
+                                                                                      8
+        Dynamic Occlusion: Fast-moving clouds creating transient,                         Complex Architectural Shading: Parapets, neighbouring buildings, and
+        sweeping shade.              2                                                    HVAC equipment.
+
+
+
+     al
+
+
+
+
+
+
+
+
+
+                                                                SWEEPING SHADE                                                                FIXED & SEASONAL
+                                                                & VOLTAGE DROP                                                                OBSTRUCTION
+        <
+         Localised Soiling: Uneven dust accumulation and specific obstructions.           Thermal & Age Degradation: Uneven temperature distributions and
+                                                                                          manufacturing tolerance scatter (-3% to +5% variance).
+                       ke                                                                                                                                 :          si CELL OCCLUSION
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                      a
+                        [<                   A
+EaIE-3%VARIANCE
+
+===== PAGE 4 =====
+  THE PHYSICS OF MISMATCH: A DISPROPORTIONATE CASCADE
+
+   THE CAUSE: PARTIAL SHADING CONDITION    THE EFFECT: DISPROPORTIONATE POWER DROP
+
+
+
+                                                100%
+
+
+
+
+
+
+
+
+                                                              The Harsh Mathematical
+                                                              Reality: The cell with
+                                                              the lowest output     |
+                                                              fundamentally dictates  |
+                             Partial Shading
+                               Condition
+
+passing  through  every        |element in the module.and limits  the current           |other series-connected      |
+
+===== PAGE 5 =====
+|                                                                                                                                       4 NotebookMBottleneckTHE CMPPT BOTTLENECK: THE VULNERABILITY OF THE CHAINCurrent Limitingthe strict current limiter for the entire array.                             IFTEC-WP-001 REV A|    Centralised  Vulnerability:   The weakest link becomes                                   |                             -
+
+===== PAGE 6 =====
+   THE ELECTRICAL CONSEQUENCE: FRACTURING THE POWER CURVE
+                                                      HERE
+                                                     Maximum Power Point
+                                                 1 | (Uniform Irradiance)
+
+              Birth of Local Maxima:
+              False peaks that deceive
+              standard tracking systems.
+
+
+
+
+
+TEC   Wn  ory   §Voltage (V)                                  TF
+
+===== PAGE 7 =====
+     THE ALGORITHM TRAP: MISREPRESENTATIVE POWER LOSSES
+
+                                                                a  Global Maximum Power Point
+                  Local Maximum ~~        SN.                    (GMPP)
+                                                                           Stranded Energy:  ¥
+                                                                  \\ ==  True GMPP SIL ly
+         Perturb & Observe path:                                           kunharvested.  4
+         Trapped at local maximum.
+
+
+
+
+
+
+
+
+
+                        Standard algorithms fail to navigate complex curves, resulting in
+
+
+
+
+
+
+
+
+
+
+
+
+                  | "Misrepresentative Power Losses" leaving available solar energy stranded.  |   TF
+TEC  ne ory  §fA NotebooklM
+
+===== PAGE 8 =====
+    THE GRANULARITY SHIFT: INTRODUCING DISTRIBUTED MPPT
+
+        ARRAY-LEVEL THINKING      DECOUPLING      NODE-LEVEL ISOLATION
+              (CMPPT)          THE SYSTEM        (DMPPT)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Distributed MPPT abandons ‘Array-level’ generalisation in favour
+                        of independent, ‘Node-level’ isolation and optimisation.    TF
+=TEC   ane By     §
+
+===== PAGE 9 =====
+    THE SCALE OF GRANULARITY
+    PUSHING INTELLIGENCE TO THE EDGE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                              ——  — ———  ———  gl m=  =  —————    —|
+
+
+
+
+
+
+
+
+
+             NN                                 ROAR                                          J
+              ph                               (ARERR OO OOOO                         ):0.0:09
+              LEELA           RT An           XENIAod shhBabASAODDOOCONOENANCOR
+           LC   +
+                EEE LEN                      0 AY    AANCOO0OAEAAAN
+                  LOO          RE         FET  eres  ERs
+              EEN             ry               XX
+                BES                             WRNOE) CONOR,
+             a)                                 SENES
+              fd                              vr AY                               'r
+
+                                                                                  JER
+                                                 A iy -
+                                                - hy
+                                                 -
+                                               3 2  -                                         1
+                                                _ -
+                                                 o-oo.
+
+
+                                                /4
+
+                                                 )
+                                                                                              1
+
+
+1.  CentralisedModule-Levelis  the  theoretical    ideal,   module-level     DMPPT(Array)between  managing  complex clrcultry    costs   andrepresents   the  optimal,   commercially   viable   balancePREG0s 000     ENOperational    Sweet SpotLKR3LHRachieving   total   shade mitigation.2.  String-LevelCART  RAEJoroo.While  cell-level    trackingWw                       bY
+
+===== PAGE 10 =====
+ DECOUPLING THE NODES: BREAKING THE CURRENT LIMITER
+
+
+
+
+
+
+
+
+
+
+       PANELA
+
+
+POWER POINT (GMPP)@    GLOBAL MAXIMUMTFThe rest of the system operates independently at itsThe under-performing  module is electrically   isolated.true Global Maximum Power Point (GMPP).TEC-KFP-BB1 REY A\
+
+===== PAGE 11 =====
+     TOPOLOGIES OF ISOLATION: MODULE-INTEGRATED PARALLEL INVERTERS (MIPI)
+
+
+                                           Microinverter Architecture
+
+                                           PROS:
+                                           — Total string independence
+                                           — Elimination of high-voltage DC risks
+                                            (enhanced fire safety)
+                                           — Plug-and-play modularity
+
+                                           CONS:
+                                           — Higher initial CapEx
+|conversion at the edgeTF | TEC-KP-881 REV ATIS +RP-88L REY Afor power electronics— Harsher operating environments— Requires complex dual-stage
+
+===== PAGE 12 =====
+TOPOLOGIES OF ISOLATION:
+MODULE-INTEGRATED SERIES CONVERTERS (MISC)
+
+
+
+            BC/DC              DC Power Optimiser  Architecture
+           OPTIMISER
+            pA             PROS:
+                         CENTRAL DE/AC         — Exceptionally high conversion efficiency
+                           INVERTER          — Excellent shade mitigation
+                                                  — Lower cost per node than full
+                                                    microinverters
+
+
+
+                                    CON IO   CONS:
+                                                  — Relies on a centralised inverter for final
+                                                    AC grid connection
+                                                  — Series connection means total parallel
+                                                    independence is not achieved
+
+
+
+
+
+                                                                                    “WF | TEC-KP-8B1 REV A
+                                                                                                                                                                                                                   |                                                                                                   A  NotebookLM
+
+===== PAGE 13 =====
+                        THE DATA ADVANTAGE: FROM BLACK BOX TO TRANSPARENT MESH
+
+                  CMPPT (CENTRALIZED MPPT)                                        DMPPT (DISTRIBUTED MPPT)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 md  SYSTEM UNDERPERFORMING
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               Hoh
+
+
+                                    EET,
+
+                                                                                                        =   ==    =
+                                                                                                    MODULE 4B: Bypass Diode Failure.
+                           Zero location data.                                                      Coordinates: Row 4, Column 2.
+                           Manual testing required.
+
+
+            Granularity of power processing enables granularity of data acquisition, drastically slashing O&M diagnostics time.
+F   © YotgbqpidM
+
+===== PAGE 14 =====
+       THE ARCHITECTURE DIAGNOSTIC MATRIX
+
+
+                                 SHADE          DATA   RELATIVE   WIRING
+        ARCHITECTURE | ro) prance |GRANULARITY | pecoluTiON |  CAPEX | COMPLEXITY
+
+
+
+
+
+
+
+
+                                                                                |
+          (Centralised) |  Poor    Array   System-wide  Lowest   StandardcMPPT  |
+
+
+          String-Level | Moderate  String  String-wide  Low   Standard
+
+
+        (Microinverters)| Absolute  Module  Pinpoint  Highest     {  AC Parallel
+          (Optimisers)  High   Module  Pinpoint  Moderate 4  DC SeriesMISC                                         Co                                                                                                                                                                                                                                                             |           :
+
+F|     TEC-KP-8B1 REVAA) Notebook
+
+===== PAGE 15 =====
+THE ROI OF GRANULARITY: SYNTHESISING THE TRADE-OFFS
+
+      High -                                           | Performance Ratio Improvement |
+
+
+                                         | Salvaged Misrepresentative Losses
+
+   Medium 4 | Upfront Hardware Premium ($/Watt) |
+
+
+
+
+
+
+      Low
+          0       5      10      15      20      25
+                                         LIFESPAN (YEARS 0 TO 25)
+
+                DMPPT demands a higher initial investment, but the compounded
+                  recovered energy yield vastly outpaces the hardware premium.
+
+                                                |                            WF| TecKp-s81REVA
+                                                                                                                                                                                                                                                                                                                                                                 41 NotebookM
+
+===== PAGE 16 =====
+In a dynamic and unpredictable environment,FUTURE-PROOFING THE ARRAYSystem resilience demands architectural granularity.a rigid chain will inevitably break.

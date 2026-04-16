@@ -1,0 +1,470 @@
+
+===== PAGE 1 =====
+t h e !
+ngineering
+Value Equation of
+§
+xBuilding-Integrae
+" F
+naT .
+}| 4
+—
+y
+e te
+r
+e
+r
+=«
+r
+o
+b
+! r e
+o
+a tad
+riF
+yu -
+>
+eR
+fC
+[
+aa
+tL
+'
+- :
+eC
+5
+a
+,a
+..g ~~
+LEEN
+oR
+niE
+rip
+——
+——_—
+.Hr
+ert
+.RN
+E S L i E S[
+L
+
+===== PAGE 2 =====
+The T r a n s i t i o n f r o m P a s s i v e E n v e l o p e s t o A c t i v e G e n e r a t o r s
+tI—
+r
+T
+”
+B
+1
+|
+The Past: Passive Barrier The Future: Active Asset
+Consumes energy, reflects light, Generates renewable energy, dynamically controls solar
+depreciates over time. heat gain, pays back its carbon and financial debt.
+True Building-Integrated Photovoltaics (BIPV) are dual-mandate assets: they must meet strict architectural
+e
+construction standards while operating as high-performance electrical generators.
+
+===== PAGE 3 =====
+Designing Without Compromise: L T
+a
+Architectural and Operational Flexibility gg “SF
+Unlike standard rooftop arrays, Utilising structural colours and Operational flexibility through
+BIPV fenestration grids, specialised coatings to motorised BIPV louvers that
+spandrel dimensions, and seamlessly hide PV cells, actively track the sun, instantly
+varying facade orientations meeting stringent heritage balancing daylighting, thermal
+require absolute and contemporary design comfort, and peak energy
+dimensional freedom. standards. yield.
+{Accepting a strategic 8-20% electrical
+efficiency trade-off to achieve
+uncompromised aesthetics).
+E R C
+
+===== PAGE 4 =====
+=F The Physicsof theFacade:
+§
+A H a r s h V e r t i c a l R e a l i t y .«
+¥
+—
+i
+—
+—
+o
+-
+.a
+|
+=
+:
+y
+—
+I
+}0
+T
+n
+- -
+JL
+- |
+eS —prT
+,hH
+*-
+i
+}hw
+oT
+—p
+3
+RMN
+rx
+_
+a
+E
+:eE
+wr ma J [IS
+Key
+2
+Insight Box .
+=
+ida
+B
+n
+w Standard solar modelling
+E
+r
+F utterly fails
+in
+the vertical b u l
+e . environment. -
+h S= . ™
+kiit
+ili
+E
+h Ballo
+T
+N
+L radiation
+Facade solar i s
+incident at highly obliqu“eX s
+angles, with shadows moving :5
+dynamically across theepars 2
+minute-by-minute. =
+;
+The urban vertical — —
+dictates severe, unavoidable
+partialshading. 2 T a
+EY
+Eg
+
+===== PAGE 5 =====
+T h e ‘Weakest Link’ Phenomenon in Series Connections -
+Even if only a small percentage
+i e
+1} of asingle panel is shaded, the
+| power generation of the
+4 1
+“iI entire series string is choked,
+dropping by as much as 80%.
+— — — ¥
+Shaded PV Panel
+Co }
+(Weakest Link)
+Physical Consequence: Reverse Bias
+. Shaded cells in a series string are forced into reverse bias, acting as an electrical resistance. This
+creates severe localised overheating known as ‘hot spots’, which permanently degrade the module
+|
+laminate, cause glass breakage, and lead to premature systemic failure of the active envelope.
+—_—
+
+===== PAGE 6 =====
+L Risk R1: Electrical safety risk due to high-
+voltage DC integration in facade elements.
+t
+Standard centralised string arrays chain ) Unlike AC current, high-voltage DC electric Routing 1000V DC deep through occupied
+modules together, forcing the system to 3 .- arcs do not cross a zero-point. Once ignited building envelopes and blind cavities presents aa
+& operate at hazardous high voltages ranging y o = by a fault, a DC arc does not self-extinguish. S E . severe, unmitigated fire Tazerd and
+. from B00V to over 1000V DC. SINE 4
+®
+
+===== PAGE 7 =====
+The Collapse of Traditional Centralised Architecture (CMPPT) CL
+-
+- The Topology Co The Diagnostic Failure
+|
+T T T - . = a "
+n i = | — fold Coll) nse
+I
+|
+l y J L G .| The centralinverter cannot distinguish aded panels from
+Co
+nish IS
+S m I = | a = sunlit ones. The entire facade string Instantly & 80ed down
+:
+oe E E output
+tothe the weakebtlink
+dl
+C C ] a
+A m i e in i Central
+i 9
+power
+[| P O i m I — Bypass diodes trigger'multiple false peaks (local
+S |
+|
+' 1 8 A i l maxima) during shading events, permanently confusing the
+J
+i i t n S — vi /,| central tracki algorithmand wasting available solar energy.
+H i | e s ousRoffting
+|
+) x CN
+A R T H i b — — 3 7 Son deadly highvoltage DC stringds o v e r
+SON = ENIRIA <3 A : etoreach he central inverter, violating nfodem BIPV§
+m e n
+1 B anciples
+|
+|
+|
+
+===== PAGE 8 =====
+a yy. 13 RE Ct - ab oa C on o a a - Cy ria r
+BE
+T h e D i s t r i b u t e d Solution: I s o l a t i n g Shading and Salvaging Yield
+Module-Integrated Parallel Inverters 1 Module-Integrated Parallel Converters
+(Microinverters) (Power Optimizers)
+B i
+Converts DC to AC directly at the back of the individual Regulates and optimises DC voltage at the panel level
+ll
+panel. Delivers the ultimate modularity, panel-level before central conversion. Perfect for isolating shading
+tracking, and absolute AC safety right at the facade . while integrating with DC building microgrids or hybrid
+ll
+surface. storage.
+
+===== PAGE 9 =====
+oo Topological Safety: The ‘Bus-Per-Fl
+my pn eCg l are PE acae p E a L hd, R P R a ti VERR o IE k R me Er wlan Je To 3 -— x or y a g t LNFTI SELY yr Gas: C L o a ir s LAH CH ; An a /
+Resolving the R1 Fire Risk
+Localized
+5
+oe
+,tl
+a
+oTyr
+]CSE
+krlrE
+sw
+-
+m1
+oor’ Architecture
+Mechanism: Voltage Benefit: Elimination of
+£1 DCB Truncation at the Source Arc-Fault Hazards
+= 4
+)
+Distributed MPPT (DMPPT) Hazardous high-voltage DC
+completely abandons is physically prevented from
+roof-to-basement series ever accumulating in the
+ocalized
+|
+strings. facade cavity.
+Utilizing a "DC bus per floor”
+approach, power optimizers or This ensures strict, inherent
+microinverters electronically compliance with [EC/NEC
+limit the system voltage safety audits and allows N
+.|
+directly at the individual : | total safe intervention by N
+module level. emergency services during
+a fire event.
+FEFECS
+M. ER C I A T S NE RT To Lo Ch or a i at a ail : Hl Cl -
+. SING ER . Cr lL ii E pp e ley t rao oe x ah <
+— = -
+:
+aC
+.
+A
+EN
+RE
+EEM
+n
+T
+e ro
+PJ
+|
+
+===== PAGE 10 =====
+fe
+of
+Conclusion: CMPPT— — — — foils the fundamental safety and yield requirements the vertical
+environment. The matrix isolates CAPEX as the absolute ONLY friction point for adopting DMPPT.
+
+===== PAGE 11 =====
+f c o n f r o n t i n gt h e R a R i s k : T h e C A P E X R e a l i t y §
+TETRI,
+2% wh a a ah k ] e - T oW l op B JE e A F y a r k e B rk a LY [ 1
+Ia 4 ST 8, RE 7. JE SE TY YE
+DAE ER EE : +
+Higher Power Electronics Count
+|
+| (an inverter or optimizer on every window)
+rd . =
+———— .
+Data
+iWin Risk
+R i s k R4: CAPEX higher than
+A
+S| ~ market-acceptable threshold.
+Risk Score: 9 / 25
+H o w e v e r , evaluating Building- — — Photovoltaics t h r o u g h the
+lens of pure initial CAPEX a fundamental accounting error.
+i s
+__
+
+===== PAGE 12 =====
+f l T h e P e r f o r m a n c e R a t i o ( P R ) i m p e r a t i v e §
+DMPPT Yield
+po |
+=
+racking the GlobalMaximum Power
+Point)
+Co
+Xx
+Le - (Temp Losses + Soiling
+2
+>
+=
+R e
+Salvaged Energy
+Q D
+c
+LJ
+D
+| 2
+fd
+K[
+= ¥ CMPPT Yield 1 f o o v r Shading Losses fundamentally?
+Q O ~.«(Choked by mismatch losses) i destroy,the Performance Ratio. +
+:
+= DMPPT actively isolates and salvages: y
+t h i s lost een nergy, consistently unlocking’ *3
+|
+] the expected >74% PR ed to make the [|"&
+farchitecturalassetfinancially viable.
+.i
+GRE
+ierF
+irt
+EIT
+op
+if
+1
+ANACNE
+5 6 7 8 9 1 0 MN 12
+Months
+,hh
+tnof
+ea
+LND
+sw 5
+i
+
+===== PAGE 13 =====
+| R e c o v e r i n g t h e I n i t i a l [ — — = TT- ~
+3. Salvaged
+12. Premium Energy Yield
+Utility
+1. Avoided
+Retrofits
+or ar]
+LN
+i Heavier
+Capital savedoy 1
+IF Value unlocked by
+JIE
+Revenue generated by RENEE
+I Initial CAPEX
+pre-empting safety § -
+B maximising active“ R
+uBsF
+GMPPT tracking and
+t Ef
+l y retrofits, R2 8 : surface area without Z i Bl: completely eliminating
+-
+- DMPPT Hardware &
+B r
+regulatory - grid-matching i . Lth" e weakest-flink effect
+Complex Installation f orcomplance 3 ES oY constraints. oil Bk:, over 30 years. .Al i l
+KE -
+} | |
+. and d e l a y e d3
+: - certifications. §
+3
+
+===== PAGE 14 =====
+A
+- $e
+| Rec e f i n i n g t h e |E c o n o m i c s :LCOEa n d N e t P r e s e n t Value _
+3
+p
+An
+y Dashboard x: LCOE (Levelised Cost of Energy) E E
+fF LcoE Supe —
+While the numerator (Initial Cost)is higher for DMPPT, thel oo r
+£ denominator (Total Lifetime Energy Produced) scales L H
+£- exponentially higher due to total shading mitigation.
+py The resulting LevelisedCost of Energy is vastly superior} :
+|
+F Highly Positive NPV
+The compounding multi-decade value of electricity bill 3
+savings (EBS) and grid-export income—secured by
+distributed panel-level tracking—resultsin a Net Present 2
+Value that completely eclipses the initial hardware ‘ 4
+keven
+4 . premium, g — —
+g l o Year§ "Year 10 e a r s "Year 20 -
+:
+|
+
+===== PAGE 15 =====
+R5: Thermal Reliability R3: Wiring Complexity
+Overcoming the harsh thermal Mitigating installation friction and
+environment of the facade. Utilising elevated labour costs through
+IP-rated enclosures and modular engineered, prefabricated harness
+redundancy—if one microinverter strategies and standardised, snap-in
+fails, the remainder of the facade interface boxes.
+stays fully online.
+R7: BMS Interoperability R6: Retrofit Readiness
+Unlocking granular data. DMPPT
+Future-proofing the asset. Hybrid
+provides panel-level telemetry that
+AC/DC tracking options interface
+integrates natively with standard
+smoothly with existing building
+building management protocols
+electrical infrastructure, streamlining
+(KNX/Madbus) for real-time, 5 .
+structural renovations.
+pinpoint fault detection.
+
+===== PAGE 16 =====
+{ incomprorised Safety
+rNh
+°
+S et
+HRN ..
+ee - ’
+a. !
+hy
+-
+fe
+gh
+b HK AY
+f s e t e : AbSOIUTEy o n iT o r r o PCAPEX: T h etessary boundedupfront
+:
+fire risks and Strict regulatorycompliance. @ hk premium for distributed power optimizers a n d ]
+t YER
+p 1
+BE microinverters.§e s m a l , a e CWhe
+c h i n e
+mmanity shaing
+E
+h 8 Yield:Total to the weakestink
+a l effect,guaranteeing a >74% Performance Ratio.” B
+environment,
+In the vertical built Distributed M P P T not anp — — — upgrade.
+is
+. I t i s the fundamental technical prerequisite that transforms a compromised glass wall into
+a viable, safe, and highly profitable energy asset.
