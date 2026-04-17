@@ -48,6 +48,7 @@ The following hard-gate inputs are still missing or not yet verified:
 
 - Deck audit: [analysis/BIPV_Presentation_Deck_Audit.md](C:/Users/Denys/Documents/Projects/PVplant/BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Audit.md)
 - Primary-source reevaluation: [analysis/BIPV_Presentation_Deck_Primary_Source_Reevaluation.md](C:/Users/Denys/Documents/Projects/PVplant/BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Primary_Source_Reevaluation.md)
+- Missing-information graph: [analysis/BIPV_Presentation_Deck_Missing_Information_Map.md](C:/Users/Denys/Documents/Projects/PVplant/BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Missing_Information_Map.md)
 - Lugano research prompt: [analysis/Research_Prompt_Lugano_iWin_Office_Facade.md](C:/Users/Denys/Documents/Projects/PVplant/BIPV_Codex_Edition/analysis/Research_Prompt_Lugano_iWin_Office_Facade.md)
 
 ## Current Decisions
@@ -90,6 +91,38 @@ The following hard-gate inputs are still missing or not yet verified:
 | Medium | Architecture decision matrix | Needed after envelope and regulatory mapping | Comparable criteria and product candidates |
 
 ## Session Log
+
+### 2026-04-17 - Session 03
+
+#### Summary
+
+- Derived a single missing-information map from the deck audit and the primary-source reevaluation.
+- Reorganized the gaps by blocked decision rather than by presentation deck.
+- Added a graphical dependency view showing which closure artifacts must exist before architecture scoring.
+
+#### Decisions / outcomes
+
+- The repeated missing items compress cleanly into five closure streams:
+  - electrical envelope and granularity
+  - shutdown / isolation and safety state
+  - thermal / packaging
+  - moving-interface and serviceability
+  - diagnostics / economics
+- No blocked conclusion can be closed from slide text alone.
+- Architecture scoring remains gated behind the same hard-envelope and service-boundary inputs.
+
+#### Learnings captured
+
+- The strongest practical use of the deck set is now as a source of closure questions, not as a source of answers.
+- The most leverage comes from turning narrative claims into worksheet-ready closure streams.
+- Safety, packaging, and economics claims all depend on the same small set of missing single-line, product, and state-definition artifacts.
+
+#### Open threads carried forward
+
+- Build the first electrical-envelope worksheet
+- Build the shutdown-state definition
+- Build the thermal-risk worksheet
+- Build the vendor-data request package
 
 ### 2026-04-16 - Session 02
 
