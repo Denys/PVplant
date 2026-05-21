@@ -50,6 +50,7 @@ The following hard-gate inputs are still missing or not yet verified:
 - Primary-source reevaluation: [analysis/BIPV_Presentation_Deck_Primary_Source_Reevaluation.md](C:/Users/Denys/Documents/Projects/PVplant/BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Primary_Source_Reevaluation.md)
 - Missing-information graph: [analysis/BIPV_Presentation_Deck_Missing_Information_Map.md](C:/Users/Denys/Documents/Projects/PVplant/BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Missing_Information_Map.md)
 - Lugano research prompt: [analysis/Research_Prompt_Lugano_iWin_Office_Facade.md](C:/Users/Denys/Documents/Projects/PVplant/BIPV_Codex_Edition/analysis/Research_Prompt_Lugano_iWin_Office_Facade.md)
+- Firecrawl research instructions: [analysis/Firecrawl_Research_Instructions_Lugano_iWin_Office_Facade.md](C:/Users/Denys/Documents/Projects/PVplant/BIPV_Codex_Edition/analysis/Firecrawl_Research_Instructions_Lugano_iWin_Office_Facade.md)
 
 ## Current Decisions
 
@@ -91,6 +92,30 @@ The following hard-gate inputs are still missing or not yet verified:
 | Medium | Architecture decision matrix | Needed after envelope and regulatory mapping | Comparable criteria and product candidates |
 
 ## Session Log
+
+### 2026-05-21 - Session 04
+
+#### Summary
+
+- Converted the Lugano iWin office-facade research prompt into a Firecrawl-ready research instruction pack.
+- Split the work into phased evidence acquisition: compliance, product/electrical envelope, claim re-evaluation, architecture evidence, thermal/reliability, and price evidence.
+- Added falsification tests and stop rules to prevent premature architecture ranking or conversion of public clues into design facts.
+
+#### Decisions / outcomes
+
+- Firecrawl should be used as a source-acquisition and normalization layer, not as final design authority.
+- Architecture ranking remains blocked until the electrical-envelope and compliance gates are populated.
+- The new Firecrawl instruction pack is the durable entrypoint for web evidence collection on the Lugano case.
+
+#### Learnings captured
+
+- The original prompt is better deployed as a phased research workflow than as a single broad deep-research request.
+- The first useful Firecrawl output should be a source ledger plus closure register, not prose-only synthesis.
+
+#### Open threads carried forward
+
+- Run Firecrawl phases and save the candidate evidence package.
+- Review extracted claims before promoting them into the design envelope, assumption register, or vendor-data request package.
 
 ### 2026-04-17 - Session 03
 
