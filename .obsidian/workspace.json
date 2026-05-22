@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GPT_project2080/webGPT_chats/Deck Analysis and Research.md",
-                "mode": "source",
+                "file": "BIPV_Codex_Edition/analysis/Research_Prompt_Lugano_iWin_Office_Facade.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Deck Analysis and Research"
+              "title": "Research_Prompt_Lugano_iWin_Office_Facade"
             }
           },
           {
@@ -213,10 +213,11 @@
   },
   "active": "d41c82a007134820",
   "lastOpenFiles": [
+    "GPT_project2080/webGPT_chats/Deck Analysis and Research.md",
+    "GPT_project2080/webGPT_chats/BIPV Module Integrated Architecture Comparison.md",
     "fixtures/pdf/fixtures.yaml",
     "fixtures/pdf/New Text Document.txt",
     "GPT_project2080/webGPT_chats/iWin BIPV Roadmap.md",
-    "GPT_project2080/webGPT_chats/Deck Analysis and Research.md",
     "fixtures/pdf/malformed.pdf",
     "fixtures/pdf/scanned-one-page.pdf",
     "fixtures/pdf/pv-installation-manual-excerpt.pdf",
@@ -225,7 +226,6 @@
     "fixtures/pdf/app-note-mixed-layout.pdf",
     "fixtures/pdf/pv-inverter-datasheet.pdf",
     "fixtures/pdf",
-    "fixtures",
     "GPT_project2080/webGPT_chats/Norms and Pass Conditions.md",
     "Daily/2026-05-22_BIPV_Brain_NotebookLM_upload_pack/UPLOAD RESULT FINAL - BIPV Brain NotebookLM 2026-05-22.md",
     "Daily/2026-05-22_BIPV_Brain_NotebookLM_upload_pack/STATE - BIPV Brain current memory after NotebookLM refresh 2026-05-22.md",
