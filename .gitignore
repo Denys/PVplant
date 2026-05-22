@@ -30,6 +30,9 @@ Daily/*.md
 # finance/
 # health/
 
+# Local nested repo stub; parent Git cannot commit it while it has no checked-out commit.
+PV_electrical/
+
 # Node modules (if using any scripts)
 node_modules/
 

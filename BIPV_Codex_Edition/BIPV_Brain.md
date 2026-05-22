@@ -51,6 +51,12 @@ The following hard-gate inputs are still missing or not yet verified:
 - Missing-information graph: [analysis/BIPV_Presentation_Deck_Missing_Information_Map.md](C:/Users/Denys/Documents/Projects/PVplant/BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Missing_Information_Map.md)
 - Lugano research prompt: [analysis/Research_Prompt_Lugano_iWin_Office_Facade.md](C:/Users/Denys/Documents/Projects/PVplant/BIPV_Codex_Edition/analysis/Research_Prompt_Lugano_iWin_Office_Facade.md)
 - Firecrawl research instructions: [analysis/Firecrawl_Research_Instructions_Lugano_iWin_Office_Facade.md](C:/Users/Denys/Documents/Projects/PVplant/BIPV_Codex_Edition/analysis/Firecrawl_Research_Instructions_Lugano_iWin_Office_Facade.md)
+- iWin distributed topology synthesis: [../Daily/2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/report.md](C:/Users/Denys/Documents/Projects/PVplant/Daily/2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/report.md)
+- iWin topology source inventory: [../Daily/2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/source_inventory.csv](C:/Users/Denys/Documents/Projects/PVplant/Daily/2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/source_inventory.csv)
+- iWin topology evidence index: [../Daily/2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/evidence_index.csv](C:/Users/Denys/Documents/Projects/PVplant/Daily/2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/evidence_index.csv)
+- iWin optimizer deep dive: [../Daily/2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/optimizer_deep_dive.md](C:/Users/Denys/Documents/Projects/PVplant/Daily/2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/optimizer_deep_dive.md)
+- iWin microinverter deep dive: [../Daily/2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/microinverter_deep_dive.md](C:/Users/Denys/Documents/Projects/PVplant/Daily/2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/microinverter_deep_dive.md)
+- NotebookLM upload pack: [../Daily/2026-05-22_BIPV_Brain_NotebookLM_upload_pack/MANIFEST - BIPV Brain NotebookLM upload 2026-05-22.md](C:/Users/Denys/Documents/Projects/PVplant/Daily/2026-05-22_BIPV_Brain_NotebookLM_upload_pack/MANIFEST%20-%20BIPV%20Brain%20NotebookLM%20upload%202026-05-22.md)
 
 ## Current Decisions
 
@@ -116,6 +122,35 @@ The following hard-gate inputs are still missing or not yet verified:
 
 - Run Firecrawl phases and save the candidate evidence package.
 - Review extracted claims before promoting them into the design envelope, assumption register, or vendor-data request package.
+
+### 2026-05-22 - Session 05
+
+#### Summary
+
+- Consolidated the three Firecrawl topology research passes into a Daily synthesis package.
+- Captured source inventory, evidence index, optimizer deep dive, microinverter deep dive, source discovery notes, and action log.
+- Uploaded the high-signal source subset to NotebookLM BIPV_Brain and verified all uploaded sources reached `ready` status.
+
+#### Decisions / outcomes
+
+- Keep blind-module level as the active electrical unit; slat-level electronics remain excluded from current architecture synthesis.
+- A multi-blind zone is acceptable only when each blind module keeps an independent MPPT channel.
+- Architecture ranking remains blocked until the blind-module electrical envelope, shutdown/isolation state, moving-cable boundary, thermal envelope, target grid/code region, rapid-shutdown strategy, and service boundary are populated.
+- NotebookLM BIPV_Brain core refresh added 27 staged sources; bookkeeping/final result sources brought the live source count to 43.
+
+#### Learnings captured
+
+- The strongest BIPV-specific evidence currently comes from facade/elevation optimizer papers plus vendor datasheets/manuals.
+- Commercial optimizers are mostly module/string ecosystem products, not neutral small BIPV converter blocks.
+- Commercial microinverters provide clearer grid-conversion evidence but move AC wiring, anti-islanding, gateway/grid-profile setup, and service constraints into the facade system.
+- IEC 62109-3 is a central standards path if electronics become integrated with the blind module product.
+
+#### Open threads carried forward
+
+- Measure or model per-blind `Voc,max`, `Vmp`, `Isc,max`, `Imp`, and `Pmp`.
+- Define the moving harness and fixed-headbox electronics boundary.
+- Resolve Hoymiles 2T independent-MPPT evidence from formal datasheets.
+- Build the next architecture decision matrix only after the hard gates are populated.
 
 ### 2026-04-17 - Session 03
 

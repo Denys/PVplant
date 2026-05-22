@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BIPV Shading Device Standards Map — Microinverter vs Power Optimizer</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --bg2: #121a31;
+      --panel: #121a2b;
+      --panel2: #17213b;
+      --line: #334466;
+      --text: #e8eefc;
+      --muted: #9fb0d1;
+      --shared: #5aa6ff;
+      --qual: #b58cff;
+      --interface: #ffb454;
+      --micro: #51d38a;
+      --opt: #58d6d6;
+      --life: #ff7aa8;
+      --logic: #c7d2fe;
+      --ghost: #7f8ba8;
+      --good: #1f9d60;
+      --warn: #d18b2e;
+      --danger: #d96a6a;
+      --shadow: 0 18px 50px rgba(0,0,0,.28);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: linear-gradient(180deg, #07101d 0%, #0d1528 100%); color: var(--text); font-family: Inter, Segoe UI, Arial, sans-serif; }
+    body { padding: 20px; }
+
+    .page {
+      max-width: 1650px;
+      margin: 0 auto;
+      display: grid;
+      gap: 16px;
+    }
+
+    .header, .panel {
+      background: linear-gradient(180deg, rgba(19,29,53,.96), rgba(14,21,39,.96));
+      border: 1px solid rgba(124, 150, 199, 0.22);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .header {
+      padding: 20px 24px 18px;
+      display: grid;
+      gap: 12px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1.15;
+      letter-spacing: .2px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+      max-width: 1200px;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn {
+      background: rgba(255,255,255,.03);
+      color: var(--text);
+      border: 1px solid rgba(177, 194, 229, .22);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: .2s ease;
+    }
+
+    .btn:hover, .btn.active {
+      transform: translateY(-1px);
+      border-color: rgba(255,255,255,.35);
+      background: rgba(255,255,255,.08);
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .legend .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .swatch {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .panel {
+      padding: 16px;
+      overflow: hidden;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 0 0 12px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.2;
+      letter-spacing: .2px;
+    }
+
+    .section-title .hint {
+      color: var(--muted);
+      font-size: 12px;
+      text-align: right;
+    }
+
+    .flow-grid {
+      display: grid;
+      grid-template-columns: minmax(180px, 1fr) 40px minmax(180px, 1fr) 40px minmax(180px, 1fr) 40px minmax(180px, 1fr);
+      gap: 10px;
+      align-items: stretch;
+    }
+
+    .split-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .branch {
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+      border: 1px solid rgba(177, 194, 229, .14);
+      border-radius: 20px;
+      padding: 14px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .branch h3 {
+      margin: 0;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .branch-note {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+      margin-top: -2px;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+      gap: 12px;
+      align-items: stretch;
+    }
+
+    .std-card, .sys-card, .note-card, .logic-card {
+      position: relative;
+      border-radius: var(--radius);
+      padding: 14px 14px 13px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      transition: transform .2s ease, opacity .2s ease, filter .2s ease, border-color .2s ease;
+      min-height: 132px;
+    }
+
+    .std-card:hover, .sys-card:hover, .note-card:hover, .logic-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255,255,255,.32);
+    }
+
+    .std-card.muted, .sys-card.muted, .note-card.muted, .logic-card.muted {
+      opacity: .23;
+      filter: saturate(.55);
+    }
+
+    .std-card .kicker,
+    .sys-card .kicker,
+    .note-card .kicker,
+    .logic-card .kicker {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .std-card h4,
+    .sys-card h4,
+    .note-card h4,
+    .logic-card h4 {
+      margin: 0 0 8px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .std-card p,
+    .sys-card p,
+    .note-card p,
+    .logic-card p {
+      margin: 0;
+      color: #d5dff6;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .chip {
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      color: #e8eefc;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      white-space: nowrap;
+    }
+
+    .sys-card { min-height: 142px; }
+
+    .arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: #83a3df;
+      user-select: none;
+      text-shadow: 0 0 16px rgba(100,150,255,.18);
+    }
+
+    .arrow.branching {
+      font-size: 30px;
+      line-height: 1;
+      margin: 4px 0 0;
+    }
+
+    .band {
+      border-top: 1px dashed rgba(177, 194, 229, .18);
+      margin-top: 10px;
+      padding-top: 14px;
+    }
+
+    .logic-wrap {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 12px;
+    }
+
+    .footer-note {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+      padding: 2px 2px 0;
+    }
+
+    .accent-shared { box-shadow: inset 0 0 0 1px rgba(90,166,255,.18); }
+    .accent-qual { box-shadow: inset 0 0 0 1px rgba(181,140,255,.18); }
+    .accent-interface { box-shadow: inset 0 0 0 1px rgba(255,180,84,.18); }
+    .accent-micro { box-shadow: inset 0 0 0 1px rgba(81,211,138,.2); }
+    .accent-opt { box-shadow: inset 0 0 0 1px rgba(88,214,214,.22); }
+    .accent-life { box-shadow: inset 0 0 0 1px rgba(255,122,168,.22); }
+    .accent-logic { box-shadow: inset 0 0 0 1px rgba(199,210,254,.18); }
+    .accent-ghost { box-shadow: inset 0 0 0 1px rgba(127,139,168,.18); }
+
+    .bar {
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 4px;
+      border-top-left-radius: inherit;
+      border-bottom-left-radius: inherit;
+      opacity: .95;
+    }
+
+    .bar.shared { background: var(--shared); }
+    .bar.qual { background: var(--qual); }
+    .bar.interface { background: var(--interface); }
+    .bar.micro { background: var(--micro); }
+    .bar.opt { background: var(--opt); }
+    .bar.life { background: var(--life); }
+    .bar.logic { background: var(--logic); }
+    .bar.ghost { background: var(--ghost); }
+
+    .mini-title {
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      margin-bottom: 8px;
+    }
+
+    .splitter {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(177,194,229,.2), transparent);
+      margin: 2px 0 4px;
+    }
+
+    .small {
+      font-size: 12px !important;
+      color: var(--muted) !important;
+      line-height: 1.45;
+    }
+
+    .dense .std-card,
+    .dense .logic-card,
+    .dense .note-card {
+      min-height: 118px;
+    }
+
+    @media (max-width: 1200px) {
+      .flow-grid { grid-template-columns: 1fr; }
+      .arrow { transform: rotate(90deg); min-height: 30px; }
+      .split-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="header">
+      <h1>BIPV shading device standards map<br>Microinverter vs power optimizer architecture</h1>
+      <div class="subtitle">
+        Architecture-centric block diagram for an iWin-type glazing-integrated PV shading device. Shared BIPV standards are shown once, then the map splits into the two downstream power-conversion options. Use the filters to emphasize the shared stack, the microinverter branch, the optimizer branch, lifecycle standards, or the cross-standard logic.
+      </div>
+      <div class="controls" id="controls">
+        <button class="btn active" data-filter="all">Show all</button>
+        <button class="btn" data-filter="shared">Shared BIPV core</button>
+        <button class="btn" data-filter="micro">Microinverter emphasis</button>
+        <button class="btn" data-filter="optimizer">Optimizer emphasis</button>
+        <button class="btn" data-filter="lifecycle">Commissioning / O&amp;M</button>
+        <button class="btn" data-filter="logic">Cross-standard logic</button>
+      </div>
+      <div class="legend">
+        <span class="tag"><span class="swatch" style="background: var(--shared)"></span> shared system / design scope</span>
+        <span class="tag"><span class="swatch" style="background: var(--qual)"></span> module qualification / performance / thermal trigger</span>
+        <span class="tag"><span class="swatch" style="background: var(--interface)"></span> interface / DC BOS</span>
+        <span class="tag"><span class="swatch" style="background: var(--micro)"></span> microinverter branch</span>
+        <span class="tag"><span class="swatch" style="background: var(--opt)"></span> optimizer branch</span>
+        <span class="tag"><span class="swatch" style="background: var(--life)"></span> commissioning / maintenance / thermography</span>
+        <span class="tag"><span class="swatch" style="background: var(--logic)"></span> inter-standard dependency logic</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="section-title">
+        <h2>1. Shared physical stack of the BIPV shading device</h2>
+        <div class="hint">These boxes exist before choosing microinverter or optimizer.</div>
+      </div>
+      <div class="flow-grid">
+        <div class="sys-card accent-shared filterable" data-tags="all shared logic">
+          <span class="bar shared"></span>
+          <div class="kicker">Subsystem</div>
+          <h4>Façade / IGU / blind system boundary</h4>
+          <p>The building-integrated shading device as a façade subsystem: glazing role, blind location, mounting, replacement boundary, and building-facing obligations.</p>
+          <div class="chips">
+            <span class="chip">envelope role</span>
+            <span class="chip">building integration</span>
+          </div>
+        </div>
+        <div class="arrow">→</div>
+        <div class="sys-card accent-shared filterable" data-tags="all shared micro optimizer logic">
+          <span class="bar shared"></span>
+          <div class="kicker">Subsystem</div>
+          <h4>PV slats / module zone</h4>
+          <p>PV element inside the shading device: slats, substrings, bypass topology, optical angle effects, and electro-thermal behavior inside the BIPV assembly.</p>
+          <div class="chips">
+            <span class="chip">slat partitioning</span>
+            <span class="chip">mismatch</span>
+          </div>
+        </div>
+        <div class="arrow">→</div>
+        <div class="sys-card accent-interface filterable" data-tags="all shared micro optimizer logic">
+          <span class="bar interface"></span>
+          <div class="kicker">Subsystem</div>
+          <h4>Feedthrough / connector / cable route</h4>
+          <p>Frame exit, moving electrical interfaces, junction/feedthrough box, connector family, cable class, bend control, and warm frame-zone routing.</p>
+          <div class="chips">
+            <span class="chip">DC interface</span>
+            <span class="chip">service risk</span>
+          </div>
+        </div>
+        <div class="arrow">→</div>
+        <div class="sys-card accent-shared filterable" data-tags="all shared micro optimizer lifecycle logic">
+          <span class="bar shared"></span>
+          <div class="kicker">Decision node</div>
+          <h4>Architecture split: MLPE at unit edge</h4>
+          <p>From the same BIPV core, choose either module-adjacent AC conversion or module-adjacent DC conditioning with downstream string DC retained.</p>
+          <div class="chips">
+            <span class="chip">microinverter</span>
+            <span class="chip">power optimizer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="band dense">
+        <div class="cards-grid">
+          <div class="std-card accent-shared filterable" data-tags="all shared logic">
+            <span class="bar shared"></span>
+            <div class="kicker">IEC 63092-2</div>
+            <h4>BIPV system in building</h4>
+            <p>System-level building integration: façade layout, mounting/system obligations, and the BIPV shading device as part of the building system.</p>
+            <div class="chips"><span class="chip">system-level</span><span class="chip">façade integration</span></div>
+          </div>
+
+          <div class="std-card accent-shared filterable" data-tags="all shared logic">
+            <span class="bar shared"></span>
+            <div class="kicker">IEC 63092-1</div>
+            <h4>BIPV module as building product</h4>
+            <p>Module-level building-product framing for the PV shading element used inside the building envelope.</p>
+            <div class="chips"><span class="chip">module role</span><span class="chip">building product</span></div>
+          </div>
+
+          <div class="std-card accent-qual filterable" data-tags="all shared micro optimizer logic">
+            <span class="bar qual"></span>
+            <div class="kicker">IEC 61730-1 / -2</div>
+            <h4>Module safety qualification</h4>
+            <p>Construction safety basis and safety testing basis for the PV module/slat assembly.</p>
+            <div class="chips"><span class="chip">electrical safety</span><span class="chip">fire / shock</span></div>
+          </div>
+
+          <div class="std-card accent-qual filterable" data-tags="all shared micro optimizer logic">
+            <span class="bar qual"></span>
+            <div class="kicker">IEC 61215-1 / -2</div>
+            <h4>Module design qualification</h4>
+            <p>Baseline module qualification and type-approval test path for the offered PV technology/build.</p>
+            <div class="chips"><span class="chip">durability basis</span><span class="chip">type approval</span></div>
+          </div>
+
+          <div class="std-card accent-qual filterable" data-tags="all shared micro optimizer logic">
+            <span class="bar qual"></span>
+            <div class="kicker">IEC 61853-1 / -2</div>
+            <h4>Performance characterization</h4>
+            <p>Irradiance-temperature response, incidence-angle effects, spectral response, and operating-temperature basis for realistic BIPV/slat energy modeling.</p>
+            <div class="chips"><span class="chip">model inputs</span><span class="chip">AOI / temp basis</span></div>
+          </div>
+
+          <div class="std-card accent-qual filterable" data-tags="all shared micro optimizer logic">
+            <span class="bar qual"></span>
+            <div class="kicker">IEC TS 63126</div>
+            <h4>High-temperature qualification trigger</h4>
+            <p>Additional qualification path when the actual deployment temperature envelope credibly exceeds the base module qualification assumption.</p>
+            <div class="chips"><span class="chip">thermal trigger</span><span class="chip">T98 review</span></div>
+          </div>
+
+          <div class="std-card accent-interface filterable" data-tags="all shared micro optimizer logic">
+            <span class="bar interface"></span>
+            <div class="kicker">IEC 62790</div>
+            <h4>Junction / feedthrough boxes</h4>
+            <p>Safety and suitability of the junction or feedthrough interface at the frame exit / interface box level.</p>
+            <div class="chips"><span class="chip">feedthrough</span><span class="chip">interface safety</span></div>
+          </div>
+
+          <div class="std-card accent-interface filterable" data-tags="all shared micro optimizer logic">
+            <span class="bar interface"></span>
+            <div class="kicker">IEC 62852</div>
+            <h4>PV DC connectors</h4>
+            <p>Connector family suitability, current/voltage class, mating discipline, and allowed connector use on the DC side.</p>
+            <div class="chips"><span class="chip">connector class</span><span class="chip">mating control</span></div>
+          </div>
+
+          <div class="std-card accent-interface filterable" data-tags="all shared micro optimizer logic">
+            <span class="bar interface"></span>
+            <div class="kicker">IEC 62930</div>
+            <h4>PV DC cables</h4>
+            <p>DC cable suitability: cable class, insulation, route compatibility, and warm/moving interface routing on the façade side.</p>
+            <div class="chips"><span class="chip">DC cable</span><span class="chip">route limits</span></div>
+          </div>
+
+          <div class="std-card accent-shared filterable" data-tags="all shared micro optimizer logic">
+            <span class="bar shared"></span>
+            <div class="kicker">IEC 62548-1</div>
+            <h4>PV array DC design backbone</h4>
+            <p>Voltage/current envelope, MPPT compatibility, disconnect/isolation boundary, protection concept, earthing/insulation monitoring, and DC routing rules.</p>
+            <div class="chips"><span class="chip">Voc,max / Isc,max</span><span class="chip">DC safety design</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="section-title">
+        <h2>2. Architecture split after the common BIPV core</h2>
+        <div class="hint">Same shading device, different downstream power-conversion topology.</div>
+      </div>
+      <div class="arrow branching">↙&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↘</div>
+      <div class="split-grid">
+        <div class="branch">
+          <h3>
+            <span style="color: var(--micro)">Microinverter branch</span>
+            <span class="chip" style="border-color: rgba(81,211,138,.25); background: rgba(81,211,138,.12)">AC earlier</span>
+          </h3>
+          <div class="branch-note">Shorter external DC path after each BIPV unit, but more electronics live near the façade edge / module zone.</div>
+
+          <div class="flow-grid" style="grid-template-columns: minmax(160px,1fr) 30px minmax(160px,1fr) 30px minmax(160px,1fr);">
+            <div class="sys-card accent-micro filterable" data-tags="all micro shared">
+              <span class="bar micro"></span>
+              <div class="kicker">Branch flow</div>
+              <h4>BIPV unit DC output</h4>
+              <p>Unit/slat-side DC exits the BIPV assembly over the shortest practical route.</p>
+            </div>
+            <div class="arrow">→</div>
+            <div class="sys-card accent-micro filterable" data-tags="all micro shared logic">
+              <span class="bar micro"></span>
+              <div class="kicker">Branch flow</div>
+              <h4>Local microinverter</h4>
+              <p>Module-adjacent DC-AC conversion. Stronger concentration of electronics at unit level.</p>
+            </div>
+            <div class="arrow">→</div>
+            <div class="sys-card accent-micro filterable" data-tags="all micro lifecycle">
+              <span class="bar micro"></span>
+              <div class="kicker">Branch flow</div>
+              <h4>AC trunk / building AC board</h4>
+              <p>After conversion, the architecture behaves more like distributed AC generation from the façade.</p>
+            </div>
+          </div>
+
+          <div class="cards-grid dense">
+            <div class="std-card accent-micro filterable" data-tags="all micro logic">
+              <span class="bar micro"></span>
+              <div class="kicker">IEC 62109-3</div>
+              <h4>Electronics combined with PV elements</h4>
+              <p>Relevant when the microinverter or power electronics are integrated with, packaged with, or boundary-coupled to the PV element.</p>
+              <div class="chips"><span class="chip">MLPE near PV</span><span class="chip">product boundary</span></div>
+            </div>
+
+            <div class="std-card accent-micro filterable" data-tags="all micro shared logic">
+              <span class="bar micro"></span>
+              <div class="kicker">IEC 62548-1 emphasis</div>
+              <h4>Still applies on the DC side</h4>
+              <p>Array/DC safety design remains relevant, but the architecture usually externalizes less series DC stringing than the optimizer branch.</p>
+              <div class="chips"><span class="chip">shorter DC route</span><span class="chip">unit isolation</span></div>
+            </div>
+
+            <div class="note-card accent-micro filterable" data-tags="all micro lifecycle">
+              <span class="bar micro"></span>
+              <div class="kicker">Architecture effect</div>
+              <h4>What becomes more critical</h4>
+              <p>Replacement access, electronics thermal environment, local diagnostics, and module-adjacent serviceability become dominant review topics.</p>
+              <div class="chips"><span class="chip">higher MLPE count</span><span class="chip">façade service burden</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="branch">
+          <h3>
+            <span style="color: var(--opt)">Power optimizer branch</span>
+            <span class="chip" style="border-color: rgba(88,214,214,.25); background: rgba(88,214,214,.12)">DC retained longer</span>
+          </h3>
+          <div class="branch-note">Module-level DC conditioning mitigates mismatch while preserving downstream string/sub-array DC design obligations.</div>
+
+          <div class="flow-grid" style="grid-template-columns: minmax(140px,1fr) 24px minmax(140px,1fr) 24px minmax(140px,1fr) 24px minmax(140px,1fr);">
+            <div class="sys-card accent-opt filterable" data-tags="all optimizer shared">
+              <span class="bar opt"></span>
+              <div class="kicker">Branch flow</div>
+              <h4>BIPV unit DC output</h4>
+              <p>Unit/slat-side DC exits the BIPV assembly into local DC conditioning.</p>
+            </div>
+            <div class="arrow">→</div>
+            <div class="sys-card accent-opt filterable" data-tags="all optimizer shared logic">
+              <span class="bar opt"></span>
+              <div class="kicker">Branch flow</div>
+              <h4>Optimizer / DC conditioner</h4>
+              <p>Module-level MPPT / DC conditioning used to manage mismatch while keeping a downstream DC bus.</p>
+            </div>
+            <div class="arrow">→</div>
+            <div class="sys-card accent-opt filterable" data-tags="all optimizer shared logic">
+              <span class="bar opt"></span>
+              <div class="kicker">Branch flow</div>
+              <h4>String / sub-array DC bus</h4>
+              <p>Series/parallel grouping, longer DC route, and string/sub-array design remain explicit.</p>
+            </div>
+            <div class="arrow">→</div>
+            <div class="sys-card accent-opt filterable" data-tags="all optimizer lifecycle">
+              <span class="bar opt"></span>
+              <div class="kicker">Branch flow</div>
+              <h4>String / multi-string inverter</h4>
+              <p>Conversion shifts downstream; façade-side BOS stays strongly DC-centric.</p>
+            </div>
+          </div>
+
+          <div class="cards-grid dense">
+            <div class="std-card accent-opt filterable" data-tags="all optimizer logic">
+              <span class="bar opt"></span>
+              <div class="kicker">IEC 62109-3</div>
+              <h4>Electronics combined with PV elements</h4>
+              <p>Directly relevant when the optimizer/DC conditioning unit is integrated at the unit edge or packaged with the PV element.</p>
+              <div class="chips"><span class="chip">DC conditioning unit</span><span class="chip">MLPE</span></div>
+            </div>
+
+            <div class="std-card accent-opt filterable" data-tags="all optimizer shared logic">
+              <span class="bar opt"></span>
+              <div class="kicker">IEC 62548-1 emphasis</div>
+              <h4>Dominant branch standard</h4>
+              <p>Stringing, PV sections/sub-arrays, MPPT window, DC overcurrent/disconnect, insulation strategy, and array diagrams stay central here.</p>
+              <div class="chips"><span class="chip">DC sections</span><span class="chip">string rules</span></div>
+            </div>
+
+            <div class="note-card accent-opt filterable" data-tags="all optimizer shared logic">
+              <span class="bar opt"></span>
+              <div class="kicker">Architecture effect</div>
+              <h4>What becomes more critical</h4>
+              <p>Approved connector/cable/feedthrough stack, longer DC routing discipline, string fault localization, and safe isolation of façade sections.</p>
+              <div class="chips"><span class="chip">longer DC path</span><span class="chip">string isolation</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="section-title">
+        <h2>3. Lifecycle standards that close the loop on both branches</h2>
+        <div class="hint">These apply after design and architecture selection, but should be carried from day 1.</div>
+      </div>
+      <div class="cards-grid">
+        <div class="std-card accent-life filterable" data-tags="all lifecycle micro optimizer logic">
+          <span class="bar life"></span>
+          <div class="kicker">IEC 62446-1</div>
+          <h4>Documentation, commissioning, inspection</h4>
+          <p>Handover documents, commissioning checks, inspection logic, labeling, and acceptance structure for the installed BIPV/PV system.</p>
+          <div class="chips"><span class="chip">handover</span><span class="chip">first energization</span></div>
+        </div>
+
+        <div class="std-card accent-life filterable" data-tags="all lifecycle micro optimizer logic">
+          <span class="bar life"></span>
+          <div class="kicker">IEC 62446-2</div>
+          <h4>Preventive / corrective maintenance</h4>
+          <p>Maintenance planning, service logic, and post-installation operational discipline for the BIPV system over life.</p>
+          <div class="chips"><span class="chip">O&amp;M</span><span class="chip">corrective service</span></div>
+        </div>
+
+        <div class="std-card accent-life filterable" data-tags="all lifecycle micro optimizer logic">
+          <span class="bar life"></span>
+          <div class="kicker">IEC TS 62446-3</div>
+          <h4>Outdoor thermography</h4>
+          <p>IR inspection method for anomaly detection, hotspot screening, and maintenance diagnostics in the installed system.</p>
+          <div class="chips"><span class="chip">IR inspection</span><span class="chip">thermal anomaly</span></div>
+        </div>
+
+        <div class="note-card accent-life filterable" data-tags="all lifecycle micro optimizer logic">
+          <span class="bar life"></span>
+          <div class="kicker">Practical effect</div>
+          <h4>Why these standards matter to architecture choice</h4>
+          <p>Microinverters can improve module-level visibility but may complicate replacement access; optimizers preserve string-level DC architecture and can demand stronger isolation and route documentation.</p>
+          <div class="chips"><span class="chip">diagnostics</span><span class="chip">service boundary</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="section-title">
+        <h2>4. Cross-standard dependency logic</h2>
+        <div class="hint">These are the interconnections between norms, not just between norms and hardware blocks.</div>
+      </div>
+      <div class="logic-wrap">
+        <div class="logic-card accent-logic filterable" data-tags="all logic shared">
+          <span class="bar logic"></span>
+          <div class="kicker">Dependency</div>
+          <h4>IEC 63092 sits on top of module safety / qualification</h4>
+          <p>For a BIPV shading device, the building-product/system framing of IEC 63092 is not a substitute for the module safety and qualification basis delivered by IEC 61730 and IEC 61215.</p>
+        </div>
+
+        <div class="logic-card accent-logic filterable" data-tags="all logic shared micro optimizer">
+          <span class="bar logic"></span>
+          <div class="kicker">Dependency</div>
+          <h4>IEC 61853 feeds architecture modeling</h4>
+          <p>Incidence-angle and temperature characterization are the model basis that should feed mismatch studies, façade yield estimates, and architecture scoring.</p>
+        </div>
+
+        <div class="logic-card accent-logic filterable" data-tags="all logic shared micro optimizer">
+          <span class="bar logic"></span>
+          <div class="kicker">Dependency</div>
+          <h4>IEC TS 63126 is a trigger, not a default claim</h4>
+          <p>Open this path only when the BIPV shading device thermal envelope credibly exceeds the base qualification assumption.</p>
+        </div>
+
+        <div class="logic-card accent-logic filterable" data-tags="all logic optimizer micro shared">
+          <span class="bar logic"></span>
+          <div class="kicker">Dependency</div>
+          <h4>IEC 62548 consumes component-level interface choices</h4>
+          <p>Connector, cable, feedthrough, and MLPE decisions close through IEC 62852, IEC 62930, IEC 62790, and IEC 62109-3 before the array design is actually defensible.</p>
+        </div>
+
+        <div class="logic-card accent-logic filterable" data-tags="all logic lifecycle micro optimizer">
+          <span class="bar logic"></span>
+          <div class="kicker">Dependency</div>
+          <h4>IEC 62446 verifies the installed outcome</h4>
+          <p>Commissioning, inspection, maintenance, and thermography close the loop on the choices made under IEC 63092, IEC 62548, and the product qualification standards.</p>
+        </div>
+      </div>
+
+      <div class="splitter"></div>
+      <div class="footer-note">
+        <strong>Boundary note.</strong> This map is intentionally centered on the standards stack carried in the project pack. For a real project, the architecture also depends on standards/codes outside this requested set, especially low-voltage installation rules, standalone inverter product safety, grid interconnection, fire-service marking, and local façade/building regulations.
+      </div>
+    </section>
+  </div>
+
+  <script>
+    (function () {
+      const buttons = Array.from(document.querySelectorAll('.btn'));
+      const cards = Array.from(document.querySelectorAll('.filterable'));
+
+      function applyFilter(filter) {
+        buttons.forEach(btn => btn.classList.toggle('active', btn.dataset.filter === filter));
+        cards.forEach(card => {
+          const tags = (card.dataset.tags || '').split(/\s+/).filter(Boolean);
+          const keep = filter === 'all' || tags.includes(filter);
+          card.classList.toggle('muted', !keep);
+        });
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => applyFilter(btn.dataset.filter));
+      });
+
+      applyFilter('all');
+    })();
+  </script>
+</body>
+</html>
