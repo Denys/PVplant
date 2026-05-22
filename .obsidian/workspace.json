@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GPT_project2080/webGPT_chats/iWin BIPV Roadmap.md",
+                "file": "GPT_project2080/webGPT_chats/Deck Analysis and Research.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "iWin BIPV Roadmap"
+              "title": "Deck Analysis and Research"
             }
           },
           {
@@ -213,6 +213,10 @@
   },
   "active": "d41c82a007134820",
   "lastOpenFiles": [
+    "fixtures/pdf/fixtures.yaml",
+    "fixtures/pdf/New Text Document.txt",
+    "GPT_project2080/webGPT_chats/iWin BIPV Roadmap.md",
+    "GPT_project2080/webGPT_chats/Deck Analysis and Research.md",
     "fixtures/pdf/malformed.pdf",
     "fixtures/pdf/scanned-one-page.pdf",
     "fixtures/pdf/pv-installation-manual-excerpt.pdf",
@@ -222,14 +226,12 @@
     "fixtures/pdf/pv-inverter-datasheet.pdf",
     "fixtures/pdf",
     "fixtures",
-    "NotebookLM/Sources/99_copy_logs/bipv_brain_incremental_upload_2026-05-22.csv",
     "GPT_project2080/webGPT_chats/Norms and Pass Conditions.md",
     "Daily/2026-05-22_BIPV_Brain_NotebookLM_upload_pack/UPLOAD RESULT FINAL - BIPV Brain NotebookLM 2026-05-22.md",
     "Daily/2026-05-22_BIPV_Brain_NotebookLM_upload_pack/STATE - BIPV Brain current memory after NotebookLM refresh 2026-05-22.md",
     "Daily/2026-05-22_BIPV_Brain_NotebookLM_upload_pack/UPLOAD RESULT - BIPV Brain NotebookLM 2026-05-22.md",
     "GPT_project2080/webGPT_chats/Project research status.md",
     "NotebookLM/Sources/UPLOAD_MANIFEST.md",
-    "NotebookLM/Sources/04_pv_dmppt_books/secondary_optional/Photovoltaic Design & Installation For Dummies - 2010 - Ryan Mayfield.pdf",
     "NotebookLM/Sources/04_pv_dmppt_books/report.md",
     "NotebookLM/Sources/04_pv_dmppt_books/action_log.md",
     "NotebookLM/Sources/03_literature_pdfs/required_and_useful/source_inventory.md",
@@ -246,8 +248,6 @@
     "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/tsun-ess.com-datasheet-gen3-microinverter-6-in-1-0701.md",
     "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/tsun-ess.com-gen3-microinverter-6-in-1.md",
     "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/northernep.com-downloads-manuals-bdm-300-micro-inverter-manual.md",
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/northernep.com-bdm-300-datasheet-2023-10-26.md",
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/northernep.com-products-microinverters-bdm-300.md",
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/self2solar.com-products-hms500.md"
+    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/northernep.com-bdm-300-datasheet-2023-10-26.md"
   ]
 }
