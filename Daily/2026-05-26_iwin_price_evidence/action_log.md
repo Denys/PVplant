@@ -2,9 +2,9 @@
 
 Date: 2026-05-26
 
-- Used `think` as a decision checkpoint.
-- Used Firecrawl status check, then Firecrawl search for accessory/gateway price gaps.
-- Scraped high-value pages for Enphase accessories, APsystems accessories, Hoymiles accessories/DTU, NEP BDM/BDG, and Tigo accessory price anchors.
-- Used existing Firecrawl cache for previously collected Tigo, Deye, Huawei, SolarEdge, Enphase, APsystems, Hoymiles, and NEP price sources.
-- Used ECB daily reference rates for USD/CAD to EUR normalization because Firecrawl's XML scrape did not expose the numeric rates.
+- Used Firecrawl status check: CLI authenticated, `.firecrawl` present, credits available.
+- Ran Firecrawl searches for Enphase accessories/gateway, APsystems accessories/prices, Hoymiles accessories/prices, NEP BDM/BDG pricing, APsystems EZ1, and APsystems DS3.
+- Scraped high-value price pages into `.firecrawl/2026-05-26-price-evidence/`.
+- Downloaded ECB daily reference XML to normalize USD and CAD prices into EUR.
 - Created `raw_price_table.csv`, `normalized_cost_table.csv`, and `price_evidence_report.md`.
+- Did not use NotebookLM; this was a live price-evidence refresh rather than persistent-source upload.

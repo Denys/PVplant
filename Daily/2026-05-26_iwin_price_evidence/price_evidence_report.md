@@ -1,128 +1,117 @@
-# iWin PV Blinds Price Evidence Focus
+# iWin PV Blinds Distributed Electronics Price Evidence
 
 Date accessed: 2026-05-26  
-Evidence method: Firecrawl search first, then targeted scrapes of high-value price/accessory pages.  
-Exchange-rate normalization: ECB daily reference rates for 2026-05-26: `1 EUR = 1.1634 USD`, `1 EUR = 1.6069 CAD`. URL: https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml
+Collection method: Firecrawl searches and targeted scrapes, with prior iWin source inventory as seed list.  
+Exchange-rate source: ECB euro foreign exchange reference rates for 2026-05-26, downloaded from `https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml`. Rates used: `1 EUR = 1.1634 USD`, `1 EUR = 1.6069 CAD`.
 
 ## Executive Summary
 
-Optimizer/DC-DC MLPE has the stronger raw per-blind price evidence. Current scraped anchors put generic or near-generic optimizers roughly in the **28-65 EUR net** class in EU distributor data, with Tigo retail anchors around **40-50 EUR normalized** from US listings. Required monitoring/rapid-shutdown hardware is shared and material: Tigo CCA/TAP kit anchors were **287-315 EUR normalized**, Deye concentrator was **105.53 EUR net**, and rapid-shutdown transmitters ranged from **38.66 EUR net** to **144.74 EUR normalized** depending source/SKU.
+Optimizer hardware has the lowest source-backed per-controllable-unit price. Current visible anchors are roughly **EUR 35-61 gross** for Deye/Tigo/SolarEdge commodity optimizers and **EUR 48-50 equivalent** for Tigo TS4-A-O US listings. Huawei MERC is higher, roughly **EUR 80-95 gross**, and remains proprietary ecosystem evidence rather than a generic blind optimizer.
 
-Microinverter unit prices are broader. Low-cost balcony/small-module anchors are competitive only when one device serves multiple independent MPPT inputs: APsystems EZ1-M was **111.72 EUR** for a two-input unit, or **55.86 EUR per input** if one blind maps to one independent input. Single-input MI anchors were higher: Hoymiles HMS-500 at **84.99-101.14 EUR**, Enphase IQ8 at **143.12 EUR normalized**, and NEP BDM-300 at **156.20 EUR normalized** with CAD currency inferred.
+Microinverter prices are more dispersed because input count matters. Single-input microinverters currently anchor around **EUR 101 gross** for Hoymiles HMS-500 in Germany, **EUR 137-171 equivalent** for Hoymiles US 1T listings, and **EUR 143-196 equivalent** for official Enphase IQ8 variants before US tax/shipping. Dual-input devices can look cost-competitive per blind only if each blind maps to one independent MPPT input: APsystems EZ1-M at Reichelt is **EUR 105.91 incl. VAT**, or **EUR 52.96 per input** before any facade wiring/protection cost.
 
-The microinverter cost driver is not only the inverter. AC trunk/drop cables, end caps, gateways, junction/combiner hardware, and local grid-interface accessories can dominate small arrays. Enphase is the clearest example: official IQ cable drops were **15.47-18.05 EUR normalized**, gateway PCB proxies were **360.58-412.58 EUR**, and a distributor IQ Gateway was **598.25 EUR normalized**.
+Gateway/accessory prices are not optional noise. Tigo CCA/TAP/RSS, Deye concentrator, Enphase IQ Gateway/IQ Cable, APsystems ECU-R/AC bus, Hoymiles DTU/trunk accessories, and NEP BDG/trunk accessories all create shared and branch-level costs. For a 50-blind thought experiment, gateway amortization is often small, roughly **EUR 0.4-9/blind**, but branch cabling and serviceable junctions can dominate locally.
 
 ## Conclusions And Opinion
 
-For iWin cost modeling, use **per blind module**, not slat, as the controllable PV unit. Optimizer hardware should be modeled as:
+For cost modeling, use three buckets instead of one device price:
 
-`optimizer_per_blind + shared_gateway_or_RSD / N + DC cabling/protection + central inverter share`
+| Bucket | Optimizer topology | Microinverter topology |
+| --- | --- | --- |
+| Per-blind electronics | Optimizer: roughly EUR 35-61 gross for commodity EU anchors; Tigo US equivalent about EUR 48-50 before tax/shipping | MI input: EUR 53/input best case for APsystems EZ1-M, EUR 101+ for single-input Hoymiles/Enphase-class devices |
+| Shared electronics | Central inverter, gateway/concentrator, RSS/rapid-shutdown hardware | Gateway/DTU/combiner, AC branch protection, monitoring hardware |
+| Branch/accessory hardware | DC string wiring, connectors, PV protection, enclosure/service box | AC trunk/drop cable, terminators, home-run cables, combiner/junction accessories |
 
-Microinverter hardware should be modeled as:
-
-`MI_channel_per_blind + AC_drop/connectors/end_caps + shared_gateway/combiner / N + AC branch protection/labor`
-
-My current cost opinion is unchanged from the topology matrix: **optimizer-based A4/A1 has the better early cost shape** unless measured blind modules strongly favor a two-input or multi-input microinverter with one independent MPPT per blind and a clean fixed-headbox AC installation.
+My current cost read: **off-the-shelf optimizer topology has a stronger low-cost per-blind anchor**, while **microinverter topology can approach optimizer hardware cost only with low-cost dual-/multi-input MIs and one independent MPPT per blind**. This is a cost observation, not a topology recommendation.
 
 ## Raw Price Table
 
-Full raw table: `raw_price_table.csv`.
+Complete raw evidence is in `raw_price_table.csv`. High-signal rows:
 
-| Item | Category | Raw price | Source |
-| --- | --- | ---: | --- |
-| Tigo TS4-A-O | Optimizer | EUR 32.00 excl VAT / EUR 39.36 incl VAT | https://www.onsaplus.eu/tigo-ts4-a-o/ |
-| Tigo TS4-A-O | Optimizer | USD 47.00 to USD 57.95 across US listings | https://www.currentconnected.com/product/tigo-ts4-a-o-optimizer-rapid-shutdown-module/ ; https://signaturesolar.com/tigo-energy/ |
-| Deye SUN-XL02-A | Optimizer | EUR 28.20 net / EUR 34.69 gross | https://7sun.eu/product-category/optimizers/ |
-| Deye SUN-XL02-B | Optimizer | EUR 34.14 net / EUR 41.99 gross | https://7sun.eu/product-category/optimizers/ |
-| Huawei MERC-1100/1300 | Optimizer | EUR 64.95-77.10 net | https://7sun.eu/product-category/optimizers/ |
-| SolarEdge S-series | Optimizer | EUR 39.06 net for S440; gross range EUR 43.41-60.45 across listed SKUs | https://7sun.eu/product-category/optimizers/ |
-| Deye SUN-XL20-B concentrator | Gateway/RSD | EUR 105.53 net / EUR 129.80 gross | https://7sun.eu/product-category/optimizers/ |
-| Tigo CCA/TAP kit | Gateway/enclosure | USD 334.09 to USD 367.03 | https://www.currentconnected.com/product/tigo-ts4-a-o-optimizer-rapid-shutdown-module/ ; https://signaturesolar.com/tigo-energy/ |
-| APsystems EZ1-M 800W | 2-input microinverter | EUR 111.72 incl 0% VAT | https://solarv.de/apsystems-ez1-m-800w-price |
-| Hoymiles HMS-500-1T | Single-input microinverter | EUR 84.99 0% VAT / EUR 101.14 incl 19% VAT | https://www.offgridtec.com/en/hoymiles-hms-500-1t-microinverter-module-inverter.html |
-| Enphase IQ8/IQ8+ | Microinverter | USD 166.50 / USD 189.00 official store | https://enphase.com/store/microinverters/iq8-series |
-| NEP BDM-300-D | Small microinverter | CAD 250.99 inferred | https://unpluggedpowersystems.ca/product/inverters/inv-grid-tied/inv-grid-tied-nep/nep-bdm-d-300-microinverter/ |
-| APsystems ECU-R | Gateway | USD 269.98 | https://shopsolarkits.com/collections/ap-systems |
-| Hoymiles DTU-Pro-S WiFi | Gateway | EUR 128.33 0% VAT / EUR 152.71 incl 19% VAT; US listing USD 236.00 | https://www.offgridtec.com/en/brands/hoymiles/accessories.html ; https://www.solar-electric.com/hoymiles-dtu-pro-s-wifi-communication-gateway.html |
-| NEP BDG-256 gateway | Gateway | USD 279.00; related kits USD 176-400 | https://iqelectro.com/products/bdg-256-nep-gateway-for-bdm-300-microinverter ; https://signaturesolar.com/shop-all/grid-tie/micro-inverters/nep/ |
-| Enphase IQ cable drop | AC cabling | USD 18.00-21.00 official store | https://enphase.com/store/accessories |
-| Hoymiles HMS 5 m connection cable | AC cabling | EUR 9.84 0% VAT / EUR 11.71 incl 19% VAT | https://www.offgridtec.com/en/brands/hoymiles/accessories.html |
-| APsystems trunk cable 2 m / 4 m | AC cabling | USD 29.99 / USD 39.98 | https://shopsolarkits.com/collections/ap-systems |
-| NEP home-run cable | AC cabling | USD 27.00 | https://signaturesolar.com/shop-all/grid-tie/micro-inverters/nep/ |
+| Product | Category | Visible price | Source type | Tax/shipping state | Source |
+| --- | --- | ---: | --- | --- | --- |
+| Tigo TS4-A-O | Optimizer | EUR 32 excl. / EUR 39.36 incl. VAT | Distributor | VAT shown; shipping not extracted | [ONSA Plus](https://www.onsaplus.eu/tigo-ts4-a-o/) |
+| Deye SUN-XL02-A | Optimizer | EUR 28.33 net / EUR 34.85 gross | Distributor | Net/gross shown; login order | [7Sun](https://7sun.eu/product-category/optimizers/) |
+| Tigo TS4-A-O | Optimizer | USD 55.84 | Distributor | Tax/shipping not visible | [Signature Solar](https://signaturesolar.com/tigo-energy/) |
+| Tigo CCA/TAP outdoor kit | Gateway/enclosure | USD 367.03 | Distributor | Tax/shipping not visible | [Signature Solar](https://signaturesolar.com/tigo-energy/) |
+| Deye SUN-XL20-B concentrator | Gateway/RSD | EUR 106.02 net / EUR 130.40 gross | Distributor | Net/gross shown; login order | [7Sun](https://7sun.eu/product-category/optimizers/) |
+| Enphase IQ8 | Microinverter | USD 166.50 | Official store | Tax not visible; shipping terms separate | [Enphase](https://enphase.com/store/microinverters/iq8-series) |
+| Enphase IQ Cable portrait drop | AC cable | USD 18.00 | Official store | Tax not visible | [Enphase](https://enphase.com/store) |
+| APsystems EZ1-M | Dual-input microinverter | EUR 105.91 incl. 19% VAT | Distributor | Shipping applies | [Reichelt](https://www.reichelt.com/de/en/shop/product/microinverter_apsystems_ez1-m_600_800_w_wlan-353419) |
+| APsystems DS3-L | Dual-input microinverter | USD 189.99 | Distributor | Shipping/tax need cart check | [Solartek](https://solartekcorp.com/products/apsystems-microinverter-ds3-l) |
+| Hoymiles HMS-500-1T | Microinverter | EUR 101.14 incl. 19% VAT / EUR 84.99 0% VAT | Distributor | Shipping extra; 0% VAT eligibility limited | [Offgridtec](https://www.offgridtec.com/en/hoymiles-hms-500-1t-microinverter-module-inverter.html) |
+| Hoymiles DTU-Pro-S | Gateway/settings | EUR 152.71 incl. 19% VAT / EUR 128.33 0% VAT | Distributor | Shipping extra | [Offgridtec](https://www.offgridtec.com/en/hoymiles-hms-500-1t-microinverter-module-inverter.html) |
+| Hoymiles HMS-800-2T-NA | Dual-input microinverter | USD 269.00 | Distributor | Taxes/shipping checkout | [Self2Solar](https://www.self2solar.com/collections/hoymiles-microinverter) |
+| NEP BDM 600X | 2-panel microinverter | USD 169.00 | Distributor | Tax/shipping not visible | [Signature Solar](https://signaturesolar.com/shop-all/grid-tie/micro-inverters/nep/) |
+| NEP BDG-256 gateway | Gateway | USD 279.00 | Retail/distributor | Shipping calculated at checkout | [IQElectro](https://iqelectro.com/products/bdg-256-nep-gateway-for-bdm-300-microinverter) |
 
 ## Normalized Cost Table
 
-Full normalized table: `normalized_cost_table.csv`.
+Complete normalized evidence is in `normalized_cost_table.csv`. Representative direct hardware anchors:
 
-| Cost item | Normalized EUR | Interpretation |
-| --- | ---: | --- |
-| Deye SUN-XL02-A | 28.20 net | Lowest optimizer anchor, but no communication/RSD path from A variant. |
-| Tigo TS4-A-O | 32.00 net EU; 40.40-49.81 US normalized | Practical generic optimizer anchor per blind module. |
-| SolarEdge S440 | 39.06 net | Useful optimizer benchmark only inside SolarEdge ecosystem. |
-| Huawei MERC-1100 | 64.95 net | Higher optimizer anchor; Huawei ecosystem constraints. |
-| Deye concentrator | 105.53 net shared | Add `105.53 / N` EUR per blind before cabling/labor. |
-| Tigo CCA/TAP kit | 287.17-315.48 shared | Add roughly `287-315 / N` EUR per blind for shared monitoring/RSD kit. |
-| APsystems EZ1-M | 111.72 per unit; 55.86 per independent input | Strong MI cost anchor if two independent MPPT inputs map to two blinds. |
-| Hoymiles HMS-500 | 84.99-101.14 | Single-input MI per blind before cable/DTU. |
-| Enphase IQ8 | 143.12 | Official-store single-input MI anchor before IQ cable/gateway/branch hardware. |
-| NEP BDM-300-D | 156.20 | Small MI anchor; CAD inferred. |
-| APsystems ECU-R | 232.06 shared | Shared gateway cost for APsystems systems without integrated Wi-Fi. |
-| Hoymiles DTU-Pro-S | 128.33-152.71 EU; 202.85 US normalized | Shared gateway cost; region/SKU dependent. |
-| NEP BDG-256 gateway | 239.81; kit range 151.28-343.82 | Shared monitoring/configuration cost. |
-| Enphase IQ Gateway / Combiner anchors | 598.25 gateway; 1762.08 combiner | Large fixed cost; only acceptable when shared across many blinds. |
-| MI AC drops/connectors | 3-35 EUR typical for small connectors/cables; Enphase Q-CONN kit 110.88 | Repeated layout-driven cost driver. |
+| Product | Normalized EUR | Unit basis | Per controllable unit assumption |
+| --- | ---: | --- | --- |
+| Deye SUN-XL02-A | 34.85 | Gross EU price | 1 optimizer per blind/segment |
+| Tigo TS4-A-O | 39.36 | Gross EU price | 1 optimizer per blind/segment |
+| Tigo TS4-A-O | 48.00 | USD converted, tax/shipping excluded | 1 optimizer per blind/segment |
+| SolarEdge S440 | 48.27 | Gross EU price | Only inside SolarEdge ecosystem |
+| APsystems EZ1-M | 105.91 | Gross EU price | EUR 52.96/input if one blind per independent MPPT |
+| Hoymiles HMS-2000-4T | 235.60 | Gross EU price | EUR 58.90/input if one blind per independent MPPT |
+| NEP BDM 600X | 145.26 | USD converted, tax/shipping excluded | EUR 72.63/input if one blind per independent input |
+| APsystems DS3-L | 163.31 | USD converted, tax/shipping excluded | EUR 81.65/input if one blind per independent input |
+| Hoymiles HMS-1000-2T | 182.77 | Gross EU price | EUR 91.39/input if one blind per independent MPPT |
+| Hoymiles HMS-500-1T | 101.14 | Gross EU price | 1 microinverter per blind |
+| Enphase IQ8 | 143.12 | USD converted, tax/shipping excluded | 1 microinverter per blind |
+| Enphase IQ8+ | 162.45 | USD converted, tax/shipping excluded | 1 microinverter per blind |
 
-## Optimizer Vs Microinverter Cost Drivers
+Shared hardware examples at 50 blinds:
 
-Optimizer cost drivers:
+| Shared item | Normalized EUR | Example amortized EUR/blind | Notes |
+| --- | ---: | ---: | --- |
+| Deye SUN-XL20-B concentrator | 130.40 | 2.61 | Verify max optimizer count and RSD behavior. |
+| Tigo CCA sale price | 129.79 | 2.60 | TAP/RSS may still be needed. |
+| Tigo CCA/TAP outdoor kit | 315.48 | 6.31 | Includes outdoor box in listing. |
+| Enphase IQ Gateway | 459.00 | 9.18 | Gateway/system count needs Enphase design check. |
+| APsystems ECU-R | 300.83 | 6.02 | Exact compatibility depends selected APsystems family. |
+| Hoymiles DTU-Lite-S | 20.73 | 0.41 | Monitoring only; Offgridtec says Pro-S needed for settings. |
+| Hoymiles DTU-Pro-S | 152.71 | 3.05 | EU anchor; Self2Solar US anchor is much higher. |
+| NEP BDG-256 gateway | 239.81 | 4.80 | IQElectro listing is new-surplus; compare authorized source. |
 
-- Per-blind optimizer price is the main repeated item: current evidence supports roughly **28-65 EUR net** for EU optimizer SKUs and **40-50 EUR normalized** for Tigo US retail anchors.
-- Gateway/RSD is shared, not per blind, but not optional if monitoring, rapid shutdown, or vendor commissioning requires it.
-- Ecosystem lock can dominate apparent cheap hardware. SolarEdge/Huawei optimizer prices do not mean generic DC/DC modules; their inverter/string rules are part of system cost.
-- DC cabling/protection and central inverter share are missing from this price pass and must be added before installed EUR/blind.
+## Optimizer vs Microinverter Cost Drivers
 
-Microinverter cost drivers:
+**Optimizer cost drivers**
 
-- One-input MI hardware is usually higher than optimizer hardware: **85-156 EUR** for lower-cost Hoymiles/NEP anchors and **143-208 EUR** for Enphase IQ8 family anchors.
-- Multi-input MIs can look cheap per blind only if each input is independently tracked. APsystems EZ1 is the cleanest current example because prior evidence confirms two independent MPPTs.
-- AC accessories are repeated: trunk/drop cables, end caps, home-run cables, connectors, and branch components.
-- Gateway/combiner costs can be large at low blind counts. Enphase and NEP gateway/combiner anchors show why small systems can be penalized.
-- Region-specific grid hardware and electrician/inspection labor are not captured in device prices.
+- Per-blind device cost is the clearest low-cost anchor: Deye/Tigo/SolarEdge distributor prices are mostly below EUR 61 gross, excluding gateway and central inverter.
+- Monitoring and rapid shutdown can add shared hardware: Tigo CCA/TAP/RSS, Deye concentrator, or proprietary gateway equipment.
+- Proprietary ecosystems change the economics: SolarEdge/Huawei optimizer prices alone are not meaningful unless the inverter/string requirements fit the facade.
+- The central inverter, DC disconnect/protection, string cabling, and service enclosure are not priced here and can dominate installed cost.
+
+**Microinverter cost drivers**
+
+- Single-input MI per blind is materially higher than commodity optimizer anchors: Enphase IQ8 starts at EUR 143 equivalent before US tax/shipping; Hoymiles HMS-500 is EUR 101 gross in Germany.
+- Dual-/multi-input MI cost per blind depends entirely on independent MPPT input count. Reichelt EZ1-M gives a strong visible anchor of EUR 52.96/input, but that assumes one blind per input and fixed/serviceable AC installation.
+- AC branch accessories are real costs: Enphase IQ Cable drops, APsystems AC bus/end caps/combiner, Hoymiles trunk cables/connectors/caps, and NEP home-run/trunk caps.
+- Gateways vary widely by vendor/region: Hoymiles DTU-Lite-S is cheap in the Offgridtec scrape; Enphase IQ Gateway and APsystems ECU-R are hundreds of EUR equivalent.
 
 ## Evidence Gaps
 
-| Gap | Why it matters |
-| --- | --- |
-| OEM/bulk pricing | Retail/distributor prices may overstate production economics and understate minimum-order constraints. |
-| Shipping/tax/import duties | Most US and Canadian listings do not include final tax/shipping; EU 0% VAT listings are conditional. |
-| Exact gateway capacity | Per-blind shared gateway cost needs confirmed device count, radio/PLC range, and facade geometry. |
-| Formal Hoymiles 2T/4T MPPT independence | Per-input cost division is invalid until independent MPPT count is confirmed. |
-| Central inverter and DC protection cost | Optimizer topology needs inverter, disconnect, protection, cabling, and enclosure cost to become installed EUR/blind. |
-| AC branch labor/enclosures | MI topology needs junction boxes, protective earth, breakers, inspection, and facade service access cost. |
-| Moving harness price | No price source yet for qualified repeated-motion PV harness/feedthrough suitable for blinds. |
-| BIPV/facade certified enclosures | Generic IP boxes are not enough; facade/fire/service classification may change enclosure cost. |
+- No official manufacturer list prices were found for Tigo, Deye, Huawei, SolarEdge, APsystems, Hoymiles, or NEP comparable to Enphase's store.
+- No OEM/volume pricing, installer pricing, or facade/BIPV project pricing was found.
+- No certified PV-blind-specific electronics price source was found.
+- No full central-inverter, DC combiner/protection, AC branch protection, enclosure, labor, or certification BOM was priced.
+- Price per watt cannot be credible until iWin provides blind-module `Pmp` and annual energy distribution.
+- Price per blind for gateway/branch hardware needs blind count per facade, string/branch topology, and service-zone layout.
 
 ## Sources Needing Manual Verification
 
-| Source | Manual check |
+| Source | Why manual verification is needed |
 | --- | --- |
-| https://7sun.eu/product-category/optimizers/ | Many optimizer SKUs show 0 pcs stock and login/quote flow. Verify actual purchasability and B2B terms. |
-| https://www.onsaplus.eu/tigo-ts4-a-o/ | Verify VAT country, shipping, stock, and whether listed price is still current at order. |
-| https://invertersrus.com/product/tigo-ts4-a-o/ | Variant price range needs manual product selection for exact single/10-pack/20-pack unit prices. |
-| https://solarv.de/apsystems-ez1-m-800w-price | 0% VAT and balcony scope may not transfer to BIPV facade use. |
-| https://www.offgridtec.com/en/hoymiles-hms-500-1t-microinverter-module-inverter.html | 0% VAT applies only to eligible German private installations; verify B2B/export price. |
-| https://unpluggedpowersystems.ca/product/inverters/inv-grid-tied/inv-grid-tied-nep/nep-bdm-d-300-microinverter/ | Currency inferred as CAD; verify stock and tax/shipping. |
-| https://enphase.com/store/accessories | Some accessories are replacement parts or kits, not complete required systems; verify BOM mapping. |
-| https://www.solarpanelstore.com/collections/enphase-accessories | Distributor Enphase gateway/combiner prices may not match current Enphase architecture. |
-| https://shopsolarkits.com/collections/ap-systems | APsystems cable/gateway listings are for specific legacy/current families; verify DS3/EZ1 compatibility. |
-
-## Next Price Searches
-
-1. `Tigo TS4-A-O bulk price pallet distributor Europe`
-2. `Deye SUN-XL02-B installation manual concentrator maximum optimizers`
-3. `APsystems DS3 ECU-R trunk cable price Europe`
-4. `Hoymiles HMS-1000-2T datasheet independent MPPT price distributor`
-5. `certified 200W microinverter price BDM-250 BDM-300 Europe`
-6. `PV flexible moving cable rated photovoltaic repeated bending price`
-7. `BIPV facade junction box PV optimizer enclosure price IP65 fire rated`
+| [7Sun optimizer category](https://7sun.eu/product-category/optimizers/) | Many optimizer SKUs show 0 pcs stock; ordering requires login; shipping not extracted. |
+| [Signature Solar Tigo](https://signaturesolar.com/tigo-energy/) | Category prices are visible but tax/shipping and current stock should be checked in cart. |
+| [Signature Solar NEP](https://signaturesolar.com/shop-all/grid-tie/micro-inverters/nep/) | Product names mix gateways, PVG devices, and connector generations; exact NEP system requirement needs vendor check. |
+| [SolarTraders Hoymiles cable](https://www.solartraders.com/en/products/accessories/hoymiles-hms-plug-play-cable-10m-betteri-bc05) | Price is members-only in the scrape; useful as product/source discovery, not a price row. |
+| [SolarV APsystems EZ1-M](https://solarv.de/apsystems-ez1-m-800w-price) | Current Firecrawl scrape did not expose the product price; Reichelt used instead for current EZ1-M price evidence. |
+| [Self2Solar HMS-500](https://www.self2solar.com/products/hms500) | Page showed price and bundle but also `Notify Me When Available`; stock/cart verification needed. |
+| [IQElectro NEP BDG-256](https://iqelectro.com/products/bdg-256-nep-gateway-for-bdm-300-microinverter) | Listing condition is `New-Surplus Original Box`; compare with authorized distribution. |
+| [Hoymiles 2T/4T price rows](https://www.offgridtec.com/en/hoymiles-hms-500-1t-microinverter-module-inverter.html) | Per-input estimates require formal confirmation of independent MPPT count and channel mapping. |
 
