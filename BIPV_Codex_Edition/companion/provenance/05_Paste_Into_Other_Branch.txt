@@ -1,0 +1,5 @@
+Use this branch export bundle as authoritative for the iWin branch.
+Canonical state = v3.
+Required context from prior versions = v2 standards/design-envelope + v2 assumptions + v1 origin.
+Do not include the cancelled 20/80 bibliography matrix.
+Preserve assumption-status vocabulary and keep v3 vendor-closure docs active.

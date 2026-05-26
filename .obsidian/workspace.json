@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BIPV_Codex_Edition/analysis/Research_Prompt_Lugano_iWin_Office_Facade.md",
-                "mode": "preview",
-                "source": true
+                "file": "BIPV_Codex_Edition/analysis/Firecrawl for evidence acquisition.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Research_Prompt_Lugano_iWin_Office_Facade"
+              "title": "Firecrawl for evidence acquisition"
             }
           },
           {
@@ -92,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 395.5
   },
   "right": {
     "id": "34babc44910ab86f",
@@ -213,41 +213,41 @@
   },
   "active": "d41c82a007134820",
   "lastOpenFiles": [
-    "GPT_project2080/webGPT_chats/Deck Analysis and Research.md",
-    "GPT_project2080/webGPT_chats/BIPV Module Integrated Architecture Comparison.md",
-    "fixtures/pdf/fixtures.yaml",
-    "fixtures/pdf/New Text Document.txt",
+    "Daily/2026-05-26_iwin_price_evidence/action_log.md",
+    "Daily/2026-05-26_iwin_price_evidence/price_evidence_report.md",
+    "Daily/2026-05-26_iwin_price_evidence/normalized_cost_table.csv",
+    "Daily/2026-05-26_iwin_price_evidence/raw_price_table.csv",
+    "Daily/2026-05-26_iwin_price_evidence",
+    "BIPV_Codex_Edition/analysis/Firecrawl_Research_Instructions_Lugano_iWin_Office_Facade.md",
+    "BIPV_Codex_Edition/analysis/Research_Prompt_Lugano_iWin_Office_Facade.md",
+    "BIPV_Codex_Edition/analysis/Research_Prompt_Lugano_iWin_Office_Facade_Diagrams.md",
+    "PV_books/Photovoltaic power system -- modelling, design, and control 2017 - Weidong Xiao.pdf",
+    "PV_books/RAPSim_095_source.7z",
+    "PV_books/2 Classification of PV Power Systems - PV PS -- modelling design control.pdf",
+    "NotebookLM/Slides/Lugano_BIPV_Resolution.pdf",
+    "Daily/2026-05-26_iwin_topology_decision_matrix/action_log.md",
+    "Daily/2026-05-26_iwin_topology_decision_matrix/decision_matrix.md",
+    "Daily/2026-05-26_iwin_topology_decision_matrix/score_matrix.csv",
+    "Daily/2026-05-26_iwin_topology_decision_matrix",
+    "Understand-Anything_PVplant_Cheat_Sheet.md",
+    "NotebookLM/first-chapters-to-read-notebooklm.md",
+    "Daily/2026-05-26.md",
+    "NotebookLM/NEW",
     "GPT_project2080/webGPT_chats/iWin BIPV Roadmap.md",
-    "fixtures/pdf/malformed.pdf",
-    "fixtures/pdf/scanned-one-page.pdf",
-    "fixtures/pdf/pv-installation-manual-excerpt.pdf",
-    "fixtures/pdf/table-heavy-electrical-spec.pdf",
-    "fixtures/pdf/digital-basic.pdf",
-    "fixtures/pdf/app-note-mixed-layout.pdf",
-    "fixtures/pdf/pv-inverter-datasheet.pdf",
-    "fixtures/pdf",
-    "GPT_project2080/webGPT_chats/Norms and Pass Conditions.md",
-    "Daily/2026-05-22_BIPV_Brain_NotebookLM_upload_pack/UPLOAD RESULT FINAL - BIPV Brain NotebookLM 2026-05-22.md",
-    "Daily/2026-05-22_BIPV_Brain_NotebookLM_upload_pack/STATE - BIPV Brain current memory after NotebookLM refresh 2026-05-22.md",
-    "Daily/2026-05-22_BIPV_Brain_NotebookLM_upload_pack/UPLOAD RESULT - BIPV Brain NotebookLM 2026-05-22.md",
-    "GPT_project2080/webGPT_chats/Project research status.md",
-    "NotebookLM/Sources/UPLOAD_MANIFEST.md",
-    "NotebookLM/Sources/04_pv_dmppt_books/report.md",
-    "NotebookLM/Sources/04_pv_dmppt_books/action_log.md",
-    "NotebookLM/Sources/03_literature_pdfs/required_and_useful/source_inventory.md",
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/ul.com-services-distributed-energy-resource-testing.md",
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/shopulstandards.com-ProductDetail.aspx.md",
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/webstore.iec.ch-en-publication-6479.md",
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/webstore.iec.ch-en-publication-27684.md",
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/webstore.iec.ch-en-publication-6471.md",
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/webstore.iec.ch-en-publication-6470.md",
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/webstore.iec.ch-en-publication-64171.md",
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/iea-pvps.org-wp-content-uploads-2020-01-IEA-PVPS_15_R09_BIPV_Design_Tools_report.pdf.md",
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/mdpi.com-2075-5309-14-12-3850.md",
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/mdpi.com-2075-5309-14-1-53.md",
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/tsun-ess.com-datasheet-gen3-microinverter-6-in-1-0701.md",
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/tsun-ess.com-gen3-microinverter-6-in-1.md",
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/northernep.com-downloads-manuals-bdm-300-micro-inverter-manual.md",
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/northernep.com-bdm-300-datasheet-2023-10-26.md"
+    "move_list.md",
+    "Context/Understand-Anything_PVplant_Cheat_Sheet.md",
+    "BIPV_Codex_Edition/companion/reference/The 20% of BIPV design that gives you the other 80%.md",
+    "BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Missing_Information_Questionnaire.md",
+    "BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Audits_Graphical_Representation.md",
+    "BIPV_Codex_Edition/companion/README_v3_iWin_Project_Companion.md",
+    "BIPV_Codex_Edition/companion/README_v2_iWin_Project_Companion.md",
+    "BIPV_Codex_Edition/companion/README_v1_iWin_Project_Companion.md",
+    "BIPV_Codex_Edition/companion/11_Vendor_Data_Request_Cover_Note.md",
+    "BIPV_Codex_Edition/companion/10_Vendor_Evaluation_Rubric.md",
+    "BIPV_Codex_Edition/companion/08_Vendor_Technical_Questionnaire.md",
+    "BIPV_Codex_Edition/companion/07_Commissioning_and_Acceptance_Template.md",
+    "BIPV_Codex_Edition/companion/06_Standards_and_Design_Envelope.md",
+    "BIPV_Codex_Edition/companion/05_Assumption_Register.md",
+    "BIPV_Codex_Edition/companion/04_Capstone_Design_Memo_Template.md"
   ]
 }
