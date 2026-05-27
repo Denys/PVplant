@@ -1,0 +1,142 @@
+{
+  "classification": "mixed_pdf",
+  "extraction": {
+    "engine_version": "2.95.0",
+    "method": "docling",
+    "ocr_enabled": false,
+    "warnings": [
+      {
+        "code": "mixed_content",
+        "message": "PDF contains detectable text and images."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-002-figure-001.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-003-figure-002.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-003-figure-003.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-004-figure-004.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-004-figure-005.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-005-figure-006.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-006-figure-007.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-007-figure-008.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-007-figure-009.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-008-figure-010.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-008-figure-011.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-009-figure-012.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-011-figure-013.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-012-figure-014.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-012-figure-015.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-013-figure-016.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-013-figure-017.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-014-figure-018.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-015-figure-019.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-016-figure-020.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-017-figure-021.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-018-figure-022.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-018-figure-023.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-019-figure-024.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-020-figure-025.png has no caption."
+      },
+      {
+        "code": "asset_caption_missing",
+        "message": "Asset page-021-figure-026.png has no caption."
+      }
+    ]
+  },
+  "outputs": {
+    "asset_dir": "pdf/C/Users/Denys/Documents/Projects/PVplant/PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets",
+    "json_sidecar": "pdf/C/Users/Denys/Documents/Projects/PVplant/PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/docling.json",
+    "markdown_note": "pdf/C/Users/Denys/Documents/Projects/PVplant/PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/source.md",
+    "root": "pdf/C/Users/Denys/Documents/Projects/PVplant/PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control",
+    "table_sidecars": [
+      "pdf/C/Users/Denys/Documents/Projects/PVplant/PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/tables.json"
+    ]
+  },
+  "page_count": 23,
+  "provenance": {
+    "page_ranges": []
+  },
+  "schema_version": 1,
+  "source_hash": "149cb276d4cd437ff73b613b15a2877f914d26b45ecec381584e5faa9ca6178d",
+  "source_kind": "pdf",
+  "source_path": "C:/Users/Denys/Documents/Projects/PVplant/PV_books/2 Classification of PV Power Systems - PV PS -- modelling design control.pdf",
+  "status": "needs_review",
+  "text_density": {
+    "chars_per_page_median": 402,
+    "chars_per_page_min": 402,
+    "empty_pages": 0,
+    "total_chars": 9248
+  }
+}

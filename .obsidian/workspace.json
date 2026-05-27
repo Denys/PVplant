@@ -11,12 +11,14 @@
             "id": "d41c82a007134820",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "PV_books/IEC 62548-2016 - Photovoltaic (PV) arrays - Design requirements -- 1_0.pdf"
+                "file": "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/source_1.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "IEC 62548-2016 - Photovoltaic (PV) arrays - Design requirements -- 1_0"
+              "icon": "lucide-file",
+              "title": "source_1"
             }
           },
           {
@@ -209,10 +211,32 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "b82dc151bdd84e92",
+  "active": "d41c82a007134820",
   "lastOpenFiles": [
-    "PV_books/Handbook of Photovoltaic Science and Engineering - 2nd 2011 - Antonio Luque (Editor), Steven Hegedus.pdf",
+    "PV_books/2 Classification of PV Power Systems - PV PS -- modelling design control.pdf",
     "PV_books/IEC 62548-2016 - Photovoltaic (PV) arrays - Design requirements -- 1_0.pdf",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-021-figure-026_1.png",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-021-figure-026.png",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-020-figure-025_1.png",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-020-figure-025.png",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-019-figure-024_1.png",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-019-figure-024.png",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-018-figure-023_1.png",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-018-figure-023.png",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-018-figure-022_1.png",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-018-figure-022.png",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/tables_1.json",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/tables.json",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/source.md",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/source_1.md",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/manifest_2.json",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/manifest_1.json",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/manifest.json",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/docling_1.json",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/docling.json",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control",
+    "PV_books/source_1.md",
     "reports/drafts/2026-05-27_dc_link_output_voltage_review/output_voltage_decision_schematic.md",
     "BIPV_Assistant_PVplant_framework_update_2026-05-27/README_BIPV_Framework_Update_2026-05-27.md",
     "BIPV_Assistant_PVplant_framework_update_2026-05-27/PVplant_Codex_Source_Map_v2.md",
@@ -220,7 +244,6 @@
     "BIPV_Assistant_PVplant_framework_update_2026-05-27/PVplant_AGENTS_v3_Codex.md",
     "BIPV_Assistant_PVplant_framework_update_2026-05-27/BIPV_Assistant_SOURCES_v3_WebGPT.md",
     "BIPV_Assistant_PVplant_framework_update_2026-05-27/BIPV_Assistant_KERNEL_v3_WebGPT.md",
-    "BIPV_Assistant_PVplant_framework_update_2026-05-27",
     "PVplant_iWin_BIPV_Knowledge_v2.md",
     "PVplant_Codex_Source_Map_v2.md",
     "PVplant_AGENTS_v3_Codex.md",
@@ -228,34 +251,13 @@
     "AGENTS_archive_OLD/AGENTS_v2.md",
     "AGENTS_v2.md",
     "AGENTS_archive_OLD/PVplant_iWin_BIPV_Knowledge_v2_reviewed.md",
-    "BIPV_Assistant_PVplant_framework_update_2026-05-27.zip",
-    "Unconfirmed 514995.crdownload",
     "UPE_v5.0_CLD/Claude_Project_Instructions.md",
-    "CLAUDE.md.pre-UPE-v5.bak",
     "UPE_v5.0_CLD/UPE_v5.0_walkthrough.md",
     "UPE_v5.0_CLD/UPE_v5.0_user_guide.md",
     "UPE_v5.0_CLD/UPE_v5.0_system_prompt.md",
     "UPE_v5.0_CLD/UPE_v5.0_report_formats.md",
     "UPE_v5.0_CLD/UPE_v5.0_patterns.md",
     "UPE_v5.0_CLD/UPE_v5.0_core.md",
-    "UPE_v5.0_CLD",
-    "UPE_v5.0_CLAUDE/UPE_v5.0_CLD/UPE_v5.0_walkthrough.md",
-    "UPE_v5.0_CLAUDE/UPE_v5.0_CLD/UPE_v5.0_user_guide.md",
-    "UPE_v5.0_CLAUDE/UPE_v5.0_CLD/UPE_v5.0_system_prompt.md",
-    "UPE_v5.0_CLAUDE/UPE_v5.0_CLD/UPE_v5.0_report_formats.md",
-    "UPE_v5.0_CLAUDE/UPE_v5.0_CLD",
-    "UPE_v5.0_CLAUDE",
-    "reports/notes",
-    "reports/New folder",
-    "GPT_project2080/H2_perZoneDCDC.png",
-    "GPT_project2080/H4_perZone_DCAC.png",
-    "GPT_project2080/H3_perWindow_DCAC.png",
-    "GPT_project2080/H2.png",
-    "GPT_project2080/H1_window_dcdc_mppt_floorDCAC.png",
-    "reports/drafts/2026-05-27_chapter5_literature_review/rendered/page-02.png",
-    "reports/drafts/2026-05-27_chapter5_literature_review/rendered/page-01.png",
-    "reports/drafts/2026-05-27_pv_ps_classification_literature_review/rendered/page-03.png",
-    "reports/drafts/2026-05-27_pv_ps_classification_literature_review/rendered/page-02.png",
-    "reports/drafts/2026-05-27_pv_ps_classification_literature_review/rendered/page-01.png"
+    "UPE_v5.0_CLAUDE/UPE_v5.0_CLD/UPE_v5.0_walkthrough.md"
   ]
 }

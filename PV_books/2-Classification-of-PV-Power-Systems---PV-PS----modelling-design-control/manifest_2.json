@@ -1,0 +1,38 @@
+{
+  "classification": "mixed_pdf",
+  "extraction": {
+    "engine_version": "2.95.0",
+    "method": "docling",
+    "ocr_enabled": false,
+    "warnings": [
+      {
+        "code": "mixed_content",
+        "message": "PDF contains detectable text and images."
+      }
+    ]
+  },
+  "outputs": {
+    "asset_dir": "pdf/C/Users/Denys/Documents/Projects/PVplant/PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets",
+    "json_sidecar": "pdf/C/Users/Denys/Documents/Projects/PVplant/PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/docling_1.json",
+    "markdown_note": "pdf/C/Users/Denys/Documents/Projects/PVplant/PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/source_1.md",
+    "root": "pdf/C/Users/Denys/Documents/Projects/PVplant/PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control",
+    "table_sidecars": [
+      "pdf/C/Users/Denys/Documents/Projects/PVplant/PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/tables_1.json"
+    ]
+  },
+  "page_count": 23,
+  "provenance": {
+    "page_ranges": []
+  },
+  "schema_version": 1,
+  "source_hash": "33d908905fa284d5be6ea889ffe82f95727345310f13cac830f62586d598669b",
+  "source_kind": "pdf",
+  "source_path": "C:/Users/Denys/Documents/Projects/PVplant/PV_books/2 Classification of PV Power Systems - PV PS -- modelling design control.pdf",
+  "status": "needs_review",
+  "text_density": {
+    "chars_per_page_median": 372,
+    "chars_per_page_min": 372,
+    "empty_pages": 0,
+    "total_chars": 8559
+  }
+}

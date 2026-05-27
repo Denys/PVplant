@@ -1,0 +1,637 @@
+{
+  "schema_version": 1,
+  "source": "docling_structured_export",
+  "tables": [
+    {
+      "path": "$.tables",
+      "payload": [
+        {
+          "annotations": [],
+          "captions": [
+            {
+              "$ref": "#/texts/99"
+            }
+          ],
+          "children": [
+            {
+              "$ref": "#/texts/99"
+            },
+            {
+              "$ref": "#/texts/100"
+            }
+          ],
+          "content_layer": "body",
+          "data": {
+            "grid": [
+              [
+                {
+                  "bbox": {
+                    "b": 386.22958339008363,
+                    "coord_origin": "TOPLEFT",
+                    "l": 71.78544541384578,
+                    "r": 115.31617536172308,
+                    "t": 378.2760394784162
+                  },
+                  "col_span": 1,
+                  "column_header": true,
+                  "end_col_offset_idx": 1,
+                  "end_row_offset_idx": 1,
+                  "fillable": false,
+                  "row_header": false,
+                  "row_section": false,
+                  "row_span": 1,
+                  "start_col_offset_idx": 0,
+                  "start_row_offset_idx": 0,
+                  "text": "Parameter"
+                },
+                {
+                  "bbox": {
+                    "b": 386.22954939355316,
+                    "coord_origin": "TOPLEFT",
+                    "l": 242.2355901544999,
+                    "r": 296.5369221712318,
+                    "t": 378.2760033336734
+                  },
+                  "col_span": 1,
+                  "column_header": true,
+                  "end_col_offset_idx": 2,
+                  "end_row_offset_idx": 1,
+                  "fillable": false,
+                  "row_header": false,
+                  "row_section": false,
+                  "row_span": 1,
+                  "start_col_offset_idx": 1,
+                  "start_row_offset_idx": 0,
+                  "text": "Specification"
+                }
+              ],
+              [
+                {
+                  "bbox": {
+                    "b": 411.35731990445964,
+                    "coord_origin": "TOPLEFT",
+                    "l": 71.74173642605497,
+                    "r": 127.605185579997,
+                    "t": 402.5200479452014
+                  },
+                  "col_span": 1,
+                  "column_header": false,
+                  "end_col_offset_idx": 1,
+                  "end_row_offset_idx": 2,
+                  "fillable": false,
+                  "row_header": false,
+                  "row_section": false,
+                  "row_span": 1,
+                  "start_col_offset_idx": 0,
+                  "start_row_offset_idx": 1,
+                  "text": "Cell material"
+                },
+                {
+                  "bbox": {
+                    "b": 411.10569700624586,
+                    "coord_origin": "TOPLEFT",
+                    "l": 241.70595328758128,
+                    "r": 314.01283529795256,
+                    "t": 403.5940033536237
+                  },
+                  "col_span": 1,
+                  "column_header": false,
+                  "end_col_offset_idx": 2,
+                  "end_row_offset_idx": 2,
+                  "fillable": false,
+                  "row_header": false,
+                  "row_section": false,
+                  "row_span": 1,
+                  "start_col_offset_idx": 1,
+                  "start_row_offset_idx": 1,
+                  "text": "Multi-crystalline"
+                }
+              ],
+              [
+                {
+                  "bbox": {
+                    "b": 427.1553947140265,
+                    "coord_origin": "TOPLEFT",
+                    "l": 71.49717691052615,
+                    "r": 141.03899198689808,
+                    "t": 418.5390510119601
+                  },
+                  "col_span": 1,
+                  "column_header": false,
+                  "end_col_offset_idx": 1,
+                  "end_row_offset_idx": 3,
+                  "fillable": false,
+                  "row_header": false,
+                  "row_section": false,
+                  "row_span": 1,
+                  "start_col_offset_idx": 0,
+                  "start_row_offset_idx": 2,
+                  "text": "Number of cells"
+                },
+                {
+                  "bbox": {
+                    "b": 427.155360671461,
+                    "coord_origin": "TOPLEFT",
+                    "l": 242.17812969551466,
+                    "r": 253.02013349662354,
+                    "t": 418.5390286771578
+                  },
+                  "col_span": 1,
+                  "column_header": false,
+                  "end_col_offset_idx": 2,
+                  "end_row_offset_idx": 3,
+                  "fillable": false,
+                  "row_header": false,
+                  "row_section": false,
+                  "row_span": 1,
+                  "start_col_offset_idx": 1,
+                  "start_row_offset_idx": 2,
+                  "text": "72"
+                }
+              ],
+              [
+                {
+                  "bbox": {
+                    "b": 443.1211967718826,
+                    "coord_origin": "TOPLEFT",
+                    "l": 71.71682534135562,
+                    "r": 151.38221449449404,
+                    "t": 433.8420564482046
+                  },
+                  "col_span": 1,
+                  "column_header": false,
+                  "end_col_offset_idx": 1,
+                  "end_row_offset_idx": 4,
+                  "fillable": false,
+                  "row_header": false,
+                  "row_section": false,
+                  "row_span": 1,
+                  "start_col_offset_idx": 0,
+                  "start_row_offset_idx": 3,
+                  "text": "Cellconfiguration"
+                },
+                {
+                  "bbox": {
+                    "b": 443.1211627689856,
+                    "coord_origin": "TOPLEFT",
+                    "l": 242.198890088141,
+                    "r": 274.29739810446824,
+                    "t": 433.8420319325915
+                  },
+                  "col_span": 1,
+                  "column_header": false,
+                  "end_col_offset_idx": 2,
+                  "end_row_offset_idx": 4,
+                  "fillable": false,
+                  "row_header": false,
+                  "row_section": false,
+                  "row_span": 1,
+                  "start_col_offset_idx": 1,
+                  "start_row_offset_idx": 3,
+                  "text": "36%x2"
+                }
+              ],
+              [
+                {
+                  "bbox": {
+                    "b": 458.63735235519493,
+                    "coord_origin": "TOPLEFT",
+                    "l": 71.4976818588859,
+                    "r": 130.2532086994567,
+                    "t": 449.8000722005104
+                  },
+                  "col_span": 1,
+                  "column_header": false,
+                  "end_col_offset_idx": 1,
+                  "end_row_offset_idx": 5,
+                  "fillable": false,
+                  "row_header": false,
+                  "row_section": false,
+                  "row_span": 1,
+                  "start_col_offset_idx": 0,
+                  "start_row_offset_idx": 4,
+                  "text": "MPPvoltage"
+                },
+                {
+                  "bbox": {
+                    "b": 458.63731834207323,
+                    "coord_origin": "TOPLEFT",
+                    "l": 242.03101061551826,
+                    "r": 268.84455843256313,
+                    "t": 449.80004455826315
+                  },
+                  "col_span": 1,
+                  "column_header": false,
+                  "end_col_offset_idx": 2,
+                  "end_row_offset_idx": 5,
+                  "fillable": false,
+                  "row_header": false,
+                  "row_section": false,
+                  "row_span": 1,
+                  "start_col_offset_idx": 1,
+                  "start_row_offset_idx": 4,
+                  "text": "17.3V"
+                }
+              ],
+              [
+                {
+                  "bbox": {
+                    "b": 474.2373695525248,
+                    "coord_origin": "TOPLEFT",
+                    "l": 71.49768234710763,
+                    "r": 132.28930113077806,
+                    "t": 465.40008899173876
+                  },
+                  "col_span": 1,
+                  "column_header": false,
+                  "end_col_offset_idx": 1,
+                  "end_row_offset_idx": 6,
+                  "fillable": false,
+                  "row_header": false,
+                  "row_section": false,
+                  "row_span": 1,
+                  "start_col_offset_idx": 0,
+                  "start_row_offset_idx": 5,
+                  "text": "MPPcurrent?"
+                },
+                {
+                  "bbox": {
+                    "b": 474.23733552425756,
+                    "coord_origin": "TOPLEFT",
+                    "l": 242.10694711832605,
+                    "r": 268.80721491361174,
+                    "t": 465.4000617630413
+                  },
+                  "col_span": 1,
+                  "column_header": false,
+                  "end_col_offset_idx": 2,
+                  "end_row_offset_idx": 6,
+                  "fillable": false,
+                  "row_header": false,
+                  "row_section": false,
+                  "row_span": 1,
+                  "start_col_offset_idx": 1,
+                  "start_row_offset_idx": 5,
+                  "text": "2.89A"
+                }
+              ],
+              [
+                {
+                  "bbox": {
+                    "b": 490.3173675427941,
+                    "coord_origin": "TOPLEFT",
+                    "l": 71.79065090662453,
+                    "r": 166.6092842263218,
+                    "t": 481.4800801952703
+                  },
+                  "col_span": 1,
+                  "column_header": false,
+                  "end_col_offset_idx": 1,
+                  "end_row_offset_idx": 7,
+                  "fillable": false,
+                  "row_header": false,
+                  "row_section": false,
+                  "row_span": 1,
+                  "start_col_offset_idx": 0,
+                  "start_row_offset_idx": 6,
+                  "text": "Short-circuit current?"
+                },
+                {
+                  "bbox": {
+                    "b": 490.3173335504329,
+                    "coord_origin": "TOPLEFT",
+                    "l": 242.2198916432633,
+                    "r": 268.83279942176864,
+                    "t": 481.4800598066408
+                  },
+                  "col_span": 1,
+                  "column_header": false,
+                  "end_col_offset_idx": 2,
+                  "end_row_offset_idx": 7,
+                  "fillable": false,
+                  "row_header": false,
+                  "row_section": false,
+                  "row_span": 1,
+                  "start_col_offset_idx": 1,
+                  "start_row_offset_idx": 6,
+                  "text": "3.20A"
+                }
+              ]
+            ],
+            "num_cols": 2,
+            "num_rows": 7,
+            "table_cells": [
+              {
+                "bbox": {
+                  "b": 386.22958339008363,
+                  "coord_origin": "TOPLEFT",
+                  "l": 71.78544541384578,
+                  "r": 115.31617536172308,
+                  "t": 378.2760394784162
+                },
+                "col_span": 1,
+                "column_header": true,
+                "end_col_offset_idx": 1,
+                "end_row_offset_idx": 1,
+                "fillable": false,
+                "row_header": false,
+                "row_section": false,
+                "row_span": 1,
+                "start_col_offset_idx": 0,
+                "start_row_offset_idx": 0,
+                "text": "Parameter"
+              },
+              {
+                "bbox": {
+                  "b": 386.22954939355316,
+                  "coord_origin": "TOPLEFT",
+                  "l": 242.2355901544999,
+                  "r": 296.5369221712318,
+                  "t": 378.2760033336734
+                },
+                "col_span": 1,
+                "column_header": true,
+                "end_col_offset_idx": 2,
+                "end_row_offset_idx": 1,
+                "fillable": false,
+                "row_header": false,
+                "row_section": false,
+                "row_span": 1,
+                "start_col_offset_idx": 1,
+                "start_row_offset_idx": 0,
+                "text": "Specification"
+              },
+              {
+                "bbox": {
+                  "b": 411.35731990445964,
+                  "coord_origin": "TOPLEFT",
+                  "l": 71.74173642605497,
+                  "r": 127.605185579997,
+                  "t": 402.5200479452014
+                },
+                "col_span": 1,
+                "column_header": false,
+                "end_col_offset_idx": 1,
+                "end_row_offset_idx": 2,
+                "fillable": false,
+                "row_header": false,
+                "row_section": false,
+                "row_span": 1,
+                "start_col_offset_idx": 0,
+                "start_row_offset_idx": 1,
+                "text": "Cell material"
+              },
+              {
+                "bbox": {
+                  "b": 411.10569700624586,
+                  "coord_origin": "TOPLEFT",
+                  "l": 241.70595328758128,
+                  "r": 314.01283529795256,
+                  "t": 403.5940033536237
+                },
+                "col_span": 1,
+                "column_header": false,
+                "end_col_offset_idx": 2,
+                "end_row_offset_idx": 2,
+                "fillable": false,
+                "row_header": false,
+                "row_section": false,
+                "row_span": 1,
+                "start_col_offset_idx": 1,
+                "start_row_offset_idx": 1,
+                "text": "Multi-crystalline"
+              },
+              {
+                "bbox": {
+                  "b": 427.1553947140265,
+                  "coord_origin": "TOPLEFT",
+                  "l": 71.49717691052615,
+                  "r": 141.03899198689808,
+                  "t": 418.5390510119601
+                },
+                "col_span": 1,
+                "column_header": false,
+                "end_col_offset_idx": 1,
+                "end_row_offset_idx": 3,
+                "fillable": false,
+                "row_header": false,
+                "row_section": false,
+                "row_span": 1,
+                "start_col_offset_idx": 0,
+                "start_row_offset_idx": 2,
+                "text": "Number of cells"
+              },
+              {
+                "bbox": {
+                  "b": 427.155360671461,
+                  "coord_origin": "TOPLEFT",
+                  "l": 242.17812969551466,
+                  "r": 253.02013349662354,
+                  "t": 418.5390286771578
+                },
+                "col_span": 1,
+                "column_header": false,
+                "end_col_offset_idx": 2,
+                "end_row_offset_idx": 3,
+                "fillable": false,
+                "row_header": false,
+                "row_section": false,
+                "row_span": 1,
+                "start_col_offset_idx": 1,
+                "start_row_offset_idx": 2,
+                "text": "72"
+              },
+              {
+                "bbox": {
+                  "b": 443.1211967718826,
+                  "coord_origin": "TOPLEFT",
+                  "l": 71.71682534135562,
+                  "r": 151.38221449449404,
+                  "t": 433.8420564482046
+                },
+                "col_span": 1,
+                "column_header": false,
+                "end_col_offset_idx": 1,
+                "end_row_offset_idx": 4,
+                "fillable": false,
+                "row_header": false,
+                "row_section": false,
+                "row_span": 1,
+                "start_col_offset_idx": 0,
+                "start_row_offset_idx": 3,
+                "text": "Cellconfiguration"
+              },
+              {
+                "bbox": {
+                  "b": 443.1211627689856,
+                  "coord_origin": "TOPLEFT",
+                  "l": 242.198890088141,
+                  "r": 274.29739810446824,
+                  "t": 433.8420319325915
+                },
+                "col_span": 1,
+                "column_header": false,
+                "end_col_offset_idx": 2,
+                "end_row_offset_idx": 4,
+                "fillable": false,
+                "row_header": false,
+                "row_section": false,
+                "row_span": 1,
+                "start_col_offset_idx": 1,
+                "start_row_offset_idx": 3,
+                "text": "36%x2"
+              },
+              {
+                "bbox": {
+                  "b": 458.63735235519493,
+                  "coord_origin": "TOPLEFT",
+                  "l": 71.4976818588859,
+                  "r": 130.2532086994567,
+                  "t": 449.8000722005104
+                },
+                "col_span": 1,
+                "column_header": false,
+                "end_col_offset_idx": 1,
+                "end_row_offset_idx": 5,
+                "fillable": false,
+                "row_header": false,
+                "row_section": false,
+                "row_span": 1,
+                "start_col_offset_idx": 0,
+                "start_row_offset_idx": 4,
+                "text": "MPPvoltage"
+              },
+              {
+                "bbox": {
+                  "b": 458.63731834207323,
+                  "coord_origin": "TOPLEFT",
+                  "l": 242.03101061551826,
+                  "r": 268.84455843256313,
+                  "t": 449.80004455826315
+                },
+                "col_span": 1,
+                "column_header": false,
+                "end_col_offset_idx": 2,
+                "end_row_offset_idx": 5,
+                "fillable": false,
+                "row_header": false,
+                "row_section": false,
+                "row_span": 1,
+                "start_col_offset_idx": 1,
+                "start_row_offset_idx": 4,
+                "text": "17.3V"
+              },
+              {
+                "bbox": {
+                  "b": 474.2373695525248,
+                  "coord_origin": "TOPLEFT",
+                  "l": 71.49768234710763,
+                  "r": 132.28930113077806,
+                  "t": 465.40008899173876
+                },
+                "col_span": 1,
+                "column_header": false,
+                "end_col_offset_idx": 1,
+                "end_row_offset_idx": 6,
+                "fillable": false,
+                "row_header": false,
+                "row_section": false,
+                "row_span": 1,
+                "start_col_offset_idx": 0,
+                "start_row_offset_idx": 5,
+                "text": "MPPcurrent?"
+              },
+              {
+                "bbox": {
+                  "b": 474.23733552425756,
+                  "coord_origin": "TOPLEFT",
+                  "l": 242.10694711832605,
+                  "r": 268.80721491361174,
+                  "t": 465.4000617630413
+                },
+                "col_span": 1,
+                "column_header": false,
+                "end_col_offset_idx": 2,
+                "end_row_offset_idx": 6,
+                "fillable": false,
+                "row_header": false,
+                "row_section": false,
+                "row_span": 1,
+                "start_col_offset_idx": 1,
+                "start_row_offset_idx": 5,
+                "text": "2.89A"
+              },
+              {
+                "bbox": {
+                  "b": 490.3173675427941,
+                  "coord_origin": "TOPLEFT",
+                  "l": 71.79065090662453,
+                  "r": 166.6092842263218,
+                  "t": 481.4800801952703
+                },
+                "col_span": 1,
+                "column_header": false,
+                "end_col_offset_idx": 1,
+                "end_row_offset_idx": 7,
+                "fillable": false,
+                "row_header": false,
+                "row_section": false,
+                "row_span": 1,
+                "start_col_offset_idx": 0,
+                "start_row_offset_idx": 6,
+                "text": "Short-circuit current?"
+              },
+              {
+                "bbox": {
+                  "b": 490.3173335504329,
+                  "coord_origin": "TOPLEFT",
+                  "l": 242.2198916432633,
+                  "r": 268.83279942176864,
+                  "t": 481.4800598066408
+                },
+                "col_span": 1,
+                "column_header": false,
+                "end_col_offset_idx": 2,
+                "end_row_offset_idx": 7,
+                "fillable": false,
+                "row_header": false,
+                "row_section": false,
+                "row_span": 1,
+                "start_col_offset_idx": 1,
+                "start_row_offset_idx": 6,
+                "text": "3.20A"
+              }
+            ]
+          },
+          "footnotes": [
+            {
+              "$ref": "#/texts/100"
+            }
+          ],
+          "label": "table",
+          "parent": {
+            "$ref": "#/body"
+          },
+          "prov": [
+            {
+              "bbox": {
+                "b": 346.3876647949219,
+                "coord_origin": "BOTTOMLEFT",
+                "l": 66.55516815185547,
+                "r": 314.87603759765625,
+                "t": 473.2423400878906
+              },
+              "charspan": [
+                0,
+                0
+              ],
+              "page_no": 6
+            }
+          ],
+          "references": [],
+          "self_ref": "#/tables/0"
+        }
+      ]
+    }
+  ]
+}

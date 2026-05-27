@@ -1,0 +1,36 @@
+{
+  "classification": "malformed_pdf",
+  "extraction": {
+    "engine_version": "stdlib-pdf-probe-0.1",
+    "method": "classifier_probe",
+    "ocr_enabled": false,
+    "warnings": [
+      {
+        "code": "missing_pages",
+        "message": "No PDF page objects were detected."
+      }
+    ]
+  },
+  "outputs": {
+    "asset_dir": null,
+    "json_sidecar": null,
+    "markdown_note": null,
+    "root": "pdf/C/Users/Denys/Documents/Projects/PVplant/PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control",
+    "table_sidecars": []
+  },
+  "page_count": 0,
+  "provenance": {
+    "page_ranges": []
+  },
+  "schema_version": 1,
+  "source_hash": "33d908905fa284d5be6ea889ffe82f95727345310f13cac830f62586d598669b",
+  "source_kind": "pdf",
+  "source_path": "C:/Users/Denys/Documents/Projects/PVplant/PV_books/2 Classification of PV Power Systems - PV PS -- modelling design control.pdf",
+  "status": "failed",
+  "text_density": {
+    "chars_per_page_median": 0,
+    "chars_per_page_min": 0,
+    "empty_pages": 0,
+    "total_chars": 0
+  }
+}
