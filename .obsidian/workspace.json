@@ -11,14 +11,12 @@
             "id": "d41c82a007134820",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "BIPV_Codex_Edition/analysis/Firecrawl for evidence acquisition.md",
-                "mode": "source",
-                "source": false
+                "file": "PV_books/Photovoltaics -- Fundamentals, Technology, and Practice - 1ed 2014 - Konrad Mertens.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Firecrawl for evidence acquisition"
+              "icon": "lucide-file-text",
+              "title": "Photovoltaics -- Fundamentals, Technology, and Practice - 1ed 2014 - Konrad Mertens"
             }
           },
           {
@@ -92,7 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 395.5
+    "width": 250.5
   },
   "right": {
     "id": "34babc44910ab86f",
@@ -213,26 +211,37 @@
   },
   "active": "d41c82a007134820",
   "lastOpenFiles": [
+    "BIPV_Codex_Edition/analysis/Firecrawl for evidence acquisition.md",
+    "reports/pv-microinverter-decision-checklist.pdf",
+    "reports/msoEE16.tmp",
+    "PV_books/RAPSim_095_source/RAPSim/src/sgs/model/variables/collector/VariableCollectorSum.java",
+    "PV_books/RAPSim_095_source/RAPSim/src/sgs/model/variables/collector/VariableOwner.java",
+    "PV_books/RAPSim_095_source/RAPSim/src/sgs/model/variables/collector/VariableCollectorMin.java",
+    "PV_books/RAPSim_095_source/RAPSim/src/sgs/model/variables/collector/VariableCollectorMax.java",
+    "PV_books/RAPSim_095_source/RAPSim/src/sgs/model/variables/collector/VariableCollectorAvg.java",
+    "PV_books/RAPSim_095_source/RAPSim/src/sgs/model/variables/collector/VariableCollector.java",
+    "PV_books/RAPSim_095_source/RAPSim/src/sgs/model/variables/collector/VariableCollection.java",
+    "PV_books/RAPSim_095_source/RAPSim/src/sgs/controller/simulation/calculation/IterativeACVoltageCalculator.txt",
+    "PV_books/RAPSim_095_source/RAPSim/src/testing/Toolbar/Up24.gif",
+    "PV_books/RAPSim_095_source/RAPSim/src/testing/Toolbar/Back24.gif",
+    "PV_books/RAPSim_095_source/RAPSim/src/testing/Toolbar/Forward24.gif",
+    "PV_books/RAPSim_095_source/RAPSim/Theoretical Stuff/solar/800px-Tageslaenge.svg.png",
+    "PV_books/RAPSim_095_source/RAPSim/Theoretical Stuff/complex numbers/ComplexMultiplication.png",
+    "PV_books/RAPSim_095_source/RAPSim/Theoretical Stuff/complex numbers/ComplexDivision.png",
+    "PV_books/RAPSim_095_source/RAPSim/Theoretical Stuff/complex numbers/ComplexAddition.png",
+    "PV_books/RAPSim_095_source/JGridMap/examplesData/snake/Wall_v2.png",
+    "PV_books/RAPSim_095_source/JGridMap/examplesData/snake/Wall_v1.png",
+    "PV_books/RAPSim_095_source/JGridMap/examplesData/snake/SnakeTail_v2_U.png",
     "Daily/2026-05-26_iwin_price_evidence/action_log.md",
     "Daily/2026-05-26_iwin_price_evidence/price_evidence_report.md",
-    "Daily/2026-05-26_iwin_price_evidence/normalized_cost_table.csv",
-    "Daily/2026-05-26_iwin_price_evidence/raw_price_table.csv",
-    "Daily/2026-05-26_iwin_price_evidence",
     "BIPV_Codex_Edition/analysis/Firecrawl_Research_Instructions_Lugano_iWin_Office_Facade.md",
     "BIPV_Codex_Edition/analysis/Research_Prompt_Lugano_iWin_Office_Facade.md",
     "BIPV_Codex_Edition/analysis/Research_Prompt_Lugano_iWin_Office_Facade_Diagrams.md",
-    "PV_books/Photovoltaic power system -- modelling, design, and control 2017 - Weidong Xiao.pdf",
-    "PV_books/RAPSim_095_source.7z",
-    "PV_books/2 Classification of PV Power Systems - PV PS -- modelling design control.pdf",
-    "NotebookLM/Slides/Lugano_BIPV_Resolution.pdf",
     "Daily/2026-05-26_iwin_topology_decision_matrix/action_log.md",
     "Daily/2026-05-26_iwin_topology_decision_matrix/decision_matrix.md",
-    "Daily/2026-05-26_iwin_topology_decision_matrix/score_matrix.csv",
-    "Daily/2026-05-26_iwin_topology_decision_matrix",
     "Understand-Anything_PVplant_Cheat_Sheet.md",
     "NotebookLM/first-chapters-to-read-notebooklm.md",
     "Daily/2026-05-26.md",
-    "NotebookLM/NEW",
     "GPT_project2080/webGPT_chats/iWin BIPV Roadmap.md",
     "move_list.md",
     "Context/Understand-Anything_PVplant_Cheat_Sheet.md",
@@ -247,7 +256,6 @@
     "BIPV_Codex_Edition/companion/08_Vendor_Technical_Questionnaire.md",
     "BIPV_Codex_Edition/companion/07_Commissioning_and_Acceptance_Template.md",
     "BIPV_Codex_Edition/companion/06_Standards_and_Design_Envelope.md",
-    "BIPV_Codex_Edition/companion/05_Assumption_Register.md",
-    "BIPV_Codex_Edition/companion/04_Capstone_Design_Memo_Template.md"
+    "BIPV_Codex_Edition/companion/05_Assumption_Register.md"
   ]
 }
