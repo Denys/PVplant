@@ -1,41 +1,117 @@
-# .understandignore - patterns for files/dirs to exclude from analysis
-# Syntax: same as .gitignore (globs, # comments, ! negation, trailing / for dirs)
-# Lines below are suggestions - uncomment to activate.
-# Use ! prefix to force-include something excluded by defaults.
-#
-# Built-in defaults (always excluded unless negated):
-#   node_modules/, .git/, dist/, build/, obj/, *.lock, *.min.js, etc.
-#
-# --- From .gitignore (uncomment to exclude) ---
+# .understandignore - curated for the PVplant knowledge graph
+# Syntax follows .gitignore. Later ! rules can re-include selected files.
 
-# .DS_Store
-# Thumbs.db
-# .obsidian/workspace.json
-# .obsidian/workspace-mobile.json
-# .obsidian/plugins/*/main.js
-# .obsidian/plugins/*/styles.css
-# .obsidian/themes/*/theme.css
-# .env
-# .env.*
-# *.key
-# *.pem
-# Intelligence/meetings/team-standups/*.md
-# Intelligence/meetings/client-calls/*.md
-# Intelligence/meetings/one-on-ones/*.md
-# Intelligence/meetings/general/*.md
-# Daily/*.md
-# private/
-# journal/
-# finance/
-# health/
-# PV_electrical/
+# Tool/runtime state that should never become graph knowledge.
+.understand-anything/
+.tmp/
+.firecrawl/
+.claude/
+.claude-plugin/
+**/.agents/
+.claudeignore
+.gitattributes
+CLAUDE.md
+**/CLAUDE.md
+AGENTS.md
+**/AGENTS.md
 
-# --- Detected directories (uncomment to exclude) ---
+# Obsidian application state and generic Obsidian/AI-OS material.
+.obsidian/
+Obsidian/
+skills/
 
-# fixtures/
+# Private or machine-local content.
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.key
+*.pem
+private/
+journal/
+finance/
+health/
+Intelligence/meetings/team-standups/*.md
+Intelligence/meetings/client-calls/*.md
+Intelligence/meetings/one-on-ones/*.md
+Intelligence/meetings/general/*.md
+PV_electrical/
 
-# --- Test file patterns (uncomment to exclude) ---
+# Binary archives and office/source containers. Keep extracted or converted
+# Markdown/CSV summaries instead of raw opaque files.
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+*.zip
+*.7z
+*.tar
+*.gz
+*.jar
+*.db
+*.lnk
 
-# *.test.*
-# *.spec.*
-# *.snap
+# Image/font/media assets. The graph should capture text and structure.
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*.webp
+*.mp3
+*.mp4
+*.woff
+*.woff2
+*.ttf
+*.eot
+
+# Generated, temporary, dependency, and build outputs.
+node_modules/
+vendor/
+venv/
+.venv/
+__pycache__/
+dist/
+build/
+out/
+coverage/
+.next/
+.cache/
+.turbo/
+target/
+obj/
+*.lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+*.min.js
+*.min.css
+*.map
+*.generated.*
+*.log
+fixtures/
+
+# Old extracted/reference software trees are not the active PVplant knowledge base.
+PV_books/RAPSim_095_source/
+
+# BIPV generated review scratch area. Keep final analysis and companion docs.
+BIPV_Codex_Edition/tmp/
+BIPV_Codex_Edition/companion/provenance/
+BIPV_Codex_Edition/companion/README_v1_*.md
+BIPV_Codex_Edition/companion/README_v2_*.md
+
+# Process logs are useful during a run but weak graph knowledge.
+**/action_log.md
+
+# Daily work folders are noisy; re-include only decision-useful summaries.
+Daily/
+!Daily/*/
+!Daily/**/report.md
+!Daily/**/price_evidence_report.md
+!Daily/**/decision_matrix.md
+!Daily/**/score_matrix.csv
+!Daily/**/evidence_index.csv
