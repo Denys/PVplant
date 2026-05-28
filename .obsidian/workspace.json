@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/source_1.md",
-                "mode": "source",
+                "file": "Daily/2026-05-28_iwin_h2_pdo_competitiveness/h2_pdo_competitiveness_review.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "source_1"
+              "title": "h2_pdo_competitiveness_review"
             }
           },
           {
@@ -67,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "h2_pdo_competitiveness_review.md",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +88,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -213,29 +214,40 @@
   },
   "active": "d41c82a007134820",
   "lastOpenFiles": [
-    "PV_books/2 Classification of PV Power Systems - PV PS -- modelling design control.pdf",
-    "PV_books/IEC 62548-2016 - Photovoltaic (PV) arrays - Design requirements -- 1_0.pdf",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-021-figure-026_1.png",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-021-figure-026.png",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-020-figure-025_1.png",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-020-figure-025.png",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-019-figure-024_1.png",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-019-figure-024.png",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-018-figure-023_1.png",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-018-figure-023.png",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-018-figure-022_1.png",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets/page-018-figure-022.png",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/tables_1.json",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/tables.json",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/source.md",
+    "GPT_project2080/webGPT_chats/2026-05-28_power_optimizer_devices_chat.md",
+    "Daily/2026-05-28_iwin_arch1_ultimate_infographic/source_copy_analysis.md",
+    "Daily/2026-05-28_iwin_arch1_ultimate_infographic",
+    "Daily/h4 iWin PV Blind Optimizer Topology CODEX.png",
+    "Daily/44 iWin PV Blind Optimizer Topology.png",
+    "Daily/h1_iwin_ts4_topology_infographic CODEX.png",
+    "Daily/iwin_ts4_topology_infographic CODEX.png",
+    "Daily/iwin_ts4_topology_infographic.png",
+    "Daily/h3_microinverter_topology_infographic CODEX.png",
+    "Daily/h3_microinverter_topology_infographic.png",
+    "Daily/h2_pdo_architecture_infographic CODEX.png",
+    "Daily/2026-05-28_iwin_h2_pdo_competitiveness/h2_pdo_architecture_infographic CODEX.png",
+    "Daily/H3 iWin PV Blind Microinverter Topology.png",
+    "Daily/Infographics_OLD",
+    "Daily/New folder",
+    "Daily/Unconfirmed 381997.crdownload",
+    "Daily/Unconfirmed 897262.crdownload",
+    "Daily/Unconfirmed 854361.crdownload",
+    "Daily/Unconfirmed 20785.crdownload",
+    "Daily/Unconfirmed 426418.crdownload",
+    "Daily/Unconfirmed 215467.crdownload",
+    "Daily/Unconfirmed 996705.crdownload",
+    "Daily/2026-05-28_iwin_h2_pdo_competitiveness/h2_pdo_architecture_infographic_prompt.md",
+    "GPT_project2080/iWin_H1_H2_H3_H4_Active_Architecture_Hypotheses_v2.md",
+    "Daily/2026-05-28_iwin_h2_pdo_competitiveness/h2_pdo_competitiveness_review.md",
+    "Daily/2026-05-28_iwin_h4_optimizer_topology/h4_infographic_prompt.md",
+    "Daily/2026-05-28_iwin_h4_optimizer_topology/h4_optimizer_topology.md",
+    "GPT_project2080/iWin_H1_H2_H3_H4_Architecture_Hypotheses.md",
+    "Daily/2026-05-28_iwin_h3_microinverter_topology/h3_infographic_prompt.md",
+    "Daily/2026-05-28_iwin_pdo_parallel_dco/parallel_dco_pdo_evaluation.md",
+    "Daily/2026-05-28_iwin_h3_microinverter_topology/h3_microinverter_topology.md",
+    "Daily/2026-05-28_iwin_ts4_topology_infographic/infographic_prompt.md",
     "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/source_1.md",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/manifest_2.json",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/manifest_1.json",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/manifest.json",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/docling_1.json",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/docling.json",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/assets",
-    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control",
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/source.md",
     "PV_books/source_1.md",
     "reports/drafts/2026-05-27_dc_link_output_voltage_review/output_voltage_decision_schematic.md",
     "BIPV_Assistant_PVplant_framework_update_2026-05-27/README_BIPV_Framework_Update_2026-05-27.md",
@@ -247,17 +259,6 @@
     "PVplant_iWin_BIPV_Knowledge_v2.md",
     "PVplant_Codex_Source_Map_v2.md",
     "PVplant_AGENTS_v3_Codex.md",
-    "README_BIPV_Framework_Update_2026-05-27.md",
-    "AGENTS_archive_OLD/AGENTS_v2.md",
-    "AGENTS_v2.md",
-    "AGENTS_archive_OLD/PVplant_iWin_BIPV_Knowledge_v2_reviewed.md",
-    "UPE_v5.0_CLD/Claude_Project_Instructions.md",
-    "UPE_v5.0_CLD/UPE_v5.0_walkthrough.md",
-    "UPE_v5.0_CLD/UPE_v5.0_user_guide.md",
-    "UPE_v5.0_CLD/UPE_v5.0_system_prompt.md",
-    "UPE_v5.0_CLD/UPE_v5.0_report_formats.md",
-    "UPE_v5.0_CLD/UPE_v5.0_patterns.md",
-    "UPE_v5.0_CLD/UPE_v5.0_core.md",
-    "UPE_v5.0_CLAUDE/UPE_v5.0_CLD/UPE_v5.0_walkthrough.md"
+    "README_BIPV_Framework_Update_2026-05-27.md"
   ]
 }

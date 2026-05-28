@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>iWin H1-H4 Power Topology Handout Dashboard</title>
+  <style>
+    :root {
+      --ink: #17202a;
+      --muted: #5a6673;
+      --line: #d7dde3;
+      --paper: #ffffff;
+      --wash: #f6f8fa;
+      --green: #146c43;
+      --green-soft: #e8f5ee;
+      --blue: #174ea6;
+      --blue-soft: #e8f0fe;
+      --amber: #9a5b00;
+      --amber-soft: #fff4da;
+      --red: #b42318;
+      --red-soft: #fff1f0;
+      --teal: #08747f;
+      --teal-soft: #e5f6f8;
+      --violet: #5b4aa3;
+      --violet-soft: #f0edff;
+      --shadow: 0 12px 28px rgba(20, 32, 45, 0.08);
+      --radius: 8px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      overflow-x: hidden;
+    }
+
+    body {
+      margin: 0;
+      background: var(--wash);
+      color: var(--ink);
+      font-family: Aptos, "Segoe UI", Arial, sans-serif;
+      line-height: 1.45;
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      width: min(1420px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 28px 0 42px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 22px;
+      align-items: stretch;
+      margin-bottom: 18px;
+    }
+
+    .hero,
+    .side-note,
+    .panel,
+    .arch-card,
+    .source-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 28px 30px;
+      min-height: 220px;
+    }
+
+    .kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(32px, 4vw, 56px);
+      line-height: 1.02;
+      max-width: 980px;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      margin: 0;
+      max-width: 980px;
+      color: #2d3844;
+      font-size: 17px;
+      overflow-wrap: anywhere;
+    }
+
+    .side-note {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .taxonomy-alert {
+      border-left: 5px solid var(--amber);
+      background: var(--amber-soft);
+      padding: 13px 14px;
+      border-radius: 6px;
+      color: #3c2a05;
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    .taxonomy-alert strong { display: block; margin-bottom: 5px; }
+
+    .small-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 12px;
+      background: #fbfcfd;
+    }
+
+    .metric b {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 2px;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 16px 0 22px;
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      padding: 10px 0;
+      background: rgba(246, 248, 250, 0.94);
+      backdrop-filter: blur(8px);
+    }
+
+    .nav a,
+    .nav button {
+      border: 1px solid var(--line);
+      background: var(--paper);
+      border-radius: 999px;
+      padding: 9px 13px;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .section {
+      margin-top: 26px;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 18px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+
+    .section-head p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      max-width: 720px;
+    }
+
+    .architecture-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .arch-card {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 430px;
+    }
+
+    .arch-card img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-bottom: 1px solid var(--line);
+      background: #eef2f5;
+    }
+
+    .arch-body {
+      padding: 15px 15px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex: 1;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 4px 8px;
+      font-size: 11px;
+      font-weight: 800;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+
+    .tag.green { background: var(--green-soft); color: var(--green); border-color: #bde4cd; }
+    .tag.blue { background: var(--blue-soft); color: var(--blue); border-color: #c5d7fb; }
+    .tag.amber { background: var(--amber-soft); color: var(--amber); border-color: #f3d690; }
+    .tag.red { background: var(--red-soft); color: var(--red); border-color: #f6b7b1; }
+    .tag.teal { background: var(--teal-soft); color: var(--teal); border-color: #b9e7ec; }
+    .tag.violet { background: var(--violet-soft); color: var(--violet); border-color: #d8d0ff; }
+
+    .arch-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: start;
+    }
+
+    .arch-title h3 {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.15;
+    }
+
+    .rank {
+      min-width: 44px;
+      text-align: center;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 5px 7px;
+      font-size: 12px;
+      color: var(--muted);
+      background: #fbfcfd;
+    }
+
+    .rank strong {
+      display: block;
+      color: var(--ink);
+      font-size: 17px;
+    }
+
+    .arch-card p {
+      margin: 0;
+      color: #33404d;
+      font-size: 14px;
+    }
+
+    .mini-table {
+      border-top: 1px solid var(--line);
+      margin-top: auto;
+      padding-top: 10px;
+      display: grid;
+      gap: 6px;
+      font-size: 13px;
+    }
+
+    .mini-row {
+      display: grid;
+      grid-template-columns: 92px 1fr;
+      gap: 8px;
+    }
+
+    .mini-row span:first-child {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .panel {
+      padding: 18px;
+    }
+
+    .matrix {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 13px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+    }
+
+    .matrix th,
+    .matrix td {
+      border-bottom: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      padding: 11px 10px;
+      vertical-align: top;
+      text-align: left;
+      overflow-wrap: anywhere;
+    }
+
+    .matrix th {
+      background: #eef2f5;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .matrix td:last-child,
+    .matrix th:last-child { border-right: 0; }
+    .matrix tr:last-child td { border-bottom: 0; }
+
+    .source-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .source-card {
+      padding: 15px;
+    }
+
+    .source-card h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .source-card ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+      color: #33404d;
+      font-size: 13px;
+    }
+
+    .source-card li { margin: 5px 0; }
+
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .filters {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filters button {
+      border: 1px solid var(--line);
+      background: var(--paper);
+      border-radius: 999px;
+      padding: 8px 10px;
+      font-weight: 800;
+      color: var(--ink);
+      cursor: pointer;
+    }
+
+    .filters button.active {
+      background: var(--ink);
+      color: white;
+      border-color: var(--ink);
+    }
+
+    .search {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 9px 14px;
+      min-width: min(360px, 100%);
+      font: inherit;
+      background: var(--paper);
+    }
+
+    .file-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      font-size: 13px;
+    }
+
+    .file-table th,
+    .file-table td {
+      padding: 10px 11px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      overflow-wrap: anywhere;
+    }
+
+    .file-table th {
+      background: #eef2f5;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .file-table tr:last-child td { border-bottom: 0; }
+
+    .path-link {
+      color: var(--blue);
+      font-weight: 700;
+      text-decoration-thickness: 1px;
+      overflow-wrap: anywhere;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .gallery a {
+      display: block;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      text-decoration: none;
+    }
+
+    .gallery img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .gallery span {
+      display: block;
+      padding: 10px 12px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .notes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .notes ul {
+      margin: 8px 0 0;
+      padding-left: 20px;
+    }
+
+    .notes li { margin: 7px 0; }
+
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 1120px) {
+      header,
+      .architecture-grid,
+      .source-grid,
+      .gallery,
+      .notes {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .shell { width: calc(100vw - 20px); padding-top: 16px; }
+      header,
+      .architecture-grid,
+      .source-grid,
+      .gallery,
+      .notes,
+      .small-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero { padding: 22px; }
+      .nav { position: static; }
+      .matrix,
+      .file-table {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+        font-size: 12px;
+      }
+      .mini-row { grid-template-columns: 82px 1fr; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .shell { width: 100%; padding: 0; }
+      .nav, .toolbar, footer { display: none; }
+      .hero, .side-note, .panel, .arch-card, .source-card, .gallery a {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+      a { text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <section class="hero">
+        <div class="kicker">PVplant / iWin BIPV pre-design handout</div>
+        <h1>H1-H4 Power Topology Dashboard</h1>
+        <p class="lead">
+          Evidence and artifacts gathered for the current iWin PV blind architecture set:
+          H1 per-window DC/DC, H2-PDO parallel DCO, H3 microinverter AC branch, and current H4/A4 per-blind optimizer string.
+          This is a decision-support handout, not a final design freeze.
+        </p>
+      </section>
+
+      <aside class="side-note">
+        <div class="taxonomy-alert">
+          <strong>Taxonomy warning</strong>
+          Older project files define H4 as "per-zone DC/AC microinverter". Current chat usage defines H4/A4 as
+          "per-blind DC optimizer -> series DC string -> facade/string inverter". This dashboard uses the current chat naming and flags the older H4 as legacy.
+        </div>
+        <div class="small-grid">
+          <div class="metric"><b>4</b><span>topology branches</span></div>
+          <div class="metric"><b>33+</b><span>indexed files</span></div>
+          <div class="metric"><b>40-45 V</b><span>main Vmp targets</span></div>
+          <div class="metric"><b>300-500 W</b><span>usable blind band</span></div>
+        </div>
+      </aside>
+    </header>
+
+    <nav class="nav" aria-label="Dashboard navigation">
+      <a href="#architectures">Architectures</a>
+      <a href="#matrix">Parameter Matrix</a>
+      <a href="#source-backbone">Source Backbone</a>
+      <a href="#gallery">Infographics</a>
+      <a href="#files">Relevant Files</a>
+      <button type="button" onclick="window.print()">Print / PDF</button>
+    </nav>
+
+    <section class="section" id="architectures">
+      <div class="section-head">
+        <div>
+          <h2>Current Architecture Handout Set</h2>
+          <p>Each branch preserves shading mitigation only when each blind module, or deliberate split section, gets independent MPPT before merge or conversion.</p>
+        </div>
+      </div>
+
+      <div class="architecture-grid">
+        <article class="arch-card" data-arch="H1">
+          <img src="assets/h1_window_dcdc.png" alt="H1 per-window DC/DC topology" />
+          <div class="arch-body">
+            <div class="arch-title">
+              <h3>H1: Per-window DC/DC MPPT</h3>
+              <div class="rank"><strong>A1</strong>41/60</div>
+            </div>
+            <div class="tag-row">
+              <span class="tag green">DC/DC</span>
+              <span class="tag teal">window-level MPPT</span>
+              <span class="tag amber">bus TBD</span>
+            </div>
+            <p>One DC/DC MPPT channel per blind/window, followed by a higher-voltage DC bus or multi-MPPT inverter at floor/facade level.</p>
+            <div class="mini-table">
+              <div class="mini-row"><span>Target</span><b>~30 Vmp legacy input; bus output architecture-defined</b></div>
+              <div class="mini-row"><span>Power</span><b>180-720 W envelope; 330-500 W practical focus</b></div>
+              <div class="mini-row"><span>Blocker</span><b>commercial blind-scale DC/DC product and service boundary</b></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="arch-card" data-arch="H2-PDO">
+          <img src="assets/h2_pdo.png" alt="H2-PDO parallel DCO topology" />
+          <div class="arch-body">
+            <div class="arch-title">
+              <h3>H2-PDO: Parallel-output DCO node</h3>
+              <div class="rank"><strong>custom</strong>open</div>
+            </div>
+            <div class="tag-row">
+              <span class="tag green">DC/DC</span>
+              <span class="tag violet">parallel DCO</span>
+              <span class="tag red">no OTS closure</span>
+            </div>
+            <p>Per-blind MPPT DCO outputs merge into a protected 48-60 V common DC node. This is not raw PV paralleling and not a TS4/SolarEdge-style series optimizer.</p>
+            <div class="mini-table">
+              <div class="mini-row"><span>Target</span><b>36-40 Vmp, Voc cold <58 V</b></div>
+              <div class="mini-row"><span>Power</span><b>300-400 W/blind; split 600-720 W</b></div>
+              <div class="mini-row"><span>Node</span><b>48-60 V, usually 3-4 blinds at 400 W</b></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="arch-card" data-arch="H3">
+          <img src="assets/h3_microinverter.png" alt="H3 microinverter topology" />
+          <div class="arch-body">
+            <div class="arch-title">
+              <h3>H3: Microinverter AC branch</h3>
+              <div class="rank"><strong>A2</strong>36/60</div>
+            </div>
+            <div class="tag-row">
+              <span class="tag blue">DC/AC</span>
+              <span class="tag teal">1 MPPT input/blind</span>
+              <span class="tag amber">grid profile</span>
+            </div>
+            <p>One blind per independent microinverter input. Preferred packaging is one fixed dual-input MI serving two blinds while keeping independent MPPT.</p>
+            <div class="mini-table">
+              <div class="mini-row"><span>Target</span><b>40 Vmp nominal, 38-42 V acceptable</b></div>
+              <div class="mini-row"><span>Power</span><b>300-480 W/blind, 400 W center</b></div>
+              <div class="mini-row"><span>AC</span><b>230 Vac 50 Hz for CH/EU certified product</b></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="arch-card" data-arch="H4-current">
+          <img src="assets/h4_optimizer.png" alt="H4 current optimizer string topology" />
+          <div class="arch-body">
+            <div class="arch-title">
+              <h3>H4/A4: Per-blind optimizer string</h3>
+              <div class="rank"><strong>A4</strong>45/60</div>
+            </div>
+            <div class="tag-row">
+              <span class="tag green">optimizer</span>
+              <span class="tag blue">facade inverter</span>
+              <span class="tag teal">best evidence</span>
+            </div>
+            <p>One DC optimizer per whole blind, outputs in series into a DC string and facade/string inverter. This is the current H4/A4 branch from this chat.</p>
+            <div class="mini-table">
+              <div class="mini-row"><span>Target</span><b>45 Vmp nominal, 42-48 V acceptable</b></div>
+              <div class="mini-row"><span>Power</span><b>330-500 W/blind; 550-600 W edge</b></div>
+              <div class="mini-row"><span>String</span><b>12-14 blinds/string, 540-630 Vmp</b></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="matrix">
+      <div class="section-head">
+        <div>
+          <h2>Parameter Matrix</h2>
+          <p>Values are pre-design targets derived from the current evidence package. Vendor electrical data, thermal limits, feedthroughs, service access, and grid-code region still gate ranking.</p>
+        </div>
+      </div>
+      <table class="matrix">
+        <thead>
+          <tr>
+            <th>Branch</th>
+            <th>Working power target</th>
+            <th>DC input target</th>
+            <th>Collection / output</th>
+            <th>Best candidate device classes</th>
+            <th>Main blocker</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>H1</b><br />Per-window DC/DC</td>
+            <td>330-500 W practical; 180-720 W envelope</td>
+            <td>Legacy ~30 Vmp PV-side input; converter output selected by bus/PCE</td>
+            <td>Higher-voltage DC bus or multi-MPPT floor inverter</td>
+            <td>Custom DC/DC, TI/Infineon references, possible DCO service box</td>
+            <td>No clean off-the-shelf blind-scale certified DC/DC channel</td>
+          </tr>
+          <tr>
+            <td><b>H2-PDO</b><br />Parallel DCO node</td>
+            <td>300-400 W preferred; 450 W edge; split 720 W</td>
+            <td>36-40 Vmp, Voc cold below ~58 V, Isc max <=14-15 A</td>
+            <td>48-60 V protected common DC node; 3-4 blinds/node at 400 W</td>
+            <td>Custom buck-boost DCO, Infineon REF_4SBB, TI TIDA-010949, Genasun/Victron as limited prototypes</td>
+            <td>No decision-grade commercial parallel-output DCO at target power/cost</td>
+          </tr>
+          <tr>
+            <td><b>H3</b><br />Microinverter</td>
+            <td>300-480 W, 400 W center; split 600-720 W</td>
+            <td>40 Vmp nominal, Voc cold <58 V, input ceiling <60 V</td>
+            <td>230 Vac 50 Hz fixed AC branch, gateway/grid profile required</td>
+            <td>APsystems EZ1/DS3, Hoymiles HMS, NEP BDM-300, TSUN 6-in-1, Enphase IQ8 benchmark</td>
+            <td>AC branch/service/grid-code burden and 60 Vdc input ceiling</td>
+          </tr>
+          <tr>
+            <td><b>H4/A4</b><br />Optimizer string</td>
+            <td>330-500 W, 400-500 W center; 550-600 W edge; split 720 W</td>
+            <td>45 Vmp nominal, Voc cold <68 V target, absolute optimizer input <80 V</td>
+            <td>Series optimized DC string, 12-14 blinds/string, facade/string inverter</td>
+            <td>Tigo TS4-A-O, Deye SUN-XL02-A/B, SolarEdge/Huawei as ecosystem benchmarks</td>
+            <td>String/RSD/vendor cabling compatibility and fixed headbox thermal/service evidence</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section" id="source-backbone">
+      <div class="section-head">
+        <div>
+          <h2>Source Backbone</h2>
+          <p>High-signal documents grouped by function. Use the full file index below for exact paths.</p>
+        </div>
+      </div>
+      <div class="source-grid">
+        <article class="source-card">
+          <h3>Architecture Memory</h3>
+          <div class="tag-row"><span class="tag amber">watch taxonomy</span></div>
+          <ul>
+            <li><a class="path-link" href="../../PVplant_iWin_BIPV_Knowledge_v2.md">PVplant_iWin_BIPV_Knowledge_v2.md</a></li>
+            <li><a class="path-link" href="../../GPT_project2080/iWin_H1_H2_H3_H4_Active_Architecture_Hypotheses_v2.md">Active Architecture Hypotheses v2</a></li>
+            <li><a class="path-link" href="../2026-05-26_iwin_topology_decision_matrix/decision_matrix.md">Decision matrix</a></li>
+          </ul>
+        </article>
+        <article class="source-card">
+          <h3>Commercial MLPE Evidence</h3>
+          <div class="tag-row"><span class="tag green">optimizer</span><span class="tag blue">microinverter</span></div>
+          <ul>
+            <li><a class="path-link" href="../2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/optimizer_deep_dive.md">Optimizer deep dive</a></li>
+            <li><a class="path-link" href="../2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/microinverter_deep_dive.md">Microinverter deep dive</a></li>
+            <li><a class="path-link" href="../2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/source_inventory.csv">Source inventory</a></li>
+          </ul>
+        </article>
+        <article class="source-card">
+          <h3>H2 Custom DCO Evidence</h3>
+          <div class="tag-row"><span class="tag violet">parallel DCO</span><span class="tag red">custom path</span></div>
+          <ul>
+            <li><a class="path-link" href="../2026-05-28_iwin_h2_pdo_competitiveness/h2_pdo_competitiveness_review.md">H2-PDO competitiveness review</a></li>
+            <li><a class="path-link" href="../2026-05-28_iwin_pdo_parallel_dco/parallel_dco_pdo_evaluation.md">Parallel DCO/PDO evaluation</a></li>
+            <li><a class="path-link" href="../2026-05-28_iwin_pdo_parallel_dco/source_table.csv">PDO source table</a></li>
+          </ul>
+        </article>
+        <article class="source-card">
+          <h3>Cost Evidence</h3>
+          <div class="tag-row"><span class="tag amber">retail/distributor</span></div>
+          <ul>
+            <li><a class="path-link" href="../2026-05-26_iwin_price_evidence/price_evidence_report.md">Price evidence report</a></li>
+            <li><a class="path-link" href="../2026-05-26_iwin_price_evidence/raw_price_table.csv">Raw price table</a></li>
+            <li><a class="path-link" href="../2026-05-26_iwin_price_evidence/normalized_cost_table.csv">Normalized cost table</a></li>
+          </ul>
+        </article>
+        <article class="source-card">
+          <h3>Current Topology Notes</h3>
+          <div class="tag-row"><span class="tag teal">handout-ready</span></div>
+          <ul>
+            <li><a class="path-link" href="../2026-05-28_iwin_h3_microinverter_topology/h3_microinverter_topology.md">H3 microinverter topology</a></li>
+            <li><a class="path-link" href="../2026-05-28_iwin_h4_optimizer_topology/h4_optimizer_topology.md">H4/A4 optimizer topology</a></li>
+            <li><a class="path-link" href="../2026-05-28_iwin_ts4_topology_infographic/infographic_prompt.md">TS4 prompt</a></li>
+          </ul>
+        </article>
+        <article class="source-card">
+          <h3>Raw Evidence Caches</h3>
+          <div class="tag-row"><span class="tag green">Firecrawl</span></div>
+          <ul>
+            <li><a class="path-link" href="../../.firecrawl/2026-05-28-h4-model/">H4 model cache</a></li>
+            <li><a class="path-link" href="../../.firecrawl/2026-05-28-pdo/">PDO cache</a></li>
+            <li><a class="path-link" href="../../.firecrawl/2026-05-28-h2-competitiveness/">H2 competitiveness cache</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="section-head">
+        <div>
+          <h2>Infographic Gallery</h2>
+          <p>Copied assets in this dashboard folder for portable viewing. Open each source for full resolution.</p>
+        </div>
+      </div>
+      <div class="gallery">
+        <a href="assets/h1_window_dcdc.png"><img src="assets/h1_window_dcdc.png" alt="H1 visual" /><span>H1 per-window DC/DC</span></a>
+        <a href="assets/h2_pdo.png"><img src="assets/h2_pdo.png" alt="H2 visual" /><span>H2-PDO parallel DCO</span></a>
+        <a href="assets/h3_microinverter.png"><img src="assets/h3_microinverter.png" alt="H3 visual" /><span>H3 microinverter</span></a>
+        <a href="assets/h4_optimizer.png"><img src="assets/h4_optimizer.png" alt="H4 visual" /><span>H4/A4 optimizer string</span></a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="notes">
+        <article class="panel">
+          <h2>Rules That Survive All Four Branches</h2>
+          <ul>
+            <li>One blind module means one whole PV blind/window assembly, not one slat.</li>
+            <li>Do not merge differently shaded blinds before independent MPPT.</li>
+            <li>Keep power electronics in fixed serviceable frame/headbox/facade zones.</li>
+            <li>The moving interface should carry protected PV DC only unless a full AC moving-interface safety case is built.</li>
+            <li>Vendor data must close Voc/cold, Isc/max, Vmp/Imp/Pmp, thermal envelope, connector, cable, feedthrough, shutdown, and replacement boundary.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h2>Fast Read</h2>
+          <ul>
+            <li>H4/A4 has the strongest off-the-shelf device and price evidence.</li>
+            <li>H3 is real and mature but pulls AC branch, grid-code, gateway, and service complexity into the facade.</li>
+            <li>H2-PDO is a serious custom electronics branch, not a near-term component-selection branch.</li>
+            <li>H1 remains the generic per-window DC/DC baseline but needs a selected converter and bus architecture.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="files">
+      <div class="section-head">
+        <div>
+          <h2>Relevant File Index</h2>
+          <p>Filter by architecture or search text. The source CSV is saved as <a class="path-link" href="source_file_index.csv">source_file_index.csv</a>.</p>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="Architecture filters">
+          <button class="active" data-filter="ALL" type="button">All</button>
+          <button data-filter="H1" type="button">H1</button>
+          <button data-filter="H2-PDO" type="button">H2-PDO</button>
+          <button data-filter="H3" type="button">H3</button>
+          <button data-filter="H4-current" type="button">H4/A4</button>
+          <button data-filter="Legacy-H4" type="button">Legacy H4</button>
+        </div>
+        <input id="search" class="search" type="search" placeholder="Search files, notes, evidence status..." />
+      </div>
+
+      <table class="file-table" id="fileTable">
+        <thead>
+          <tr>
+            <th>Arch</th>
+            <th>Role</th>
+            <th>Evidence</th>
+            <th>File / Folder</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-arch="ALL"><td>ALL</td><td>root instructions</td><td>project authority</td><td><a class="path-link" href="../../AGENTS.md">../../AGENTS.md</a></td><td>PVplant operating rules, evidence taxonomy, hard gates.</td></tr>
+          <tr data-arch="ALL"><td>ALL</td><td>canonical knowledge base</td><td>project-derived</td><td><a class="path-link" href="../../PVplant_iWin_BIPV_Knowledge_v2.md">../../PVplant_iWin_BIPV_Knowledge_v2.md</a></td><td>Shared assumptions and older H1-H4 definitions.</td></tr>
+          <tr data-arch="ALL"><td>ALL</td><td>active hypothesis pack</td><td>project-derived</td><td><a class="path-link" href="../../GPT_project2080/iWin_H1_H2_H3_H4_Active_Architecture_Hypotheses_v2.md">../../GPT_project2080/iWin_H1_H2_H3_H4_Active_Architecture_Hypotheses_v2.md</a></td><td>Corrected May 28 map; current H4/A4 naming differs.</td></tr>
+          <tr data-arch="ALL"><td>ALL</td><td>decision matrix</td><td>verified + inference</td><td><a class="path-link" href="../2026-05-26_iwin_topology_decision_matrix/decision_matrix.md">../2026-05-26_iwin_topology_decision_matrix/decision_matrix.md</a></td><td>A1-A4 scoring and shortlist.</td></tr>
+          <tr data-arch="ALL"><td>ALL</td><td>score matrix</td><td>verified + inference</td><td><a class="path-link" href="../2026-05-26_iwin_topology_decision_matrix/score_matrix.csv">../2026-05-26_iwin_topology_decision_matrix/score_matrix.csv</a></td><td>Per-score source/confidence/missing data.</td></tr>
+          <tr data-arch="ALL"><td>ALL</td><td>price evidence report</td><td>price evidence</td><td><a class="path-link" href="../2026-05-26_iwin_price_evidence/price_evidence_report.md">../2026-05-26_iwin_price_evidence/price_evidence_report.md</a></td><td>Cost anchors and driver comparison.</td></tr>
+          <tr data-arch="ALL"><td>ALL</td><td>raw price table</td><td>price evidence</td><td><a class="path-link" href="../2026-05-26_iwin_price_evidence/raw_price_table.csv">../2026-05-26_iwin_price_evidence/raw_price_table.csv</a></td><td>Raw price extraction.</td></tr>
+          <tr data-arch="ALL"><td>ALL</td><td>normalized cost table</td><td>derived price</td><td><a class="path-link" href="../2026-05-26_iwin_price_evidence/normalized_cost_table.csv">../2026-05-26_iwin_price_evidence/normalized_cost_table.csv</a></td><td>EUR per controllable-unit estimates.</td></tr>
+          <tr data-arch="ALL"><td>ALL</td><td>topology synthesis</td><td>verified + inference</td><td><a class="path-link" href="../2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/report.md">../2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/report.md</a></td><td>Initial cross-topology Firecrawl synthesis.</td></tr>
+          <tr data-arch="ALL"><td>ALL</td><td>source inventory</td><td>source list</td><td><a class="path-link" href="../2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/source_inventory.csv">../2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/source_inventory.csv</a></td><td>Source type, relevance, limitations, bucket.</td></tr>
+          <tr data-arch="ALL"><td>ALL</td><td>evidence index</td><td>evidence rows</td><td><a class="path-link" href="../2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/evidence_index.csv">../2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/evidence_index.csv</a></td><td>Extracted evidence rows.</td></tr>
+          <tr data-arch="H1"><td>H1</td><td>infographic</td><td>project artifact</td><td><a class="path-link" href="../../GPT_project2080/H1_window_dcdc_mppt_floorDCAC.png">../../GPT_project2080/H1_window_dcdc_mppt_floorDCAC.png</a></td><td>Per-window DC/DC visual.</td></tr>
+          <tr data-arch="H1"><td>H1</td><td>infographic</td><td>project artifact</td><td><a class="path-link" href="../../GPT_project2080/H1-SDO-infographic_WEB.png">../../GPT_project2080/H1-SDO-infographic_WEB.png</a></td><td>H1 SDO visual variant.</td></tr>
+          <tr data-arch="H2-PDO"><td>H2-PDO</td><td>competitiveness review</td><td>inference + sources</td><td><a class="path-link" href="../2026-05-28_iwin_h2_pdo_competitiveness/h2_pdo_competitiveness_review.md">../2026-05-28_iwin_h2_pdo_competitiveness/h2_pdo_competitiveness_review.md</a></td><td>Neighbor-chat H2-PDO review.</td></tr>
+          <tr data-arch="H2-PDO"><td>H2-PDO</td><td>infographic</td><td>project artifact</td><td><a class="path-link" href="../2026-05-28_iwin_h2_pdo_competitiveness/h2_pdo_architecture_infographic.png">../2026-05-28_iwin_h2_pdo_competitiveness/h2_pdo_architecture_infographic.png</a></td><td>H2-PDO infographic.</td></tr>
+          <tr data-arch="H2-PDO"><td>H2-PDO</td><td>prompt</td><td>prompt artifact</td><td><a class="path-link" href="../2026-05-28_iwin_h2_pdo_competitiveness/h2_pdo_architecture_infographic_prompt.md">../2026-05-28_iwin_h2_pdo_competitiveness/h2_pdo_architecture_infographic_prompt.md</a></td><td>H2 infographic prompt.</td></tr>
+          <tr data-arch="H2-PDO"><td>H2-PDO</td><td>PDO evaluation</td><td>Firecrawl-backed</td><td><a class="path-link" href="../2026-05-28_iwin_pdo_parallel_dco/parallel_dco_pdo_evaluation.md">../2026-05-28_iwin_pdo_parallel_dco/parallel_dco_pdo_evaluation.md</a></td><td>Parallel DCO sources and bus sizing.</td></tr>
+          <tr data-arch="H2-PDO"><td>H2-PDO</td><td>source table</td><td>source list</td><td><a class="path-link" href="../2026-05-28_iwin_pdo_parallel_dco/source_table.csv">../2026-05-28_iwin_pdo_parallel_dco/source_table.csv</a></td><td>PDO source table.</td></tr>
+          <tr data-arch="H3"><td>H3</td><td>topology note</td><td>verified + inference</td><td><a class="path-link" href="../2026-05-28_iwin_h3_microinverter_topology/h3_microinverter_topology.md">../2026-05-28_iwin_h3_microinverter_topology/h3_microinverter_topology.md</a></td><td>H3 values and device-fit table.</td></tr>
+          <tr data-arch="H3"><td>H3</td><td>infographic</td><td>project artifact</td><td><a class="path-link" href="../2026-05-28_iwin_h3_microinverter_topology/h3_microinverter_topology_infographic.png">../2026-05-28_iwin_h3_microinverter_topology/h3_microinverter_topology_infographic.png</a></td><td>H3 infographic.</td></tr>
+          <tr data-arch="H3"><td>H3</td><td>prompt</td><td>prompt artifact</td><td><a class="path-link" href="../2026-05-28_iwin_h3_microinverter_topology/h3_infographic_prompt.md">../2026-05-28_iwin_h3_microinverter_topology/h3_infographic_prompt.md</a></td><td>H3 infographic prompt.</td></tr>
+          <tr data-arch="H3"><td>H3</td><td>microinverter deep dive</td><td>verified + inference</td><td><a class="path-link" href="../2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/microinverter_deep_dive.md">../2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/microinverter_deep_dive.md</a></td><td>Vendor/product extraction.</td></tr>
+          <tr data-arch="H4-current"><td>H4/A4</td><td>topology note</td><td>verified + inference</td><td><a class="path-link" href="../2026-05-28_iwin_h4_optimizer_topology/h4_optimizer_topology.md">../2026-05-28_iwin_h4_optimizer_topology/h4_optimizer_topology.md</a></td><td>Current optimizer-string branch.</td></tr>
+          <tr data-arch="H4-current"><td>H4/A4</td><td>infographic</td><td>project artifact</td><td><a class="path-link" href="../2026-05-28_iwin_h4_optimizer_topology/h4_optimizer_topology_infographic.png">../2026-05-28_iwin_h4_optimizer_topology/h4_optimizer_topology_infographic.png</a></td><td>H4/A4 infographic.</td></tr>
+          <tr data-arch="H4-current"><td>H4/A4</td><td>prompt</td><td>prompt artifact</td><td><a class="path-link" href="../2026-05-28_iwin_h4_optimizer_topology/h4_infographic_prompt.md">../2026-05-28_iwin_h4_optimizer_topology/h4_infographic_prompt.md</a></td><td>H4 infographic prompt.</td></tr>
+          <tr data-arch="H4-current"><td>H4/A4</td><td>optimizer deep dive</td><td>verified + inference</td><td><a class="path-link" href="../2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/optimizer_deep_dive.md">../2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/optimizer_deep_dive.md</a></td><td>Tigo, Deye, SolarEdge, Huawei, TI, Analog/Maxim.</td></tr>
+          <tr data-arch="H4-current"><td>H4/A4</td><td>TS4 infographic</td><td>project artifact</td><td><a class="path-link" href="../2026-05-28_iwin_ts4_topology_infographic/iwin_ts4_topology_infographic.png">../2026-05-28_iwin_ts4_topology_infographic/iwin_ts4_topology_infographic.png</a></td><td>Earlier TS4-A-O infographic.</td></tr>
+          <tr data-arch="Legacy-H4"><td>Legacy H4</td><td>legacy visual</td><td>project artifact</td><td><a class="path-link" href="../../GPT_project2080/H4_perZone_DCAC.png">../../GPT_project2080/H4_perZone_DCAC.png</a></td><td>Older H4 equals per-zone DC/AC. Not current H4/A4.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <span>Generated 2026-05-28 from local PVplant Daily, GPT_project2080, Firecrawl, and price-evidence artifacts.</span>
+      <span>Use as pre-design evidence dashboard only. Final architecture ranking remains vendor-data gated.</span>
+    </footer>
+  </div>
+
+  <script>
+    const buttons = Array.from(document.querySelectorAll("[data-filter]"));
+    const rows = Array.from(document.querySelectorAll("#fileTable tbody tr"));
+    const search = document.getElementById("search");
+    let current = "ALL";
+
+    function applyFilters() {
+      const q = search.value.trim().toLowerCase();
+      rows.forEach((row) => {
+        const arch = row.dataset.arch;
+        const matchesArch = current === "ALL" || arch === current || (current !== "ALL" && arch === "ALL");
+        const matchesQuery = !q || row.textContent.toLowerCase().includes(q);
+        row.style.display = matchesArch && matchesQuery ? "" : "none";
+      });
+    }
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        current = button.dataset.filter;
+        buttons.forEach((b) => b.classList.toggle("active", b === button));
+        applyFilters();
+      });
+    });
+
+    search.addEventListener("input", applyFilters);
+  </script>
+</body>
+</html>

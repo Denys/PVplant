@@ -1,11 +1,141 @@
 {
   "version": "1.0.0",
-  "gitCommitHash": "41f8c4722a3e762bdcf10e4b376fe671ee9556e2",
-  "generatedAt": "2026-05-26T19:40:13.578Z",
+  "gitCommitHash": "bdc4104e00eef5445845209b38338909de9452de",
+  "generatedAt": "2026-05-28T11:56:24.133Z",
   "files": {
+    ".memory/daily/2026-05-26.md": {
+      "filePath": ".memory/daily/2026-05-26.md",
+      "contentHash": "f795d6b6075a8d40a7d0e3217457333f29d920cb7484960f3527bddea824b680",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 61,
+      "hasStructuralAnalysis": true
+    },
+    ".memory/hubs/Agent Context Bootstrap and Memory Layer.md": {
+      "filePath": ".memory/hubs/Agent Context Bootstrap and Memory Layer.md",
+      "contentHash": "e1901cc419b500b1f16461b40a6b7628667e39840abb3ace87d3fbc9619a2204",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 46,
+      "hasStructuralAnalysis": true
+    },
+    ".memory/hubs/Conflict Register.md": {
+      "filePath": ".memory/hubs/Conflict Register.md",
+      "contentHash": "0bf17f667bc427106552f1fdcb85c36ac2786494914c62c16878e01d9cef9d49",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    ".memory/hubs/Current State Mirror.md": {
+      "filePath": ".memory/hubs/Current State Mirror.md",
+      "contentHash": "3b78e4e57d533942af8ce9a26631989a9e185a915ccf486a1f4adb801075d7a7",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 56,
+      "hasStructuralAnalysis": true
+    },
+    ".memory/hubs/Derived Themes Hub.md": {
+      "filePath": ".memory/hubs/Derived Themes Hub.md",
+      "contentHash": "773135d78df2223121557264626c99b97a0d96fc438586c8dde390ac7a55a572",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 45,
+      "hasStructuralAnalysis": true
+    },
+    ".memory/hubs/Evidence Index.md": {
+      "filePath": ".memory/hubs/Evidence Index.md",
+      "contentHash": "2a0c9ef89387d3ad3588889449f021216d2622274d4219ac0e153fdd59bcb16d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 77,
+      "hasStructuralAnalysis": true
+    },
+    ".memory/hubs/Source Collections Hub.md": {
+      "filePath": ".memory/hubs/Source Collections Hub.md",
+      "contentHash": "6dfcfbd76bb42ad486c46948e9a53f0809e1f66abdbc09bc85d324421c015767",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 39,
+      "hasStructuralAnalysis": true
+    },
+    ".memory/hubs/Source Precedence and Evidence Rules.md": {
+      "filePath": ".memory/hubs/Source Precedence and Evidence Rules.md",
+      "contentHash": "684423446878554961f1f573b9751b4d315b29d3f0c6b46cab3ec30ceba265dc",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 34,
+      "hasStructuralAnalysis": true
+    },
+    ".memory/hubs/Validation and Open Items.md": {
+      "filePath": ".memory/hubs/Validation and Open Items.md",
+      "contentHash": "ef2851980e26fad8e0da516164006d1d5e17666c4ac786a6a5fdaa03cc1900fe",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 77,
+      "hasStructuralAnalysis": true
+    },
+    ".memory/README.md": {
+      "filePath": ".memory/README.md",
+      "contentHash": "a10a0595ebd3ab14ac7031606d1e532b5ab286d5d6d36c279b0133c400d56ef6",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 27,
+      "hasStructuralAnalysis": true
+    },
+    "AGENTS_OLD.md": {
+      "filePath": "AGENTS_OLD.md",
+      "contentHash": "254d3f55cf6c05e55ea4fccdd5b471f5dbdebf13c79f9a8553303fd701e6b0f1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 66,
+      "hasStructuralAnalysis": true
+    },
+    "AGENTS.md": {
+      "filePath": "AGENTS.md",
+      "contentHash": "f198b2556b1f2d40c34b328ca9187b0649a892a5832dd465c634c9dae4183bb7",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 704,
+      "hasStructuralAnalysis": true
+    },
+    "BIPV_Codex_Edition/AGENTS.md": {
+      "filePath": "BIPV_Codex_Edition/AGENTS.md",
+      "contentHash": "7bf9a1ea3f8b4d33658fbc8f82a5f941ee26779ac58cc457d2d1b5c0da73a807",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 75,
+      "hasStructuralAnalysis": true
+    },
     "BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Audit.md": {
       "filePath": "BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Audit.md",
-      "contentHash": "d40a4fe5bf9e13abef2452f3421da6d1d2ea472b87e348c24e45b1fe718e4239",
+      "contentHash": "385d5397c40fb326f459ddf69c748efbb243b29ef3f3802a88857e227f544d1c",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -15,7 +145,7 @@
     },
     "BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Audits_Graphical_Representation.md": {
       "filePath": "BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Audits_Graphical_Representation.md",
-      "contentHash": "8277a4dfade48df3a2306c9358eaa65007c493210ee2330e8604325c0f5d51aa",
+      "contentHash": "a0bf94514ca17e928b9b2f2f1b799569eff59db4a71c7edd18f5f30a7ec515bf",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -25,7 +155,7 @@
     },
     "BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Missing_Information_Map.md": {
       "filePath": "BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Missing_Information_Map.md",
-      "contentHash": "59543d3672c51ec9f45d9451565d7dcddb687cf4861f43977c3039b6c366ae5c",
+      "contentHash": "1bf6b707160f0560b8bf1714786bd8e1073ef0d01bcaa805978d3bf939f01c73",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -35,7 +165,7 @@
     },
     "BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Missing_Information_Questionnaire.md": {
       "filePath": "BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Missing_Information_Questionnaire.md",
-      "contentHash": "d9d2eadf722842567b7bccf0dbbd93ba1779a3bf55a50056b5eae18b40214b34",
+      "contentHash": "615443df449a9376a8348468d5bedea295b088e3a538414eb2de63d8e60ca17f",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -45,7 +175,7 @@
     },
     "BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Primary_Source_Reevaluation.md": {
       "filePath": "BIPV_Codex_Edition/analysis/BIPV_Presentation_Deck_Primary_Source_Reevaluation.md",
-      "contentHash": "90d97817a694fd456d009dd8001f114c17f740a9d52a6fef287b14a6cfaa02fd",
+      "contentHash": "ed2e12410072dc9d5ce41b960dec8fd4e4a09edd8baa4babfd48c95069f50425",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -55,7 +185,7 @@
     },
     "BIPV_Codex_Edition/analysis/Firecrawl for evidence acquisition.md": {
       "filePath": "BIPV_Codex_Edition/analysis/Firecrawl for evidence acquisition.md",
-      "contentHash": "d974d15aca387363a78d2d58eb2202fd1ec45566ade53eb77769d2f76fff8cf1",
+      "contentHash": "2c13bc451bf561769cf6b5833afcb5d5d16b833d3f6ee850717f22690717c5bc",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -65,7 +195,7 @@
     },
     "BIPV_Codex_Edition/analysis/Firecrawl_Research_Instructions_Lugano_iWin_Office_Facade.md": {
       "filePath": "BIPV_Codex_Edition/analysis/Firecrawl_Research_Instructions_Lugano_iWin_Office_Facade.md",
-      "contentHash": "bd2cfa9fef84401227adccc17623ceb8e9b5053e1b41b28304b94dea7ee97b0f",
+      "contentHash": "cdb38b8b531fe74b00788393233458a9fb3cae574985aafcab5d84fb0c233586",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -75,7 +205,7 @@
     },
     "BIPV_Codex_Edition/analysis/Research_Prompt_Lugano_iWin_Office_Facade_Diagrams.md": {
       "filePath": "BIPV_Codex_Edition/analysis/Research_Prompt_Lugano_iWin_Office_Facade_Diagrams.md",
-      "contentHash": "72845645d16c5be116a263f558fd491e8c4732ebf38240b205a15def76baf5ba",
+      "contentHash": "9feae272ce2486dc3c136c6e3d4fe025eafe3d6a0d8384fcabd2d2f6da4808ba",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -85,7 +215,7 @@
     },
     "BIPV_Codex_Edition/analysis/Research_Prompt_Lugano_iWin_Office_Facade.md": {
       "filePath": "BIPV_Codex_Edition/analysis/Research_Prompt_Lugano_iWin_Office_Facade.md",
-      "contentHash": "8e42ddca70175c2a2082d3bcdff0c19094b2d686433176af0b166ba3f7dd21b6",
+      "contentHash": "1dc86478c997eea56c82872f5b94176c5a1f2d4a11b0cbecc3b9e6d0261d21b9",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -95,7 +225,7 @@
     },
     "BIPV_Codex_Edition/BIPV_Brain.md": {
       "filePath": "BIPV_Codex_Edition/BIPV_Brain.md",
-      "contentHash": "7c42d04afa332e826f773d3b7c698549775174eecd396440c6744e16dd9933a3",
+      "contentHash": "bbf1f98f8a344b160d27db1ea8d0065bfa3ef1a284ccc295cfb655301381b358",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -105,7 +235,7 @@
     },
     "BIPV_Codex_Edition/companion/01_Reading_Tracker.md": {
       "filePath": "BIPV_Codex_Edition/companion/01_Reading_Tracker.md",
-      "contentHash": "eff1ef4240f8c18b5bc2b4f44b32677fe1e8fd9a43614672dd6856437f50d2d3",
+      "contentHash": "e4571344211aac69df8ad43a34aa5142c7e53dc55e93c88c6d45fc1c1d847a55",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -115,7 +245,7 @@
     },
     "BIPV_Codex_Edition/companion/02_Weekly_Checklist.md": {
       "filePath": "BIPV_Codex_Edition/companion/02_Weekly_Checklist.md",
-      "contentHash": "e9e67bcf43e5de9a34dcee1906ca9da4f7f07f8c17a39f82bac421d77e094b3b",
+      "contentHash": "b604c012095a0e8f5859c0bcb3abf962aabc90c711b0682e37e6ae7319c2808f",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -125,7 +255,7 @@
     },
     "BIPV_Codex_Edition/companion/03_iWin_FMEA_Template.md": {
       "filePath": "BIPV_Codex_Edition/companion/03_iWin_FMEA_Template.md",
-      "contentHash": "eb8a0a1813fa3d7be55292ff474cef5f3c27bcd6274d66182beee99f13bfeb35",
+      "contentHash": "b84a6dbf5af4c03ee3775281e554802ff67cae17d547034ec283b40f179b0979",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -135,7 +265,7 @@
     },
     "BIPV_Codex_Edition/companion/04_Capstone_Design_Memo_Template.md": {
       "filePath": "BIPV_Codex_Edition/companion/04_Capstone_Design_Memo_Template.md",
-      "contentHash": "e1f882e7b1eea378894d1d792e360e3f86d76abd810ee7b16432a4551fdf6381",
+      "contentHash": "e47d5e363d8da0c3d21cd857851716ac335c07bff879cb458c9ba81a458e0d8b",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -145,7 +275,7 @@
     },
     "BIPV_Codex_Edition/companion/05_Assumption_Register.md": {
       "filePath": "BIPV_Codex_Edition/companion/05_Assumption_Register.md",
-      "contentHash": "e1c69bf9ebbf338ce6a2c2831614593316e35e9d30be266811c6ed8b6eb39a1e",
+      "contentHash": "f1c3d14c0ef5661b81441b7e31482c7afc4ae5e87c9460690df095bb32570629",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -155,7 +285,7 @@
     },
     "BIPV_Codex_Edition/companion/06_Standards_and_Design_Envelope.md": {
       "filePath": "BIPV_Codex_Edition/companion/06_Standards_and_Design_Envelope.md",
-      "contentHash": "e79cb87be24a9c14ba55c5f3e59327d25c7bf5deb4d060ff83b6a74c64a9a34e",
+      "contentHash": "f4bb2d8fbcad1bb14f243230c351c8958cc686985a26bcada7aed453ce0f0763",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -165,7 +295,7 @@
     },
     "BIPV_Codex_Edition/companion/07_Commissioning_and_Acceptance_Template.md": {
       "filePath": "BIPV_Codex_Edition/companion/07_Commissioning_and_Acceptance_Template.md",
-      "contentHash": "5b097f29731445f09cc9ca481731c6fd3d668fea5dc7656a897d8511423012b8",
+      "contentHash": "024773ca9c54c46775adb3e8ebd65f88a605cef0dc9ac0e0b50f8834fb6020e4",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -175,7 +305,7 @@
     },
     "BIPV_Codex_Edition/companion/08_Vendor_Technical_Questionnaire.md": {
       "filePath": "BIPV_Codex_Edition/companion/08_Vendor_Technical_Questionnaire.md",
-      "contentHash": "0d9a732d84be38f5c93fefcdc02b6fd219dd6dc31a9b819e1908436917bc148c",
+      "contentHash": "2283ab404ab76da338f7f37fa4e9c5ebff47b077526588f51523c9746ff15976",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -195,7 +325,7 @@
     },
     "BIPV_Codex_Edition/companion/10_Vendor_Evaluation_Rubric.md": {
       "filePath": "BIPV_Codex_Edition/companion/10_Vendor_Evaluation_Rubric.md",
-      "contentHash": "955aa87b73e1910a06de756a49d39a3a270756faf0d62a379b8c5503244947c2",
+      "contentHash": "e50e4c1b25bd66d60b64280820989649da0b2a86a3c3543122f06b5ee9b8e936",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -205,7 +335,7 @@
     },
     "BIPV_Codex_Edition/companion/11_Vendor_Data_Request_Cover_Note.md": {
       "filePath": "BIPV_Codex_Edition/companion/11_Vendor_Data_Request_Cover_Note.md",
-      "contentHash": "bf3cdde91afd64fc4b3f902c1d8f08b481b92c31017420c80153fdee117a6826",
+      "contentHash": "7f99dde6375138b0ffcad5094e1dab693db1f7bce2057ecb2ff25b665db0e95c",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -215,7 +345,7 @@
     },
     "BIPV_Codex_Edition/companion/README_v3_iWin_Project_Companion.md": {
       "filePath": "BIPV_Codex_Edition/companion/README_v3_iWin_Project_Companion.md",
-      "contentHash": "cfcf9bbe0eef620b319c36a9fe0ca5944726fc19d0461fe4a0e0dbe21bad0133",
+      "contentHash": "474b0609aa9165a41e9101bdfae4d3d7d7552e71d730af2511ea99a3e558ac6c",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -225,7 +355,7 @@
     },
     "BIPV_Codex_Edition/companion/reference/The 20% of BIPV design that gives you the other 80%.md": {
       "filePath": "BIPV_Codex_Edition/companion/reference/The 20% of BIPV design that gives you the other 80%.md",
-      "contentHash": "126145675f10bb7bf35a05a6b97469f975dad48a33b5723393605371b47a64c3",
+      "contentHash": "fde2480ae49f68c4e09b4ace3ebe86b057fe2fd789a6f858d5ebe54c41e03752",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -235,7 +365,7 @@
     },
     "BIPV_Codex_Edition/PLAN.md": {
       "filePath": "BIPV_Codex_Edition/PLAN.md",
-      "contentHash": "037a72971617c209dfdea5da35a4215bd3c07467c09880bfa6c4651edfe6a5a0",
+      "contentHash": "b2fcfa4cacd5afc52d55229b9dcedc88cc0f4a675a94176af6519790dbcaf0b4",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -245,7 +375,7 @@
     },
     "BIPV_Codex_Edition/README.md": {
       "filePath": "BIPV_Codex_Edition/README.md",
-      "contentHash": "0bf9f99bfd9a09b33073215a833e9872e14d740a9bbb1deb927d521902bd9539",
+      "contentHash": "f733ddccb2f5f1816f4951937bb15d2780c34bfd0cd1a214ba6150f0057b67b4",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -253,59 +383,19 @@
       "totalLines": 18,
       "hasStructuralAnalysis": true
     },
-    "claude_literature/_Prompts for use of evidence to report pipeline - skill.md": {
-      "filePath": "claude_literature/_Prompts for use of evidence to report pipeline - skill.md",
-      "contentHash": "4ad5574e8de9ef7c746f3a47702c9623311922f7db9f6584e99ac0647f5434b9",
+    "CHANGELOG.md": {
+      "filePath": "CHANGELOG.md",
+      "contentHash": "669afea0a89f4852bb1dd9688782710a17628daaf52efe70fa7e6f78b2acf409",
       "functions": [],
       "classes": [],
       "imports": [],
       "exports": [],
-      "totalLines": 39,
+      "totalLines": 13,
       "hasStructuralAnalysis": true
     },
-    "claude_literature/source_inventory.md": {
-      "filePath": "claude_literature/source_inventory.md",
-      "contentHash": "6d9bbd4f9bc13a3730b04a643de703caa6ac0bf47b0f21d736e2e8804d99860b",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 20,
-      "hasStructuralAnalysis": true
-    },
-    "Context/business.md": {
-      "filePath": "Context/business.md",
-      "contentHash": "555f5f0b43e07d86629cb76e4f8be716db737e6766be3132e421925b876f7890",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 32,
-      "hasStructuralAnalysis": true
-    },
-    "Context/infrastructure.md": {
-      "filePath": "Context/infrastructure.md",
-      "contentHash": "447ebb8765e453d2df7d14846d2a3cefc04afd416ba0ff363da3640071c41be7",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 52,
-      "hasStructuralAnalysis": true
-    },
-    "Context/me.md": {
-      "filePath": "Context/me.md",
-      "contentHash": "e301ee56575993057d85229ee68fc8fd21155a10fa7fff518b41340795544583",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 84,
-      "hasStructuralAnalysis": true
-    },
-    "Context/strategy.md": {
-      "filePath": "Context/strategy.md",
-      "contentHash": "d6b72bf717c48fa6ee3df40796bddead6f0959e8de3f1ed75efb16de4c36891d",
+    "CHECKPOINT.md": {
+      "filePath": "CHECKPOINT.md",
+      "contentHash": "766d33c453dde82891cdca5179ee2f31f97551aee431555e1ad0aa9c878dbcf1",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -313,9 +403,39 @@
       "totalLines": 62,
       "hasStructuralAnalysis": true
     },
+    "claude_literature/source_inventory.md": {
+      "filePath": "claude_literature/source_inventory.md",
+      "contentHash": "c36d00c31ceb1ba27a5e2b1181f36f7e14c90882cebc2dd010a261d60d3fe08e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 20,
+      "hasStructuralAnalysis": true
+    },
+    "CLAUDE_Obsidian.md": {
+      "filePath": "CLAUDE_Obsidian.md",
+      "contentHash": "cba8ccdfc606910299a202e0612d597c60d36ed2e5bf179f2ac2ac37269cca39",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 210,
+      "hasStructuralAnalysis": true
+    },
+    "CLAUDE.md.pre-UPE-v5.bak": {
+      "filePath": "CLAUDE.md.pre-UPE-v5.bak",
+      "contentHash": "cba8ccdfc606910299a202e0612d597c60d36ed2e5bf179f2ac2ac37269cca39",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 210,
+      "hasStructuralAnalysis": false
+    },
     "Context/Understand-Anything_PVplant_Cheat_Sheet.md": {
       "filePath": "Context/Understand-Anything_PVplant_Cheat_Sheet.md",
-      "contentHash": "ced683a141102e900d02c98895286e8088919c39038ad95baa155aa73990af07",
+      "contentHash": "defe4f32f707435c5b683087f3a2137bf44aa3ed262f0da684591a25b4908c13",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -323,229 +443,9 @@
       "totalLines": 358,
       "hasStructuralAnalysis": true
     },
-    "firecrawl_BIPV_prompts.md": {
-      "filePath": "firecrawl_BIPV_prompts.md",
-      "contentHash": "d76800fdfa39a1d686c30ba5cdc1d27e86a88983f26661a587978c430b387fbc",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 213,
-      "hasStructuralAnalysis": true
-    },
-    "GPT_project2080/BIPV_Assistant_UPE_v3_1_Prompt_Pack.md": {
-      "filePath": "GPT_project2080/BIPV_Assistant_UPE_v3_1_Prompt_Pack.md",
-      "contentHash": "0f3221ebaad6bf76b0a05748bd0c784d9a22d811e8005c02d4fe933f7afd36c2",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 857,
-      "hasStructuralAnalysis": true
-    },
-    "GPT_project2080/iWin_Project_Companion/01_Reading_Tracker.md": {
-      "filePath": "GPT_project2080/iWin_Project_Companion/01_Reading_Tracker.md",
-      "contentHash": "e64e14156368a50f40c93c4a82c7e4923f0eda86820fb41e48c165e58e79f425",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 21,
-      "hasStructuralAnalysis": true
-    },
-    "GPT_project2080/iWin_Project_Companion/02_Weekly_Checklist.md": {
-      "filePath": "GPT_project2080/iWin_Project_Companion/02_Weekly_Checklist.md",
-      "contentHash": "369fa75ede4f931f27e2c564d36266b2d61fbcb0b9ae2991c3e13f3d1138413b",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 83,
-      "hasStructuralAnalysis": true
-    },
-    "GPT_project2080/iWin_Project_Companion/03_iWin_FMEA_Template.md": {
-      "filePath": "GPT_project2080/iWin_Project_Companion/03_iWin_FMEA_Template.md",
-      "contentHash": "220d81388d62c6dca72bd8cc792528ea525a2a5fa7b634de43d6f9af819f4fa2",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 40,
-      "hasStructuralAnalysis": true
-    },
-    "GPT_project2080/iWin_Project_Companion/04_Capstone_Design_Memo_Template.md": {
-      "filePath": "GPT_project2080/iWin_Project_Companion/04_Capstone_Design_Memo_Template.md",
-      "contentHash": "767b22b5380a570a2897ce5e20b6298edf66deefc01a781f5678823be5ee64ed",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 84,
-      "hasStructuralAnalysis": true
-    },
-    "GPT_project2080/iWin_Project_Companion/05_Assumption_Register.md": {
-      "filePath": "GPT_project2080/iWin_Project_Companion/05_Assumption_Register.md",
-      "contentHash": "b9b6fc357729de131b613e000b905dc26aeae77d533588622fa3d1bba2733bcc",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 20,
-      "hasStructuralAnalysis": true
-    },
-    "GPT_project2080/iWin_Project_Companion/README_iWin_Project_Companion.md": {
-      "filePath": "GPT_project2080/iWin_Project_Companion/README_iWin_Project_Companion.md",
-      "contentHash": "76cb4e787ce5110ab4969bb868c262fd64cb06ac8dc099d5f7d9038f9d142d29",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 249,
-      "hasStructuralAnalysis": true
-    },
-    "GPT_project2080/webGPT_chats/BIPV Module Integrated Architecture Comparison.md": {
-      "filePath": "GPT_project2080/webGPT_chats/BIPV Module Integrated Architecture Comparison.md",
-      "contentHash": "0244c16d50a4fc744f20fd38e0527d8b098bc7e17243790ceac4b3719616eaa0",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 465,
-      "hasStructuralAnalysis": true
-    },
-    "GPT_project2080/webGPT_chats/bipv_sd_standards_block_diagram.html": {
-      "filePath": "GPT_project2080/webGPT_chats/bipv_sd_standards_block_diagram.html",
-      "contentHash": "9851041d294051504a6c23189cb5cc110d97880071d45330a911b24c0af74f7e",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 754,
-      "hasStructuralAnalysis": false
-    },
-    "GPT_project2080/webGPT_chats/Deck Analysis and Research.md": {
-      "filePath": "GPT_project2080/webGPT_chats/Deck Analysis and Research.md",
-      "contentHash": "e06d0f85799349f281c6de272b57dfec0cc19b65a53b36e43a338c6e1f38cfd7",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 1712,
-      "hasStructuralAnalysis": true
-    },
-    "GPT_project2080/webGPT_chats/iWin BIPV Roadmap.md": {
-      "filePath": "GPT_project2080/webGPT_chats/iWin BIPV Roadmap.md",
-      "contentHash": "cff0b804376f55d007c5dd0e73e05b55ccc4e3b7116ec9fe095407197685dbdb",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 401,
-      "hasStructuralAnalysis": true
-    },
-    "GPT_project2080/webGPT_chats/Norms and Pass Conditions.md": {
-      "filePath": "GPT_project2080/webGPT_chats/Norms and Pass Conditions.md",
-      "contentHash": "7cf0a6e7ae308200aac1406a63caf0867f2156b4a60138168e628c59d7bb1779",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 1019,
-      "hasStructuralAnalysis": true
-    },
-    "GPT_project2080/webGPT_chats/Project research status.md": {
-      "filePath": "GPT_project2080/webGPT_chats/Project research status.md",
-      "contentHash": "e83f6a5e8a200ffbe6959ea3df8559a5186ea0c527551dfa2d668992af7364e0",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 422,
-      "hasStructuralAnalysis": true
-    },
-    "move_list.md": {
-      "filePath": "move_list.md",
-      "contentHash": "9ac92d3023fec62ad1f92dbb7e50d27be90ec73f28812dcce2325bfca3e61196",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 45,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/first-chapters-to-read-notebooklm.md": {
-      "filePath": "NotebookLM/first-chapters-to-read-notebooklm.md",
-      "contentHash": "6212eee4df3ced9ebf6a96975ddb3081800a59cedb9ebb0bc93ccc91571df8ea",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 31,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/00_project_context/BIPV_Brain.md": {
-      "filePath": "NotebookLM/Sources/00_project_context/BIPV_Brain.md",
-      "contentHash": "d134ce636aaaccaae7af88faa49e367cb54e95b5169726a1ebb974f3fbec59bc",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 281,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/00_project_context/BIPV_Presentation_Deck_Audit.md": {
-      "filePath": "NotebookLM/Sources/00_project_context/BIPV_Presentation_Deck_Audit.md",
-      "contentHash": "d40a4fe5bf9e13abef2452f3421da6d1d2ea472b87e348c24e45b1fe718e4239",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 579,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/00_project_context/BIPV_Presentation_Deck_Missing_Information_Map.md": {
-      "filePath": "NotebookLM/Sources/00_project_context/BIPV_Presentation_Deck_Missing_Information_Map.md",
-      "contentHash": "59543d3672c51ec9f45d9451565d7dcddb687cf4861f43977c3039b6c366ae5c",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 190,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/00_project_context/BIPV_Presentation_Deck_Primary_Source_Reevaluation.md": {
-      "filePath": "NotebookLM/Sources/00_project_context/BIPV_Presentation_Deck_Primary_Source_Reevaluation.md",
-      "contentHash": "90d97817a694fd456d009dd8001f114c17f740a9d52a6fef287b14a6cfaa02fd",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 199,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/00_project_context/Firecrawl_Research_Instructions_Lugano_iWin_Office_Facade.md": {
-      "filePath": "NotebookLM/Sources/00_project_context/Firecrawl_Research_Instructions_Lugano_iWin_Office_Facade.md",
-      "contentHash": "bd2cfa9fef84401227adccc17623ceb8e9b5053e1b41b28304b94dea7ee97b0f",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 363,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/00_project_context/Research_Prompt_Lugano_iWin_Office_Facade.md": {
-      "filePath": "NotebookLM/Sources/00_project_context/Research_Prompt_Lugano_iWin_Office_Facade.md",
-      "contentHash": "8e42ddca70175c2a2082d3bcdff0c19094b2d686433176af0b166ba3f7dd21b6",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 415,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/01_iwin_topology_synthesis/evidence_index.csv": {
-      "filePath": "NotebookLM/Sources/01_iwin_topology_synthesis/evidence_index.csv",
-      "contentHash": "338c189ed0b4126f1aae8b507f4e8edd07dd67b439ecf77b6d31c38c7984985b",
+    "Daily/2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/evidence_index.csv": {
+      "filePath": "Daily/2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/evidence_index.csv",
+      "contentHash": "1d8bbed1330a546773b6c06766bd98ddc74b5fbba91d02e40ea77f4dab6afce2",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -553,29 +453,9 @@
       "totalLines": 52,
       "hasStructuralAnalysis": false
     },
-    "NotebookLM/Sources/01_iwin_topology_synthesis/microinverter_deep_dive.md": {
-      "filePath": "NotebookLM/Sources/01_iwin_topology_synthesis/microinverter_deep_dive.md",
-      "contentHash": "98a467f56342fd428b4a976d1bc412a0084eb73ca0648e405fe86d9d5fd31d69",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 65,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/01_iwin_topology_synthesis/optimizer_deep_dive.md": {
-      "filePath": "NotebookLM/Sources/01_iwin_topology_synthesis/optimizer_deep_dive.md",
-      "contentHash": "0106b454127d02cda1ef5fe2c06bb3d919687967e42322606a0931b5861c4526",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 60,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/01_iwin_topology_synthesis/report.md": {
-      "filePath": "NotebookLM/Sources/01_iwin_topology_synthesis/report.md",
-      "contentHash": "375801d382082a9e1eafec35eb75177e2fecb25bea266c19cb7916fc2ada8a14",
+    "Daily/2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/report.md": {
+      "filePath": "Daily/2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/report.md",
+      "contentHash": "313416dad30b59d833956d18d0d3cfa79678664495be702496ac293df501331b",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -583,19 +463,9 @@
       "totalLines": 160,
       "hasStructuralAnalysis": true
     },
-    "NotebookLM/Sources/01_iwin_topology_synthesis/source_discovery_notes.md": {
-      "filePath": "NotebookLM/Sources/01_iwin_topology_synthesis/source_discovery_notes.md",
-      "contentHash": "5b89d79e1e1d2941816ea5b1ce157f3e90995c0e866745f2f6f76b1906f6e32d",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 63,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/01_iwin_topology_synthesis/source_inventory.csv": {
-      "filePath": "NotebookLM/Sources/01_iwin_topology_synthesis/source_inventory.csv",
-      "contentHash": "af847b8da72bab80512119bfb5288137d2e3c489629452cc1cbe6258394846fc",
+    "Daily/2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/source_inventory.csv": {
+      "filePath": "Daily/2026-05-21_iwin_pv_blinds_firecrawl_topology_synthesis/source_inventory.csv",
+      "contentHash": "56e979cd576e24e5bf3424a1c858bf535bb2d92458efef84449bef2424ef5c9e",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -603,459 +473,129 @@
       "totalLines": 48,
       "hasStructuralAnalysis": false
     },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/cdn.prod.website-files.com-5fad551d7419c7a0e9e4aba4-68827724d772a21c23ceb55e_002-00216-00%201.1%20Datasheet%20TS4-A-O%20(725W)%2020250709%20-%20EN.pdf.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/cdn.prod.website-files.com-5fad551d7419c7a0e9e4aba4-68827724d772a21c23ceb55e_002-00216-00%201.1%20Datasheet%20TS4-A-O%20(725W)%2020250709%20-%20EN.pdf.md",
-      "contentHash": "e1bfa289ef64772cd9409bb1f7c6360bad9f0b7f7f6a7fb615f4445a48bf8d6f",
+    "Daily/2026-05-26_iwin_price_evidence/price_evidence_report.md": {
+      "filePath": "Daily/2026-05-26_iwin_price_evidence/price_evidence_report.md",
+      "contentHash": "df29acafc9e4017b94c3648051215cd9154b9963239f0537e5520652347e43a0",
       "functions": [],
       "classes": [],
       "imports": [],
       "exports": [],
-      "totalLines": 122,
+      "totalLines": 118,
       "hasStructuralAnalysis": true
     },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/cdn.prod.website-files.com-5fad551d7419c7a0e9e4aba4-698b65573e1e53f5d116c80f_002-00129-00%202.3%20IO%26M%20TS4A%20with%20TAP%20and%20CCA%2020251001%20-%20EN.pdf.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/cdn.prod.website-files.com-5fad551d7419c7a0e9e4aba4-698b65573e1e53f5d116c80f_002-00129-00%202.3%20IO%26M%20TS4A%20with%20TAP%20and%20CCA%2020251001%20-%20EN.pdf.md",
-      "contentHash": "c9cec3192f98306ad4066d99faf39decdcdffb5a3fbd85adc081cc30b74278fd",
+    "Daily/2026-05-26_iwin_topology_decision_matrix/decision_matrix.md": {
+      "filePath": "Daily/2026-05-26_iwin_topology_decision_matrix/decision_matrix.md",
+      "contentHash": "57e308f86d9cab07df6cdd63c670f975073639b294b71dc5fd909e62c074c501",
       "functions": [],
       "classes": [],
       "imports": [],
       "exports": [],
-      "totalLines": 342,
+      "totalLines": 148,
       "hasStructuralAnalysis": true
     },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/enphase.com-download-iq8-and-iq8-microinverters-data-sheet.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/enphase.com-download-iq8-and-iq8-microinverters-data-sheet.md",
-      "contentHash": "a67bde9f73a787dd8b886c971df82c1652f1aa5b6c664730e71479f0964feace",
+    "Daily/2026-05-26_iwin_topology_decision_matrix/score_matrix.csv": {
+      "filePath": "Daily/2026-05-26_iwin_topology_decision_matrix/score_matrix.csv",
+      "contentHash": "61c4d42b087cabe5c32025c7fe959ed31a8d1fdc0dbb6b3863ebb328e966d2f4",
       "functions": [],
       "classes": [],
       "imports": [],
       "exports": [],
-      "totalLines": 233,
-      "hasStructuralAnalysis": true
+      "totalLines": 50,
+      "hasStructuralAnalysis": false
     },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/enphase.com-download-iq8-series-microinverter-installation-and-operation-manual.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/enphase.com-download-iq8-series-microinverter-installation-and-operation-manual.md",
-      "contentHash": "7d94bee9d07878474f2a29107c1a8e943bf0e3e8e3a9dc1e49cfef46b24a602f",
+    "Daily/2026-05-28_iwin_h3_microinverter_topology/h3_microinverter_topology.md": {
+      "filePath": "Daily/2026-05-28_iwin_h3_microinverter_topology/h3_microinverter_topology.md",
+      "contentHash": "f5a17033eab1a9a91372befe27a69d9720459de8f092c73ee0fa10be2a238938",
       "functions": [],
       "classes": [],
       "imports": [],
       "exports": [],
-      "totalLines": 2127,
+      "totalLines": 197,
       "hasStructuralAnalysis": true
     },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/global.apsystems.com-diy-ez1.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/global.apsystems.com-diy-ez1.md",
-      "contentHash": "db90ba8720a1394c8926e59a1c73fb16b62c7117697d03f346e30ae2f69a5c78",
+    "Daily/2026-05-28_iwin_pdo_parallel_dco/parallel_dco_pdo_evaluation.md": {
+      "filePath": "Daily/2026-05-28_iwin_pdo_parallel_dco/parallel_dco_pdo_evaluation.md",
+      "contentHash": "0ed31ef39f898013a73f5ec0c2d21d9638e6672b9fb659835010e72e7fde7d18",
       "functions": [],
       "classes": [],
       "imports": [],
       "exports": [],
-      "totalLines": 538,
+      "totalLines": 225,
       "hasStructuralAnalysis": true
     },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/global.apsystems.com-ez1-emea-datasheet-2024-12-09.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/global.apsystems.com-ez1-emea-datasheet-2024-12-09.md",
-      "contentHash": "c5c26680576e8703efa293b3eccc1c2176e976fd9738e2b7ef78eb40a2aeaf0e",
+    "docs/plans/README.md": {
+      "filePath": "docs/plans/README.md",
+      "contentHash": "615f425ca56681bbc46e13c9945f99d614879fa5c697a9ed07dc438b62f6806d",
       "functions": [],
       "classes": [],
       "imports": [],
       "exports": [],
-      "totalLines": 93,
+      "totalLines": 22,
       "hasStructuralAnalysis": true
     },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/global.apsystems.com-ez1-emea-user-manual-2024-12-09.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/global.apsystems.com-ez1-emea-user-manual-2024-12-09.md",
-      "contentHash": "91a140add8fd865e0f999dbc7d812d169f839c8e9d05c004cdc21145091a85d5",
+    "docs/research/pvplant-iwin-research-template.md": {
+      "filePath": "docs/research/pvplant-iwin-research-template.md",
+      "contentHash": "1ed6e141abfe2c97efe197fc3db2cd3eb5f2ca5f7a4ba3ca33f99043843b5604",
       "functions": [],
       "classes": [],
       "imports": [],
       "exports": [],
-      "totalLines": 548,
+      "totalLines": 86,
       "hasStructuralAnalysis": true
     },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/hoymiles.com-products-hms-300-350-400-450-500-1t.html.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/hoymiles.com-products-hms-300-350-400-450-500-1t.html.md",
-      "contentHash": "10b9da9725189e6328719390b32fa51bb4d049b1db5a2b4d50d96a055c4b324e",
+    "docs/research/README.md": {
+      "filePath": "docs/research/README.md",
+      "contentHash": "c884b7c4a2782eb3313d43cead7c8685603e65af33ca5fb1fe024d19360b7b72",
       "functions": [],
       "classes": [],
       "imports": [],
       "exports": [],
-      "totalLines": 332,
+      "totalLines": 17,
       "hasStructuralAnalysis": true
     },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/mdpi.com-2075-5309-14-1-53.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/mdpi.com-2075-5309-14-1-53.md",
-      "contentHash": "77df8bc7248ef010e2c918e9cb55a2e6dfbb9065620aa77e808364d19af10658",
+    "experiments/inter-chat-memory/README.md": {
+      "filePath": "experiments/inter-chat-memory/README.md",
+      "contentHash": "f38fbbfa6299bd4352b263d756a468f597c1310f7fb4bae61ee8fe4c1c196d2c",
       "functions": [],
       "classes": [],
       "imports": [],
       "exports": [],
-      "totalLines": 643,
+      "totalLines": 14,
       "hasStructuralAnalysis": true
     },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/mdpi.com-2075-5309-14-12-3850.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/mdpi.com-2075-5309-14-12-3850.md",
-      "contentHash": "ea275c279ed52e58324ff3f3373ea8a95c8da9b7ba8581c0654213ff283de8b6",
+    "firecrawl_BIPV_prompts.md": {
+      "filePath": "firecrawl_BIPV_prompts.md",
+      "contentHash": "8b8c352f0a145436b557a5cf2570bcdc7c93cdb78af5cfc7f678ec8d482ae0c2",
       "functions": [],
       "classes": [],
       "imports": [],
       "exports": [],
-      "totalLines": 697,
+      "totalLines": 213,
       "hasStructuralAnalysis": true
     },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/minisite.solaredge.com-hubfs-Power%20Optimizer%20S1400_DS-000205-PHL.pdf.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/minisite.solaredge.com-hubfs-Power%20Optimizer%20S1400_DS-000205-PHL.pdf.md",
-      "contentHash": "97f051bef84d350eb092ea0dd18952590061233941f2c8884b38859300a9bbc5",
+    "INTER_CHAT_MEMORY.md": {
+      "filePath": "INTER_CHAT_MEMORY.md",
+      "contentHash": "216129aaee4a1be70d83c7ad68125425268fa36c2906fbc89a96fd6fcaaa72c8",
       "functions": [],
       "classes": [],
       "imports": [],
       "exports": [],
-      "totalLines": 206,
+      "totalLines": 33,
       "hasStructuralAnalysis": true
     },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/northernep.com-bdm-300-datasheet-2023-10-26.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/northernep.com-bdm-300-datasheet-2023-10-26.md",
-      "contentHash": "1a33920f4187d200bf8a709779758a1ff817e54ff1d8cea652cafcc4ea1f5c83",
+    "maintenance/pvplant-agent-infrastructure-checklist.md": {
+      "filePath": "maintenance/pvplant-agent-infrastructure-checklist.md",
+      "contentHash": "169cc818e6549b5a0e051413ac84ef5f68221f1ebb3aa4798ae3c8d939a361e7",
       "functions": [],
       "classes": [],
       "imports": [],
       "exports": [],
-      "totalLines": 87,
+      "totalLines": 34,
       "hasStructuralAnalysis": true
     },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/northernep.com-products-microinverters-bdm-300.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/northernep.com-products-microinverters-bdm-300.md",
-      "contentHash": "aea83c1ae0ae2594ca723b5ddddad745409a365540e0a797579d680caf8eb05d",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 256,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/shopulstandards.com-ProductDetail.aspx.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/shopulstandards.com-ProductDetail.aspx.md",
-      "contentHash": "41f7b8170458662086fdf82b3c875acf76a063b11ce32b67af37999e48522c86",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 362,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/solar.huawei.com-en-products-merc-1100-1300-p.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/solar.huawei.com-en-products-merc-1100-1300-p.md",
-      "contentHash": "6f3efc40f7c4720aecf5092033ba4323e0e35ae04915b1c19c5d3782a675ccc6",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 809,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/solaredge.com-en-products-residential-power-optimizers.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/solaredge.com-en-products-residential-power-optimizers.md",
-      "contentHash": "2fac44df39192a9370218686d8900726627bb259effa947b53c20626bc6a6a84",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 1545,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/support.huawei.com-enterprise-en-doc-EDOC1100265210-288032bf-connecting-cables.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/support.huawei.com-enterprise-en-doc-EDOC1100265210-288032bf-connecting-cables.md",
-      "contentHash": "db07b1d9797845ccb740c7d95d50f4250dc003d75ae6e5e1a58e4824e2b55f91",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 709,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/support.huawei.com-enterprise-en-doc-EDOC1100265210-998e36a3-technical-specifications.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/support.huawei.com-enterprise-en-doc-EDOC1100265210-998e36a3-technical-specifications.md",
-      "contentHash": "6738d7641854f8bdcfb476d0b50902329d109fcd3383c7bb05e049b04c267ed6",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 662,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/support.huawei.com-enterprise-en-doc-EDOC1100265210-9acf6acc-configuration-principles.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/support.huawei.com-enterprise-en-doc-EDOC1100265210-9acf6acc-configuration-principles.md",
-      "contentHash": "dbe3709b50b5993bfba9b78046a8776c219c27ac6a07831cfd0fe54c96bb5e45",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 675,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/tigoenergy.com-product-ts4-a-o.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/tigoenergy.com-product-ts4-a-o.md",
-      "contentHash": "37469a83592a968826fe2948caa8c02294b44ff0dd3ae0f2dc10e926cf60383a",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 519,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/webstore.iec.ch-en-publication-27684.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/webstore.iec.ch-en-publication-27684.md",
-      "contentHash": "e948b43b6d7dbd073ff2a02c6d65ae213176fbcf82156b1085b3c27fd704dc24",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 228,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/webstore.iec.ch-en-publication-64171.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/webstore.iec.ch-en-publication-64171.md",
-      "contentHash": "6f22d22b83394b0390c288f4fcbd08cffb19dc4f73c2d7ebbaee2b5ab0468fe7",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 414,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/webstore.iec.ch-en-publication-6470.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/webstore.iec.ch-en-publication-6470.md",
-      "contentHash": "799ad0d01528b61ec696c606aae9b9c95229fd034071522c95e3e77a61097127",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 584,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/webstore.iec.ch-en-publication-6471.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/webstore.iec.ch-en-publication-6471.md",
-      "contentHash": "60e04ff6abcfb3ff387ab301e6a6ac85a220a063655887839e709c0c7560468f",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 245,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/required/webstore.iec.ch-en-publication-6479.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/required/webstore.iec.ch-en-publication-6479.md",
-      "contentHash": "72bf99d60c475b0f4f9494bfb39b41c28236f8fc35574886c260e59c17dea596",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 158,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/7sun.eu-product-category-optimizers.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/7sun.eu-product-category-optimizers.md",
-      "contentHash": "1e7cfbdda06b5c36454e7f9a478547248228acf30e55f9d6a84aad442e86500a",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 808,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/analog.com-media-en-news-marketing-collateral-product-highlight-maxim-solar-cell-optimizer-product-brief.pdf.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/analog.com-media-en-news-marketing-collateral-product-highlight-maxim-solar-cell-optimizer-product-brief.pdf.md",
-      "contentHash": "f504659d73d2f04889b29c24df447c96d755d66ca0520362748b0f958f0393ff",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 45,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/canada.apsystems.com-ds3.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/canada.apsystems.com-ds3.md",
-      "contentHash": "b19ba59054ec27ebc144362937329c0edd06d25c71c5546d00cf01326d035f5d",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 97,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/deyeinverter.com-deyeinverter-2023-12-21-datasheet_sun-xl02-a_231221_en.pdf.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/deyeinverter.com-deyeinverter-2023-12-21-datasheet_sun-xl02-a_231221_en.pdf.md",
-      "contentHash": "293260157bc9a196d8d3dd08305d52708cbff915c01a05a9ff98b0de5e062621",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 39,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/deyeinverter.com-product-accessory-monitoring-1-SUNXL02A-2538.html.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/deyeinverter.com-product-accessory-monitoring-1-SUNXL02A-2538.html.md",
-      "contentHash": "3f2edb078b230ff3aa0a8c5a503471ac9edeee6db07dcdb595e6a0ee22a9eabf",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 270,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/enphase.com-store-microinverters-iq8-series.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/enphase.com-store-microinverters-iq8-series.md",
-      "contentHash": "744b8b247e1b4e1532736546a97d49a30cb98d811df896ce79f97b7d5b499684",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 918,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/global.apsystems.com-wp-content-uploads-2022-07-APsystems-Microinverter-DS3-series-for-APAC-Installation-manual_Rev1.1_2022-07-15.pdf.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/global.apsystems.com-wp-content-uploads-2022-07-APsystems-Microinverter-DS3-series-for-APAC-Installation-manual_Rev1.1_2022-07-15.pdf.md",
-      "contentHash": "cd2f05f833ed242ba98a707d34b6bd98a55b07fc8c1ec640df6e0f2c1bb2f6e7",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 592,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/hoymiles.com-products-hms-300w-350w-400w-450w-500w-1t-wi-fi-integrated.html.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/hoymiles.com-products-hms-300w-350w-400w-450w-500w-1t-wi-fi-integrated.html.md",
-      "contentHash": "26e039671b6b67f51f619e9d24822a59c5c76e96a8f4f80746a8c9cb79646d16",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 351,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/hoymiles.com-products-hms-600-700-800-900-1000-2t.html.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/hoymiles.com-products-hms-600-700-800-900-1000-2t.html.md",
-      "contentHash": "6d9037c5babb84a87be08e35456ff4da20b6bac9e0c11284d784b7bdabf37050",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 339,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/iea-pvps.org-wp-content-uploads-2020-01-IEA-PVPS_15_R09_BIPV_Design_Tools_report.pdf.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/iea-pvps.org-wp-content-uploads-2020-01-IEA-PVPS_15_R09_BIPV_Design_Tools_report.pdf.md",
-      "contentHash": "f66783a6b9d4b48828ce85a80046ff72c62a9ada341981a914e36ed785f1ef79",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 2028,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/northernep.com-downloads-manuals-bdm-300-micro-inverter-manual.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/northernep.com-downloads-manuals-bdm-300-micro-inverter-manual.md",
-      "contentHash": "8244d6e423eb9c257a625b2388d49f869d18f2e0a1ae9adb0ccefb1cb49bf072",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 782,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/offgridtec.com-en-hoymiles-hms-500-1t-microinverter-module-inverter.html.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/offgridtec.com-en-hoymiles-hms-500-1t-microinverter-module-inverter.html.md",
-      "contentHash": "7291db123a136808203068363438b77b1aea737b3338ec623231665bd3bebfad",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 3122,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/onsaplus.eu-tigo-ts4-a-o.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/onsaplus.eu-tigo-ts4-a-o.md",
-      "contentHash": "df0d84a2abedb9903db31267e59dd94112176ba114d839c53e8c540416f3f52c",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 469,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/self2solar.com-products-hms500.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/self2solar.com-products-hms500.md",
-      "contentHash": "224cba232dd0ef45af44529a7133520c5c2544f5ff72f7754b78be5f961f4b94",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 2382,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/signaturesolar.com-tigo-energy.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/signaturesolar.com-tigo-energy.md",
-      "contentHash": "7211651a1fcb8391fa7d4aebddcfa9bfb82f6fb51c068a9ca888e56ecbf59bc7",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 1839,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/solaredge.com-en-products-commercial-s1500-power-optimizer.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/solaredge.com-en-products-commercial-s1500-power-optimizer.md",
-      "contentHash": "cff57479e66bedca5eba12a2f328bb337b5c2d1b65dbaed509dd2a5bf4bb35b6",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 1521,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/ti.com-lit-pdf-tiduf99.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/ti.com-lit-pdf-tiduf99.md",
-      "contentHash": "74a39641ae56ef9e02e171248e82b97ecdf4d2ecd00d37f7576a1e59d94485ce",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 947,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/tsun-ess.com-datasheet-gen3-microinverter-6-in-1-0701.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/tsun-ess.com-datasheet-gen3-microinverter-6-in-1-0701.md",
-      "contentHash": "439e454d38c4dba2148b4027f28756bebc0a756aa853d2eac0719078814a2a19",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 108,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/tsun-ess.com-gen3-microinverter-6-in-1.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/tsun-ess.com-gen3-microinverter-6-in-1.md",
-      "contentHash": "cc1bddc6f009669b8363ca26c3c60938fcadcbfbb6995b3cb01a477dcbebfa8c",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 639,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/ul.com-services-distributed-energy-resource-testing.md": {
-      "filePath": "NotebookLM/Sources/02_firecrawl_scraped_sources/useful/ul.com-services-distributed-energy-resource-testing.md",
-      "contentHash": "08bf3748289852bfacc08c90b2a3e02f2fba1cbbeba8fd204f2d20d5910ede6c",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 464,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/03_literature_pdfs/required_and_useful/source_inventory.md": {
-      "filePath": "NotebookLM/Sources/03_literature_pdfs/required_and_useful/source_inventory.md",
-      "contentHash": "6d9bbd4f9bc13a3730b04a643de703caa6ac0bf47b0f21d736e2e8804d99860b",
+    "maintenance/README.md": {
+      "filePath": "maintenance/README.md",
+      "contentHash": "14a14380969fd4ad5d7f4fab85b4523ac87800a25fc585e00e0d265031191955",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -1063,69 +603,9 @@
       "totalLines": 20,
       "hasStructuralAnalysis": true
     },
-    "NotebookLM/Sources/04_pv_dmppt_books/evidence_index.csv": {
-      "filePath": "NotebookLM/Sources/04_pv_dmppt_books/evidence_index.csv",
-      "contentHash": "f0ba4f6ce661fc184fdb39e81cfade8ff2c371dfd30202eafce856cd1005b749",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 30,
-      "hasStructuralAnalysis": false
-    },
-    "NotebookLM/Sources/04_pv_dmppt_books/report.md": {
-      "filePath": "NotebookLM/Sources/04_pv_dmppt_books/report.md",
-      "contentHash": "8098287410fdeb98e564fd67be511769640bd6e1b7a6492b7077e3485608d69d",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 181,
-      "hasStructuralAnalysis": true
-    },
-    "NotebookLM/Sources/04_pv_dmppt_books/source_inventory.csv": {
-      "filePath": "NotebookLM/Sources/04_pv_dmppt_books/source_inventory.csv",
-      "contentHash": "3c3d03349eb3abba3fcbe6e703218917221666433e87fc59ea69d1c106df6e7c",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 13,
-      "hasStructuralAnalysis": false
-    },
-    "NotebookLM/Sources/99_copy_logs/bipv_brain_incremental_upload_2026-05-22.csv": {
-      "filePath": "NotebookLM/Sources/99_copy_logs/bipv_brain_incremental_upload_2026-05-22.csv",
-      "contentHash": "5159b4aaf9c8622a209e10eb773e9bc5cd9f9e41d4cc42c00f2b4c2517f98f77",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 15,
-      "hasStructuralAnalysis": false
-    },
-    "NotebookLM/Sources/99_copy_logs/copied_sources.csv": {
-      "filePath": "NotebookLM/Sources/99_copy_logs/copied_sources.csv",
-      "contentHash": "22306304a3c1b39d3bfa5fabc66ef2c7a12d854e3409e2da1d194ec498a7045c",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 86,
-      "hasStructuralAnalysis": false
-    },
-    "NotebookLM/Sources/99_copy_logs/missing_sources.csv": {
-      "filePath": "NotebookLM/Sources/99_copy_logs/missing_sources.csv",
-      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 1,
-      "hasStructuralAnalysis": false
-    },
     "NotebookLM/Sources/UPLOAD_MANIFEST.md": {
       "filePath": "NotebookLM/Sources/UPLOAD_MANIFEST.md",
-      "contentHash": "b7f7d07ad89465c36c2583cf1b9e4467dfd6f64e8f6c0f21acd844d67d03649b",
+      "contentHash": "1df491fe9c0526c4f88011f9faff2549b59bad3c5c55f6e28eaa4e5d3c5bc4d4",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -1133,9 +613,19 @@
       "totalLines": 45,
       "hasStructuralAnalysis": true
     },
+    "PROJECT_TRACKER.md": {
+      "filePath": "PROJECT_TRACKER.md",
+      "contentHash": "7fe7b0054e2a8ea19bb91519b3f6d225b5e96154339f3b0354261a11265d72f1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 44,
+      "hasStructuralAnalysis": true
+    },
     "Projects/CONNECT-iWin/README.md": {
       "filePath": "Projects/CONNECT-iWin/README.md",
-      "contentHash": "75900cd5511fc1836f15678268897c5cd23600aa7ff68d26a6f4a6e7c71d0368",
+      "contentHash": "16c0c706a14ed963159cc679e414ebebdb55d96356f6f8630e098248ea0304a2",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -1143,9 +633,189 @@
       "totalLines": 64,
       "hasStructuralAnalysis": true
     },
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/docling_1.json": {
+      "filePath": "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/docling_1.json",
+      "contentHash": "b39e0e0fd385fd318aceee566c92172e561a0bb44609e2fe18f3cd8a3c19598a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 20368,
+      "hasStructuralAnalysis": true
+    },
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/docling.json": {
+      "filePath": "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/docling.json",
+      "contentHash": "9ce8a261772e2895576ceb8684568e3b2aa9cbba9945085a319900497374d2b1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1301,
+      "hasStructuralAnalysis": true
+    },
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/manifest_1.json": {
+      "filePath": "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/manifest_1.json",
+      "contentHash": "cffac28c84f2b136a491f2024318c73e56911bef3b38067273881ab2617a6404",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 37,
+      "hasStructuralAnalysis": true
+    },
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/manifest_2.json": {
+      "filePath": "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/manifest_2.json",
+      "contentHash": "c45e64bc9938deeb511b04aed9d22d9a9928d54851e0ebe8b15b9232ce267a3f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 39,
+      "hasStructuralAnalysis": true
+    },
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/manifest.json": {
+      "filePath": "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/manifest.json",
+      "contentHash": "9ca6545d46b5ed62ab41bb5c7cde739f8a93f09ade56a077643e8c1893bcb481",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 143,
+      "hasStructuralAnalysis": true
+    },
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/source_1.md": {
+      "filePath": "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/source_1.md",
+      "contentHash": "8b23b4e7dec3704f5a620a1979bab14ce3d8b643c570b5483ff154246248c3c9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 396,
+      "hasStructuralAnalysis": true
+    },
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/source.md": {
+      "filePath": "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/source.md",
+      "contentHash": "c8dee64e685e3624cd69abd75e136e55ef357bda665d4f3fa2201eaa2d1de3fe",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 121,
+      "hasStructuralAnalysis": true
+    },
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/tables_1.json": {
+      "filePath": "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/tables_1.json",
+      "contentHash": "54a76dee17b95932f51094204651f57bfec163adb7e10600274d69f6cbc201d9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 638,
+      "hasStructuralAnalysis": true
+    },
+    "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/tables.json": {
+      "filePath": "PV_books/2-Classification-of-PV-Power-Systems---PV-PS----modelling-design-control/tables.json",
+      "contentHash": "d222ec7515e77369437dedbc5797cf1255b4c06963a030682cab39e882338941",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 47,
+      "hasStructuralAnalysis": true
+    },
+    "PVplant_AGENTS_v3_Codex.md": {
+      "filePath": "PVplant_AGENTS_v3_Codex.md",
+      "contentHash": "844cfbe1d46e2539d071542b121d08e18fa2d29b17eedcaa2bc7289191241cd6",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 160,
+      "hasStructuralAnalysis": true
+    },
+    "PVplant_Codex_Source_Map_v2.md": {
+      "filePath": "PVplant_Codex_Source_Map_v2.md",
+      "contentHash": "036a8b20d450fe9ec26e1ba20d71a5abde0e288e0558fcae902921a8ea2616c8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 73,
+      "hasStructuralAnalysis": true
+    },
+    "PVplant_iWin_BIPV_Knowledge_v2.md": {
+      "filePath": "PVplant_iWin_BIPV_Knowledge_v2.md",
+      "contentHash": "ac0ee00d5c5f6528fbed7c7bccb1d647cc5b8a7eff9db5df41dccda4372dafcb",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 439,
+      "hasStructuralAnalysis": true
+    },
+    "README_BIPV_Framework_Update_2026-05-27.md": {
+      "filePath": "README_BIPV_Framework_Update_2026-05-27.md",
+      "contentHash": "c61bd3461c4d9e9fa75abdd397a881dfc2f4a06b4d47344b85beb188eec6d23c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 34,
+      "hasStructuralAnalysis": true
+    },
+    "README.md": {
+      "filePath": "README.md",
+      "contentHash": "5b8f641efbd0d7b5034d96bc8fc380720c82a26e84459fe89da3f2e8e7332e3a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 83,
+      "hasStructuralAnalysis": true
+    },
+    "reports/drafts/2026-05-27_chapter5_literature_review/literature_review.md": {
+      "filePath": "reports/drafts/2026-05-27_chapter5_literature_review/literature_review.md",
+      "contentHash": "b4c9d48bbff9277cc9faf29a6b68757f7316ad26ee74a6dadb1a5cda1199e61f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 306,
+      "hasStructuralAnalysis": true
+    },
+    "reports/drafts/2026-05-27_dc_link_output_voltage_review/output_voltage_decision_schematic.md": {
+      "filePath": "reports/drafts/2026-05-27_dc_link_output_voltage_review/output_voltage_decision_schematic.md",
+      "contentHash": "3fe1cde44feaed7e89409d9b535187883432804c990e14cd9311ec0abeb7a960",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 308,
+      "hasStructuralAnalysis": true
+    },
+    "reports/drafts/2026-05-27_pv_ps_classification_literature_review/literature_review.md": {
+      "filePath": "reports/drafts/2026-05-27_pv_ps_classification_literature_review/literature_review.md",
+      "contentHash": "e24a7cd444deb7faf823a8192b9f57cf1f558456d60c9f48f9232e0fe9c9e452",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 219,
+      "hasStructuralAnalysis": true
+    },
+    "reports/notes/PVplant_AGENTS_Knowledge_review_notes.md": {
+      "filePath": "reports/notes/PVplant_AGENTS_Knowledge_review_notes.md",
+      "contentHash": "86389cb0371c260431a9451892e0f4d79db94a976c162f740ba721b6da44eb51",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 57,
+      "hasStructuralAnalysis": true
+    },
     "reports/PV_DMPPT_Book_Chapter_Map_2026-05-21/evidence_index.csv": {
       "filePath": "reports/PV_DMPPT_Book_Chapter_Map_2026-05-21/evidence_index.csv",
-      "contentHash": "f0ba4f6ce661fc184fdb39e81cfade8ff2c371dfd30202eafce856cd1005b749",
+      "contentHash": "10ed66dd9c426fb10ac36bbabae2484ee869c28326042749a0e5d53340bb86a5",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -1155,7 +825,7 @@
     },
     "reports/PV_DMPPT_Book_Chapter_Map_2026-05-21/report.md": {
       "filePath": "reports/PV_DMPPT_Book_Chapter_Map_2026-05-21/report.md",
-      "contentHash": "8098287410fdeb98e564fd67be511769640bd6e1b7a6492b7077e3485608d69d",
+      "contentHash": "5f37f47ba7e0613a85d9f5666ba3f3e6cc2729401e026ae6b9072ca7e10b3ce4",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -1165,7 +835,7 @@
     },
     "reports/PV_DMPPT_Book_Chapter_Map_2026-05-21/source_inventory.csv": {
       "filePath": "reports/PV_DMPPT_Book_Chapter_Map_2026-05-21/source_inventory.csv",
-      "contentHash": "3c3d03349eb3abba3fcbe6e703218917221666433e87fc59ea69d1c106df6e7c",
+      "contentHash": "d9ee6427d1f54b8dd179a51cffd6b49f048c959422e12bd1123cf64f049b5f1e",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -1173,14 +843,84 @@
       "totalLines": 13,
       "hasStructuralAnalysis": false
     },
-    "Understand-Anything_PVplant_Cheat_Sheet.md": {
-      "filePath": "Understand-Anything_PVplant_Cheat_Sheet.md",
-      "contentHash": "ced683a141102e900d02c98895286e8088919c39038ad95baa155aa73990af07",
+    "UPE_v5.0_CLD/Claude_Project_Instructions.md": {
+      "filePath": "UPE_v5.0_CLD/Claude_Project_Instructions.md",
+      "contentHash": "ee3877bdaea9e77f53d04001b00beda9b74fdd5231aafa6cf058bf4ccd4a1e8d",
       "functions": [],
       "classes": [],
       "imports": [],
       "exports": [],
-      "totalLines": 358,
+      "totalLines": 286,
+      "hasStructuralAnalysis": true
+    },
+    "UPE_v5.0_CLD/UPE_v5.0_core.md": {
+      "filePath": "UPE_v5.0_CLD/UPE_v5.0_core.md",
+      "contentHash": "8c0c12ed4848b733156a40d7f777b79c38f2f1461ff9f6045a009748fedd3435",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 383,
+      "hasStructuralAnalysis": true
+    },
+    "UPE_v5.0_CLD/UPE_v5.0_patterns.md": {
+      "filePath": "UPE_v5.0_CLD/UPE_v5.0_patterns.md",
+      "contentHash": "ede446ba6ed14edabcb42e69f241a4c5080f1a61a9664912927020134d48eef2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 304,
+      "hasStructuralAnalysis": true
+    },
+    "UPE_v5.0_CLD/UPE_v5.0_report_formats.md": {
+      "filePath": "UPE_v5.0_CLD/UPE_v5.0_report_formats.md",
+      "contentHash": "6d20cea7f2b96ea0e5bb788171f2b09d5aa09beb86218d6e0efbd2fb6334738f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 440,
+      "hasStructuralAnalysis": true
+    },
+    "UPE_v5.0_CLD/UPE_v5.0_system_prompt.md": {
+      "filePath": "UPE_v5.0_CLD/UPE_v5.0_system_prompt.md",
+      "contentHash": "46ba48f4cf2b3c8028f57fb604817157aaba15a062ed8a0f402891c7a0dc1e57",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 412,
+      "hasStructuralAnalysis": true
+    },
+    "UPE_v5.0_CLD/UPE_v5.0_user_guide.md": {
+      "filePath": "UPE_v5.0_CLD/UPE_v5.0_user_guide.md",
+      "contentHash": "6c48e57c0ce9a51d54772860d186e08a23e7f85f65918a716a4f7788eaf5b771",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 247,
+      "hasStructuralAnalysis": true
+    },
+    "UPE_v5.0_CLD/UPE_v5.0_walkthrough.md": {
+      "filePath": "UPE_v5.0_CLD/UPE_v5.0_walkthrough.md",
+      "contentHash": "de3a094edc677765014007544ec2bd9bcf35d18b5a4719bf03fc725d2705faca",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 430,
+      "hasStructuralAnalysis": true
+    },
+    "UPE_v5.0.md": {
+      "filePath": "UPE_v5.0.md",
+      "contentHash": "d5de5589e7abc0884d4414ca2767863bf9dab3123cdd7d570368a7e1fe1e79df",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 341,
       "hasStructuralAnalysis": true
     }
   }

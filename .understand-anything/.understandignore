@@ -12,8 +12,19 @@
 .gitattributes
 CLAUDE.md
 **/CLAUDE.md
-AGENTS.md
-**/AGENTS.md
+
+# Keep PVplant authority and current-state files in the decision graph.
+!README.md
+!AGENTS.md
+!PVplant_iWin_BIPV_Knowledge_v2.md
+!PVplant_Codex_Source_Map_v2.md
+!CHECKPOINT.md
+!PROJECT_TRACKER.md
+!.memory/
+!.memory/hubs/
+!.memory/hubs/*.md
+!.memory/daily/
+!.memory/daily/*.md
 
 # Obsidian application state and generic Obsidian/AI-OS material.
 .obsidian/
@@ -98,6 +109,21 @@ fixtures/
 # Old extracted/reference software trees are not the active PVplant knowledge base.
 PV_books/RAPSim_095_source/
 
+# Duplicate/imported surfaces that should not dominate the default graph.
+GPT_project2080/
+BIPV_Assistant_PVplant_framework_update_2026-05-27/
+AGENTS_archive_OLD/
+NotebookLM/**
+!NotebookLM/
+!NotebookLM/Sources/
+!NotebookLM/Sources/UPLOAD_MANIFEST.md
+Context/business.md
+Context/infrastructure.md
+Context/me.md
+Context/strategy.md
+move_list.md
+claude_literature/_Prompts for use of evidence to report pipeline - skill.md
+
 # BIPV generated review scratch area. Keep final analysis and companion docs.
 BIPV_Codex_Edition/tmp/
 BIPV_Codex_Edition/companion/provenance/
@@ -108,10 +134,15 @@ BIPV_Codex_Edition/companion/README_v2_*.md
 **/action_log.md
 
 # Daily work folders are noisy; re-include only decision-useful summaries.
-Daily/
+Daily/**
+!Daily/
 !Daily/*/
+!Daily/**/
 !Daily/**/report.md
 !Daily/**/price_evidence_report.md
 !Daily/**/decision_matrix.md
 !Daily/**/score_matrix.csv
 !Daily/**/evidence_index.csv
+!Daily/**/source_inventory.csv
+!Daily/**/parallel_dco_pdo_evaluation.md
+!Daily/**/h3_microinverter_topology.md
