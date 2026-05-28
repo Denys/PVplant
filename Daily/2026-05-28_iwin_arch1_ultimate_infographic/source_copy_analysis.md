@@ -31,7 +31,7 @@ One optimizer / one MPPT per blind module
 TS4 outputs connected in series
 Output voltage is not set manually
 String voltage is managed by inverter MPPT
-10-14 blind modules per DC string typical
+12-14 blind modules per DC string typical
 Do not merge differently shaded blinds before independent optimization
 ```
 
@@ -39,13 +39,14 @@ Do not merge differently shaded blinds before independent optimization
 
 ```text
 Pmp normal target: 330-500 W
-One optimizer upper design: 550-600 W
+Design center: 400-500 W
+One-optimizer upper design: 550-600 W
 720 W case: split into 2 x 360 W sections
 Vmp target: 45 V nominal, 42-48 V acceptable
 Voc STC: 55-60 V
-Voc cold design: <75 V, absolute <80 V
-Imp target: <13.5 A
-Isc target: <15-18 A
+Voc cold design target: <68 V/module, absolute optimizer input <80 V
+Imp normal target: 9-12 A
+Isc normal target: <=14 A
 
 TS4-A-O envelope:
 Input Vmp: 12-80 V current datasheet
@@ -60,13 +61,12 @@ Rapid shutdown: <30 s
 
 String example:
 45 Vmp module
-10 blinds/string -> 450 Vmp
 12 blinds/string -> 540 Vmp
 14 blinds/string -> 630 Vmp
-Voc cold example: 67.6 V/module
-12 modules -> 811 V
-14 modules -> 946 V
-15 modules -> 1014 V: over 1000 V class
+Voc cold design: 68 V/module
+12 modules -> 816 V
+14 modules -> 952 V
+15 modules -> 1020 V: avoid in 1000 V class
 ```
 
 ## Naming note

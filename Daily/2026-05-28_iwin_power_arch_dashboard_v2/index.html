@@ -1,0 +1,1345 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f4f9fc" />
+  <title>iWin PV Blind Power Architecture Dashboard v2</title>
+  <style>
+    :root {
+      --ink: #13202d;
+      --muted: #5c6a78;
+      --line: #cfdae5;
+      --line-strong: #adc0d1;
+      --paper: #ffffff;
+      --wash: #f4f9fc;
+      --green: #08743b;
+      --green-2: #e6f7ec;
+      --blue: #1456b8;
+      --blue-2: #e8f1ff;
+      --teal: #007985;
+      --teal-2: #e3f7f8;
+      --orange: #e75b10;
+      --orange-2: #fff0e8;
+      --yellow: #c18a00;
+      --yellow-2: #fff8df;
+      --red: #bd271c;
+      --red-2: #fff0ef;
+      --violet: #5947b8;
+      --violet-2: #f0edff;
+      --radius: 8px;
+      --shadow: 0 12px 30px rgba(29, 55, 80, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      color-scheme: light;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      background:
+        linear-gradient(90deg, rgba(20, 86, 184, 0.05) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(8, 116, 59, 0.05) 1px, transparent 1px),
+        var(--wash);
+      background-size: 42px 42px;
+      color: var(--ink);
+      font-family: Aptos, "Segoe UI", Tahoma, sans-serif;
+      line-height: 1.42;
+      -webkit-tap-highlight-color: rgba(20, 86, 184, 0.16);
+    }
+
+    a { color: inherit; }
+
+    button {
+      font: inherit;
+      touch-action: manipulation;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 12px;
+      top: 12px;
+      z-index: 100;
+      transform: translateY(-160%);
+      background: var(--ink);
+      color: #fff;
+      border-radius: 8px;
+      padding: 9px 12px;
+      font-weight: 850;
+      text-decoration: none;
+    }
+
+    .skip-link:focus-visible {
+      transform: translateY(0);
+      outline: 3px solid #ffbf47;
+      outline-offset: 2px;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid rgba(20, 86, 184, 0.42);
+      outline-offset: 3px;
+    }
+
+    .shell {
+      width: min(1780px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 18px 0 42px;
+    }
+
+    .topbar {
+      display: grid;
+      grid-template-columns: minmax(380px, 1.2fr) minmax(420px, 1fr) minmax(320px, 0.8fr);
+      gap: 12px;
+      align-items: stretch;
+      margin-bottom: 12px;
+    }
+
+    .panel,
+    .arch-card,
+    .gallery-card,
+    .source-card {
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .title-panel {
+      padding: 18px 20px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 16px;
+      align-items: center;
+      min-height: 150px;
+    }
+
+    .title-panel > div,
+    .conclusion-box,
+    .fact,
+    .arch-head > div,
+    .source-card,
+    .pdf-card,
+    .note-card {
+      min-width: 0;
+    }
+
+    .mark {
+      width: 54px;
+      height: 54px;
+      border-radius: 8px;
+      background: var(--green);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 32px;
+      font-weight: 900;
+      box-shadow: inset 0 -8px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 3.2vw, 58px);
+      line-height: 0.98;
+      letter-spacing: 0;
+      text-wrap: balance;
+      overflow-wrap: anywhere;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 15px;
+      max-width: 980px;
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .conclusion {
+      padding: 16px 18px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      min-height: 150px;
+    }
+
+    .conclusion-box {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      background: #fff;
+    }
+
+    .conclusion-box.lead { border-color: #9ed8b3; background: var(--green-2); }
+    .conclusion-box.custom { border-color: #9edee2; background: var(--teal-2); }
+
+    .label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 7px;
+      color: var(--muted);
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 0.05em;
+    }
+
+    .big-call {
+      display: block;
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--green);
+      margin-bottom: 6px;
+      overflow-wrap: anywhere;
+    }
+
+    .custom .big-call { color: var(--teal); }
+
+    .conclusion-box p {
+      margin: 0;
+      color: #26384a;
+      font-size: 13px;
+    }
+
+    .facts {
+      padding: 16px 18px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      min-height: 150px;
+    }
+
+    .fact {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: #fff;
+    }
+
+    .fact b {
+      display: block;
+      font-size: 18px;
+      color: var(--ink);
+      margin-bottom: 2px;
+    }
+
+    .fact span {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 8;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 0;
+      margin: 0 0 12px;
+      background: rgba(244, 249, 252, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(173, 192, 209, 0.6);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .nav a,
+    .filter-btn,
+    .print-btn {
+      border: 1px solid var(--line-strong);
+      background: #fff;
+      color: var(--ink);
+      text-decoration: none;
+      border-radius: 8px;
+      padding: 8px 11px;
+      font-size: 12px;
+      font-weight: 850;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .nav a:hover,
+    .filter-btn:hover,
+    .filter-btn.active,
+    .print-btn:hover {
+      border-color: var(--blue);
+      background: var(--blue-2);
+      color: var(--blue);
+    }
+
+    .section {
+      margin-top: 18px;
+      scroll-margin-top: 76px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      margin: 0 0 10px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 23px;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+
+    .section-head p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      max-width: 920px;
+      font-size: 14px;
+    }
+
+    .arch-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .arch-card {
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto auto 1fr;
+      min-height: 560px;
+      border-top: 5px solid var(--green);
+    }
+
+    .arch-card.parallel-dco { border-top-color: var(--teal); }
+    .arch-card.zone-dco { border-top-color: var(--yellow); }
+    .arch-card.parallel-mi { border-top-color: var(--blue); }
+    .arch-card.zone-mi { border-top-color: var(--violet); }
+
+    .arch-head {
+      padding: 12px 12px 8px;
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      align-items: flex-start;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.15;
+      overflow-wrap: anywhere;
+    }
+
+    .rank {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 38px;
+      height: 28px;
+      border-radius: 8px;
+      background: var(--ink);
+      color: #fff;
+      font-weight: 900;
+      font-size: 13px;
+      padding: 0 8px;
+      flex-shrink: 0;
+    }
+
+    .rank.lead { background: var(--green); }
+    .rank.alt { background: var(--teal); }
+    .rank.watch { background: var(--yellow); color: #1f2933; }
+    .rank.backup { background: var(--blue); }
+    .rank.weak { background: var(--violet); }
+
+    .mini {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    .schematic {
+      margin: 0 12px 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background:
+        linear-gradient(90deg, rgba(8, 116, 59, 0.045) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(20, 86, 184, 0.045) 1px, transparent 1px),
+        #fff;
+      background-size: 22px 22px;
+      min-height: 178px;
+    }
+
+    svg { display: block; width: 100%; height: auto; }
+
+    .box {
+      fill: #fff;
+      stroke: #9fb2c4;
+      stroke-width: 1.4;
+      rx: 5;
+    }
+
+    .pv { fill: #e9f8ed; stroke: #08743b; }
+    .dco { fill: #e3f7f8; stroke: #007985; }
+    .mi { fill: #e8f1ff; stroke: #1456b8; }
+    .zone { fill: #fff8df; stroke: #c18a00; }
+    .warn { fill: #fff0e8; stroke: #e75b10; }
+    .dc-line { stroke: #08743b; stroke-width: 3; fill: none; marker-end: url(#arrowGreen); }
+    .dc-line-thin { stroke: #08743b; stroke-width: 2; fill: none; marker-end: url(#arrowGreen); }
+    .bus-line { stroke: #007985; stroke-width: 3.4; fill: none; marker-end: url(#arrowTeal); }
+    .ac-line { stroke: #1456b8; stroke-width: 3; fill: none; marker-end: url(#arrowBlue); }
+    .zone-line { stroke: #c18a00; stroke-width: 3; fill: none; marker-end: url(#arrowYellow); }
+    .dash { stroke-dasharray: 6 5; }
+    .txt { font: 700 11px Aptos, Segoe UI, sans-serif; fill: #13202d; }
+    .tiny { font: 700 9px Aptos, Segoe UI, sans-serif; fill: #425466; }
+    .blue-txt { fill: #1456b8; }
+    .green-txt { fill: #08743b; }
+    .teal-txt { fill: #007985; }
+    .orange-txt { fill: #e75b10; }
+
+    .arch-body {
+      padding: 0 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .spec-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: center;
+      padding: 9px 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfdff;
+      font-size: 12px;
+    }
+
+    .price {
+      display: inline-flex;
+      min-width: 54px;
+      justify-content: center;
+      border-radius: 8px;
+      background: var(--orange-2);
+      color: var(--orange);
+      padding: 4px 7px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .pros-cons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      font-size: 12px;
+    }
+
+    .pc {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 9px;
+      background: #fff;
+    }
+
+    .pc strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .pc ul {
+      margin: 0;
+      padding-left: 15px;
+    }
+
+    .pc li { margin: 3px 0; }
+    .pc.pro strong { color: var(--green); }
+    .pc.con strong { color: var(--orange); }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 1080px;
+      font-size: 13px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      padding: 9px 10px;
+      vertical-align: top;
+    }
+
+    th:last-child,
+    td:last-child { border-right: 0; }
+    tr:last-child td { border-bottom: 0; }
+
+    th {
+      position: sticky;
+      top: 50px;
+      z-index: 2;
+      background: #f8fbff;
+      color: var(--ink);
+      text-align: left;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    td.good { background: var(--green-2); color: #074b29; font-weight: 760; }
+    td.mid { background: var(--yellow-2); color: #5f4100; font-weight: 760; }
+    td.bad { background: var(--red-2); color: #7d1913; font-weight: 760; }
+    td.info { background: var(--blue-2); color: #103f88; font-weight: 760; }
+
+    .matrix-note {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .note-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: var(--shadow);
+      padding: 13px;
+    }
+
+    .note-card strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .note-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .gallery-tools {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .gallery-card {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .gallery-card img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .image-button {
+      display: block;
+      width: 100%;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      cursor: zoom-in;
+      touch-action: manipulation;
+      text-align: inherit;
+    }
+
+    .image-button:focus-visible {
+      outline-offset: -4px;
+    }
+
+    .gallery-card .caption {
+      padding: 10px 11px;
+      display: grid;
+      gap: 7px;
+    }
+
+    .caption b {
+      font-size: 13px;
+      line-height: 1.2;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .chip {
+      border-radius: 999px;
+      padding: 3px 7px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .chip.green { color: var(--green); background: var(--green-2); border-color: #a9dfb9; }
+    .chip.blue { color: var(--blue); background: var(--blue-2); border-color: #b8cff4; }
+    .chip.teal { color: var(--teal); background: var(--teal-2); border-color: #a8dce0; }
+    .chip.orange { color: var(--orange); background: var(--orange-2); border-color: #f5b99b; }
+    .chip.violet { color: var(--violet); background: var(--violet-2); border-color: #cdc4f4; }
+
+    .source-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 12px;
+    }
+
+    .source-card {
+      padding: 14px;
+    }
+
+    .source-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .source-card ul {
+      margin: 0;
+      padding-left: 18px;
+      color: #26384a;
+    }
+
+    .source-card li { margin: 6px 0; }
+
+    .pdf-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .pdf-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 12px;
+      display: grid;
+      gap: 8px;
+      min-height: 140px;
+    }
+
+    .pdf-card a {
+      color: var(--blue);
+      font-weight: 850;
+      text-decoration: none;
+    }
+
+    .footer {
+      margin-top: 18px;
+      padding: 12px 14px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 12px;
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 8px;
+    }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 40;
+      display: none;
+      place-items: center;
+      background: rgba(10, 18, 27, 0.78);
+      padding: 24px;
+      overscroll-behavior: contain;
+    }
+
+    .modal.open { display: grid; }
+
+    .modal figure {
+      margin: 0;
+      width: min(1520px, 96vw);
+      max-height: 94vh;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: 1fr auto;
+    }
+
+    .modal img {
+      width: 100%;
+      height: min(82vh, 850px);
+      object-fit: contain;
+      background: #fff;
+      display: block;
+    }
+
+    .modal figcaption {
+      padding: 10px 12px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      border-top: 1px solid var(--line);
+      color: var(--ink);
+      font-weight: 800;
+    }
+
+    .modal button {
+      border: 1px solid var(--line);
+      background: var(--ink);
+      color: #fff;
+      border-radius: 8px;
+      padding: 7px 10px;
+      cursor: pointer;
+      font-weight: 800;
+      touch-action: manipulation;
+    }
+
+    @media (max-width: 1350px) {
+      .topbar,
+      .source-grid { grid-template-columns: 1fr; }
+      .arch-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .facts { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 820px) {
+      .shell { width: min(100vw - 18px, 1780px); padding-top: 10px; }
+      .title-panel { grid-template-columns: 1fr; }
+      h1 {
+        font-size: clamp(27px, 7.6vw, 30px);
+        line-height: 1.08;
+        text-wrap: wrap;
+        word-break: break-word;
+        max-width: 315px;
+      }
+      .subtitle { max-width: 315px; }
+      .big-call {
+        font-size: 19px;
+        line-height: 1.16;
+        text-wrap: wrap;
+        word-break: break-word;
+      }
+      .conclusion,
+      .facts,
+      .matrix-note,
+      .pdf-grid,
+      .arch-grid,
+      .gallery { grid-template-columns: 1fr; }
+      .nav { align-items: stretch; flex-direction: column; }
+      .gallery-tools { justify-content: flex-start; }
+      th { position: static; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .nav,
+      .filter-btn,
+      .print-btn,
+      .modal { display: none !important; }
+      .panel,
+      .arch-card,
+      .gallery-card,
+      .source-card,
+      .table-wrap { box-shadow: none; }
+      .shell { width: 100%; padding: 0; }
+      .section { break-inside: avoid; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#architectures">Skip to dashboard content</a>
+  <div class="shell">
+    <header class="topbar">
+      <section class="panel title-panel">
+        <div class="mark">PV</div>
+        <div>
+          <h1>iWin PV Blind Power Architecture Dashboard v2</h1>
+          <p class="subtitle">Review of series DCO, parallel DCO, DCO per zone, parallel MI, and per-zone MI topologies for movable BIPV/PV blind modules.</p>
+        </div>
+      </section>
+
+      <section class="panel conclusion">
+        <div class="conclusion-box lead">
+          <span class="label">near-term conclusion</span>
+          <span class="big-call">Series DCO / optimizer string leads</span>
+          <p>Best current off-the-shelf path: one blind module -> one optimizer/MPPT -> series DC string -> facade/string inverter.</p>
+        </div>
+        <div class="conclusion-box custom">
+          <span class="label">custom native-BIPV target</span>
+          <span class="big-call">Parallel DCO / PDO is the strategic branch</span>
+          <p>Conceptually strongest for future LVDC-style BIPV if certified per-blind DCO channels are available or developed.</p>
+        </div>
+      </section>
+
+      <section class="panel facts">
+        <div class="fact"><b>1 blind</b><span>controllable PV unit</span></div>
+        <div class="fact"><b>no merge</b><span>before independent MPPT</span></div>
+        <div class="fact"><b>EUR 35-61</b><span>optimizer price anchors</span></div>
+        <div class="fact"><b>EUR 53+</b><span>MI input best anchor</span></div>
+      </section>
+    </header>
+
+    <nav class="nav" aria-label="Dashboard sections">
+      <div class="nav-links">
+        <a href="#architectures">Architectures</a>
+        <a href="#matrix">Comparison Matrix</a>
+        <a href="#notebooks">Notebook Consensus</a>
+        <a href="#gallery">Approved Infographics</a>
+        <a href="#sources">Sources</a>
+      </div>
+      <button class="print-btn" type="button" onclick="window.print()">Print / Export</button>
+    </nav>
+
+    <section class="section" id="architectures">
+      <div class="section-head">
+        <div>
+          <h2>Architecture And Connection Review</h2>
+          <p>Schematics show the electrical boundary that matters for iWin: moving side carries protected PV DC only; power conversion is kept on fixed/serviceable facade or headbox side.</p>
+        </div>
+      </div>
+
+      <div class="arch-grid">
+        <article class="arch-card series-dco" data-arch="dco">
+          <div class="arch-head">
+            <div>
+              <h3>Series DCO / Optimizer String</h3>
+              <div class="mini">Per-blind optimizer, outputs in series</div>
+            </div>
+            <span class="rank lead">Lead</span>
+          </div>
+          <div class="schematic">
+            <svg viewBox="0 0 360 205" role="img" aria-label="Series DCO topology">
+              <defs>
+                <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#08743b"/></marker>
+                <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1456b8"/></marker>
+                <marker id="arrowTeal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#007985"/></marker>
+                <marker id="arrowYellow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#c18a00"/></marker>
+              </defs>
+              <line class="dc-line dash" x1="132" y1="14" x2="132" y2="184"/>
+              <text class="tiny green-txt" x="85" y="196">moving: PV DC only</text>
+              <text class="tiny blue-txt" x="154" y="196">fixed service side</text>
+              <rect class="box pv" x="16" y="25" width="50" height="26"/><text class="txt" x="23" y="42">Blind A</text>
+              <rect class="box pv" x="16" y="82" width="50" height="26"/><text class="txt" x="23" y="99">Blind B</text>
+              <rect class="box pv" x="16" y="139" width="50" height="26"/><text class="txt" x="23" y="156">Blind N</text>
+              <path class="dc-line-thin" d="M66 38 H152"/>
+              <path class="dc-line-thin" d="M66 95 H152"/>
+              <path class="dc-line-thin" d="M66 152 H152"/>
+              <rect class="box dco" x="154" y="24" width="72" height="30"/><text class="txt" x="168" y="42">DCO A</text>
+              <rect class="box dco" x="154" y="80" width="72" height="30"/><text class="txt" x="168" y="99">DCO B</text>
+              <rect class="box dco" x="154" y="136" width="72" height="30"/><text class="txt" x="168" y="155">DCO N</text>
+              <path class="bus-line" d="M226 39 H246 V151 H226"/>
+              <path class="bus-line" d="M226 95 H246"/>
+              <path class="bus-line" d="M246 95 H272"/>
+              <text class="tiny teal-txt" x="235" y="28">series after DCO</text>
+              <rect class="box" x="274" y="72" width="54" height="47"/><text class="tiny" x="283" y="91">string</text><text class="tiny" x="280" y="104">inverter</text>
+              <path class="ac-line" d="M328 96 H352"/>
+              <text class="tiny blue-txt" x="308" y="136">AC</text>
+            </svg>
+          </div>
+          <div class="arch-body">
+            <div class="spec-row"><span>Power-device price, qualitative</span><span class="price">Low</span></div>
+            <div class="spec-row"><span>Fit: 45 Vmp, 330-500 W/blind; 12-14 blinds/string typical</span><span>Strong</span></div>
+            <div class="pros-cons">
+              <div class="pc pro"><strong>Pros</strong><ul><li>Real product and price anchors.</li><li>Blind-level MPPT.</li><li>AC conversion centralized.</li></ul></div>
+              <div class="pc con"><strong>Cons</strong><ul><li>High-voltage DC string remains.</li><li>Needs RSD/string design closure.</li><li>Vendor cabling limits matter.</li></ul></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="arch-card parallel-dco" data-arch="dco pdo">
+          <div class="arch-head">
+            <div>
+              <h3>Parallel DCO / PDO</h3>
+              <div class="mini">Per-blind DCO to protected common DC node</div>
+            </div>
+            <span class="rank alt">Custom</span>
+          </div>
+          <div class="schematic">
+            <svg viewBox="0 0 360 205" role="img" aria-label="Parallel DCO topology">
+              <line class="dc-line dash" x1="132" y1="14" x2="132" y2="184"/>
+              <rect class="box pv" x="16" y="25" width="50" height="26"/><text class="txt" x="23" y="42">Blind A</text>
+              <rect class="box pv" x="16" y="82" width="50" height="26"/><text class="txt" x="23" y="99">Blind B</text>
+              <rect class="box pv" x="16" y="139" width="50" height="26"/><text class="txt" x="23" y="156">Blind N</text>
+              <path class="dc-line-thin" d="M66 38 H152"/>
+              <path class="dc-line-thin" d="M66 95 H152"/>
+              <path class="dc-line-thin" d="M66 152 H152"/>
+              <rect class="box dco" x="154" y="24" width="70" height="30"/><text class="txt" x="166" y="42">DCO A</text>
+              <rect class="box dco" x="154" y="80" width="70" height="30"/><text class="txt" x="166" y="99">DCO B</text>
+              <rect class="box dco" x="154" y="136" width="70" height="30"/><text class="txt" x="166" y="155">DCO N</text>
+              <path class="bus-line" d="M224 39 H248 V152"/>
+              <path class="bus-line" d="M224 95 H248"/>
+              <path class="bus-line" d="M224 151 H248"/>
+              <circle cx="248" cy="95" r="6" fill="#007985"/>
+              <path class="bus-line" d="M254 95 H279"/>
+              <rect class="box" x="280" y="72" width="56" height="47"/><text class="tiny" x="288" y="90">shared</text><text class="tiny" x="287" y="103">DC/AC</text>
+              <text class="tiny teal-txt" x="228" y="29">48-60 V node</text>
+              <path class="ac-line" d="M336 96 H354"/>
+            </svg>
+          </div>
+          <div class="arch-body">
+            <div class="spec-row"><span>Power-device price, qualitative</span><span class="price">Medium</span></div>
+            <div class="spec-row"><span>Fit: best as 36-40 Vmp, 300-400 W/blind, 3-4 DCO/node</span><span>Custom</span></div>
+            <div class="pros-cons">
+              <div class="pc pro"><strong>Pros</strong><ul><li>Best native DC-BIPV concept.</li><li>No raw PV merge before MPPT.</li><li>Central grid inverter.</li></ul></div>
+              <div class="pc con"><strong>Cons</strong><ul><li>No solid off-the-shelf blind DCO found.</li><li>Bus sharing, protection, RSD open.</li><li>Custom certification likely.</li></ul></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="arch-card zone-dco" data-arch="zone dco">
+          <div class="arch-head">
+            <div>
+              <h3>DCO Per Zone</h3>
+              <div class="mini">Grouped blinds by orientation/shading zone</div>
+            </div>
+            <span class="rank watch">Watch</span>
+          </div>
+          <div class="schematic">
+            <svg viewBox="0 0 360 205" role="img" aria-label="DCO per zone topology">
+              <rect class="box zone" x="15" y="24" width="100" height="54"/><text class="txt" x="30" y="45">Zone 1</text><text class="tiny" x="25" y="60">similar blinds</text>
+              <rect class="box zone" x="15" y="114" width="100" height="54"/><text class="txt" x="30" y="135">Zone 2</text><text class="tiny" x="25" y="150">similar blinds</text>
+              <path class="zone-line" d="M115 51 H153"/>
+              <path class="zone-line" d="M115 141 H153"/>
+              <rect class="box dco" x="154" y="28" width="74" height="44"/><text class="txt" x="170" y="47">Zone</text><text class="txt" x="171" y="60">DCO</text>
+              <rect class="box dco" x="154" y="118" width="74" height="44"/><text class="txt" x="170" y="137">Zone</text><text class="txt" x="171" y="150">DCO</text>
+              <path class="bus-line" d="M228 50 H252 V140 H228"/>
+              <path class="bus-line" d="M252 96 H282"/>
+              <rect class="box" x="284" y="74" width="54" height="45"/><text class="tiny" x="293" y="93">floor</text><text class="tiny" x="291" y="106">inverter</text>
+              <path class="ac-line" d="M338 96 H354"/>
+              <rect class="warn" x="19" y="176" width="307" height="20"/><text class="tiny orange-txt" x="27" y="190">Zone only works when shading/control behavior is homogeneous.</text>
+            </svg>
+          </div>
+          <div class="arch-body">
+            <div class="spec-row"><span>Power-device price, qualitative</span><span class="price">Lowest</span></div>
+            <div class="spec-row"><span>Fit: cost reduction branch, not the main shading-mitigation baseline</span><span>Conditional</span></div>
+            <div class="pros-cons">
+              <div class="pc pro"><strong>Pros</strong><ul><li>Fewest DC/DC devices.</li><li>Lower service count.</li><li>Useful for stable zones.</li></ul></div>
+              <div class="pc con"><strong>Cons</strong><ul><li>Zone mismatch remains.</li><li>Fault can affect many blinds.</li><li>Lower diagnostics granularity.</li></ul></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="arch-card parallel-mi" data-arch="mi">
+          <div class="arch-head">
+            <div>
+              <h3>Parallel MI</h3>
+              <div class="mini">Per-blind microinverter or MI input</div>
+            </div>
+            <span class="rank backup">Backup</span>
+          </div>
+          <div class="schematic">
+            <svg viewBox="0 0 360 205" role="img" aria-label="Parallel MI topology">
+              <line class="dc-line dash" x1="132" y1="14" x2="132" y2="184"/>
+              <rect class="box pv" x="16" y="25" width="50" height="26"/><text class="txt" x="23" y="42">Blind A</text>
+              <rect class="box pv" x="16" y="82" width="50" height="26"/><text class="txt" x="23" y="99">Blind B</text>
+              <rect class="box pv" x="16" y="139" width="50" height="26"/><text class="txt" x="23" y="156">Blind N</text>
+              <path class="dc-line-thin" d="M66 38 H152"/>
+              <path class="dc-line-thin" d="M66 95 H152"/>
+              <path class="dc-line-thin" d="M66 152 H152"/>
+              <rect class="box mi" x="154" y="24" width="62" height="30"/><text class="txt blue-txt" x="174" y="42">MI A</text>
+              <rect class="box mi" x="154" y="80" width="62" height="30"/><text class="txt blue-txt" x="174" y="99">MI B</text>
+              <rect class="box mi" x="154" y="136" width="62" height="30"/><text class="txt blue-txt" x="174" y="155">MI N</text>
+              <path class="ac-line" d="M216 39 H244 V152"/>
+              <path class="ac-line" d="M216 95 H244"/>
+              <path class="ac-line" d="M216 151 H244"/>
+              <path class="ac-line" d="M244 96 H274"/>
+              <rect class="box" x="276" y="74" width="60" height="45"/><text class="tiny" x="288" y="93">AC</text><text class="tiny" x="286" y="106">combiner</text>
+              <path class="ac-line" d="M336 96 H354"/>
+              <text class="tiny blue-txt" x="228" y="28">parallel AC</text>
+            </svg>
+          </div>
+          <div class="arch-body">
+            <div class="spec-row"><span>Power-device price, qualitative</span><span class="price">Highest</span></div>
+            <div class="spec-row"><span>Fit: 38-42 Vmp, 300-480 W/blind; fixed AC service zone only</span><span>Backup</span></div>
+            <div class="pros-cons">
+              <div class="pc pro"><strong>Pros</strong><ul><li>Mature certified products.</li><li>Strong per-blind independence.</li><li>Reduces high-voltage DC exposure.</li></ul></div>
+              <div class="pc con"><strong>Cons</strong><ul><li>AC branch enters facade design.</li><li>Higher power-device price.</li><li>Per-blind inverter service burden.</li></ul></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="arch-card zone-mi" data-arch="mi zone">
+          <div class="arch-head">
+            <div>
+              <h3>Per-Zone MI</h3>
+              <div class="mini">Multi-input or zone AC converter</div>
+            </div>
+            <span class="rank weak">Alt</span>
+          </div>
+          <div class="schematic">
+            <svg viewBox="0 0 360 205" role="img" aria-label="Per-zone MI topology">
+              <rect class="box zone" x="16" y="24" width="94" height="54"/><text class="txt" x="33" y="45">Zone 1</text><text class="tiny" x="24" y="60">2-6 blinds</text>
+              <rect class="box zone" x="16" y="114" width="94" height="54"/><text class="txt" x="33" y="135">Zone 2</text><text class="tiny" x="24" y="150">2-6 blinds</text>
+              <path class="zone-line" d="M110 51 H153"/>
+              <path class="zone-line" d="M110 141 H153"/>
+              <rect class="box mi" x="154" y="28" width="78" height="44"/><text class="txt blue-txt" x="177" y="47">Zone</text><text class="txt blue-txt" x="181" y="60">MI</text>
+              <rect class="box mi" x="154" y="118" width="78" height="44"/><text class="txt blue-txt" x="177" y="137">Zone</text><text class="txt blue-txt" x="181" y="150">MI</text>
+              <path class="ac-line" d="M232 50 H256 V140 H232"/>
+              <path class="ac-line" d="M256 96 H285"/>
+              <rect class="box" x="286" y="74" width="54" height="45"/><text class="tiny" x="295" y="93">AC</text><text class="tiny" x="292" y="106">board</text>
+              <path class="ac-line" d="M340 96 H354"/>
+              <rect class="warn" x="22" y="176" width="310" height="20"/><text class="tiny orange-txt" x="30" y="190">Cost/device count improves, but zone fault and mismatch remain.</text>
+            </svg>
+          </div>
+          <div class="arch-body">
+            <div class="spec-row"><span>Power-device price, qualitative</span><span class="price">Med-high</span></div>
+            <div class="spec-row"><span>Fit: only with independent MPPT inputs or homogeneous zones</span><span>Weak-alt</span></div>
+            <div class="pros-cons">
+              <div class="pc pro"><strong>Pros</strong><ul><li>Fewer converters than parallel MI.</li><li>AC-side modularity.</li><li>Fixed service-zone placement possible.</li></ul></div>
+              <div class="pc con"><strong>Cons</strong><ul><li>Less shade granularity.</li><li>AC branch still required.</li><li>Zone fault affects multiple blinds.</li></ul></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="matrix">
+      <div class="section-head">
+        <div>
+          <h2>Comparative Table And Relative Power-Device Price</h2>
+          <p>Price comparison is qualitative and covers power devices only: optimizers/DCOs, microinverters, and primary inverter/converter stage. It excludes passive components, cabling, connectors, enclosures, BOS, installation, and certification work.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Criterion</th>
+              <th>Series DCO / optimizer string</th>
+              <th>Parallel DCO / PDO</th>
+              <th>DCO per zone</th>
+              <th>Parallel MI</th>
+              <th>Per-zone MI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Connection topology</td>
+              <td>Blind -> optimizer/DCO -> series DC string -> string/facade inverter</td>
+              <td>Blind -> buck-boost DCO -> protected parallel DC node -> shared converter/inverter</td>
+              <td>Similar blinds -> zone DCO -> floor/facade inverter</td>
+              <td>Blind -> MI or MI input -> parallel AC branch</td>
+              <td>Zone group -> multi-input/zone MI -> AC branch</td>
+            </tr>
+            <tr>
+              <td>MPPT granularity</td>
+              <td class="good">Per blind</td>
+              <td class="good">Per blind if DCO per blind</td>
+              <td class="mid">Per zone</td>
+              <td class="good">Per blind if independent MI input</td>
+              <td class="mid">Per zone or per input</td>
+            </tr>
+            <tr>
+              <td>Partial shading tolerance</td>
+              <td class="good">Strong when no pre-MPPT merge</td>
+              <td class="good">Strongest DC concept when protected DCO outputs merge only after MPPT</td>
+              <td class="mid">Moderate; zone mismatch remains</td>
+              <td class="good">Strong, but only with independent inputs</td>
+              <td class="mid">Moderate to strong depending input count</td>
+            </tr>
+            <tr>
+              <td>Moving interface</td>
+              <td class="good">Protected PV DC only; optimizer fixed</td>
+              <td class="good">Protected PV DC only; DCO/node fixed</td>
+              <td class="mid">Protected PV DC, but zone harness must be managed</td>
+              <td class="mid">Protected PV DC only if MI fixed; AC starts after MI</td>
+              <td class="mid">Same as MI, with more zone cabling</td>
+            </tr>
+            <tr>
+              <td>Thermal and service</td>
+              <td class="good">Low converter count at facade; central inverter service</td>
+              <td class="mid">DCO per blind plus node protection; custom thermal closure</td>
+              <td class="good">Fewer converters, easier access if zone box fixed</td>
+              <td class="bad">DC/AC converter per blind/input; facade service burden</td>
+              <td class="mid">Fewer MI devices, but larger shared zone failure</td>
+            </tr>
+            <tr>
+              <td>Safety and regulatory load</td>
+              <td class="mid">DC string, RSD/optimizer rules, inverter compatibility</td>
+              <td class="mid">LVDC node possible, but bus sharing/protection/RSD unclear</td>
+              <td class="mid">Zone DC protection and inverter safety path</td>
+              <td class="mid">AC branch, anti-islanding, grid profile, AC protection</td>
+              <td class="mid">Same AC/grid constraints, fewer devices</td>
+            </tr>
+            <tr>
+              <td>Maturity and availability</td>
+              <td class="good">High; Tigo/Deye/SolarEdge/Huawei class evidence</td>
+              <td class="bad">Low for blind-scale certified PDO; good only as custom/reference branch</td>
+              <td class="mid">Conceptual and custom; commercial zone products not closed</td>
+              <td class="good">High product maturity, weaker iWin fit</td>
+              <td class="mid">Available as multi-input packages, use-scope needs closure</td>
+            </tr>
+            <tr>
+              <td>Relative power-device price</td>
+              <td class="good">Low. Commodity optimizer anchors: EUR 35-61/blind class.</td>
+              <td class="mid">Medium. Target EUR 45-65/channel; no solid certified product anchor.</td>
+              <td class="good">Lowest device count; low only if zone electronics are acceptable.</td>
+              <td class="bad">Highest. EUR 53/input best dual MI; EUR 101+ single-input MI; Enphase IQ8 EUR 143-196 before tax/shipping.</td>
+              <td class="mid">Medium-high. Fewer devices than per-blind MI, but larger AC converter.</td>
+            </tr>
+            <tr>
+              <td>Current verdict</td>
+              <td class="good">Most suitable current architecture for iWin pre-design.</td>
+              <td class="info">Best strategic custom/native-BIPV target if certified DCO exists.</td>
+              <td class="mid">Cost-reduction compromise; not baseline for dynamic shading.</td>
+              <td class="mid">Backup/benchmark for maximum independence; price and service penalty.</td>
+              <td class="mid">Pragmatic MI branch only for homogeneous zones.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="matrix-note">
+        <div class="note-card">
+          <strong>Most suitable now</strong>
+          <p>Series DCO / optimizer string because it combines blind-level MPPT, fixed service placement, known MLPE products, and the strongest power-device price evidence.</p>
+        </div>
+        <div class="note-card">
+          <strong>Most interesting custom path</strong>
+          <p>Parallel DCO / PDO because it matches the Notebook decks' native-BIPV logic, but it needs a certified per-blind DCO with reverse blocking, current limiting, bus control, thermal closure, and RSD strategy.</p>
+        </div>
+        <div class="note-card">
+          <strong>Rejected pattern</strong>
+          <p>Any topology that merges differently shaded blinds before independent MPPT. That includes raw parallel PV buses and coarse zone collectors without verified shade homogeneity.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="notebooks">
+      <div class="section-head">
+        <div>
+          <h2>Notebook And Literature-Style Synthesis</h2>
+          <p>The three NotebookLM/PVBrain PDFs explain the same architecture space from a more conceptual BIPV perspective. They are useful as synthesis sources, not supplier evidence.</p>
+        </div>
+      </div>
+      <div class="source-grid">
+        <div class="source-card">
+          <h3>Cross-source consensus</h3>
+          <ul>
+            <li>Granular MPPT is the decisive feature for dynamic BIPV shading.</li>
+            <li>Module/blind-level tracking beats zone-level tracking when shading is non-uniform.</li>
+            <li>DC optimizer variants tend to be lower in power-device cost than MI variants.</li>
+            <li>Parallel MI is strongest for DC safety and independence, but highest in device count and AC facade burden.</li>
+            <li>Zone architectures reduce devices but trade away diagnostics, fault isolation, and shade granularity.</li>
+          </ul>
+        </div>
+        <div class="source-card">
+          <h3>Preserved disagreement</h3>
+          <ul>
+            <li><b>Firecrawl/vendor evidence:</b> series optimizer string leads today.</li>
+            <li><b>NOTEBOOK and NOTEBOOK2:</b> parallel DCO/PDO is the conceptual optimum.</li>
+            <li><b>PVBRAIN:</b> parallel MI is the safety/yield maximum; zone MI is a pragmatic lower-device branch.</li>
+            <li><b>Dashboard v2 conclusion:</b> choose series DCO now; develop or request evidence for PDO next.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pdf-grid">
+        <div class="pdf-card">
+          <span class="chip teal">Notebook source</span>
+          <b>NOTEBOOK_BIPV_Electrical_Architectures</b>
+          <span>Verdict leans Parallel DCO for resilience, safety, and BIPV longevity.</span>
+          <a href="../NOTEBOOK_BIPV_Electrical_Architectures.pdf">Open PDF</a>
+        </div>
+        <div class="pdf-card">
+          <span class="chip teal">Notebook source</span>
+          <b>NOTEBOOK2_BIPV_Electrical_Architectures</b>
+          <span>Device cost spectrum: zone DCO lowest, series DCO low, parallel DCO medium, MI variants higher.</span>
+          <a href="../NOTEBOOK2_BIPV_Electrical_Architectures.pdf">Open PDF</a>
+        </div>
+        <div class="pdf-card">
+          <span class="chip violet">BIPV Brain</span>
+          <b>PVBRAIN_BIPV_Power_Topologies</b>
+          <span>Verdict separates maximum safety/yield from pragmatic cost/device-count choices.</span>
+          <a href="../PVBRAIN_BIPV_Power_Topologies.pdf">Open PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="section-head">
+        <div>
+          <h2>Approved Infographics Gallery</h2>
+          <p>Only the user-approved infographic set is used here, plus the two Codex comparison/Arch1 images generated in this thread.</p>
+        </div>
+        <div class="gallery-tools" role="group" aria-label="Filter gallery">
+          <button class="filter-btn active" type="button" data-filter="all">All</button>
+          <button class="filter-btn" type="button" data-filter="dco">DCO</button>
+          <button class="filter-btn" type="button" data-filter="mi">MI</button>
+          <button class="filter-btn" type="button" data-filter="comparison">Comparison</button>
+          <button class="filter-btn" type="button" data-filter="notebook">Notebook</button>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <article class="gallery-card" data-tags="dco comparison"><button class="image-button" type="button" aria-label="Open H1 iWin PV Blind Topology with TS4-A-O Optimizers"><img src="assets/h1_webgpt_ts4.png" width="1600" height="900" loading="lazy" alt="H1 TS4 optimizer topology" /></button><div class="caption"><b>H1 iWin PV Blind Topology with TS4-A-O Optimizers</b><div class="chips"><span class="chip green">Series DCO</span><span class="chip">Approved</span></div></div></article>
+        <article class="gallery-card" data-tags="dco comparison"><button class="image-button" type="button" aria-label="Open h1_iwin_ts4_topology_infographic CODEX"><img src="assets/h1_codex_ts4.png" width="1600" height="900" loading="lazy" alt="Codex H1 TS4 optimizer topology" /></button><div class="caption"><b>h1_iwin_ts4_topology_infographic CODEX</b><div class="chips"><span class="chip green">Series DCO</span><span class="chip">Approved</span></div></div></article>
+        <article class="gallery-card" data-tags="dco pdo"><button class="image-button" type="button" aria-label="Open H2-PDO iWin PV Blind Parallel DCO Architecture"><img src="assets/h2_pdo_webgpt.png" width="1600" height="900" loading="lazy" alt="H2 PDO parallel DCO architecture" /></button><div class="caption"><b>H2-PDO iWin PV Blind Parallel DCO Architecture</b><div class="chips"><span class="chip teal">Parallel DCO</span><span class="chip">Approved</span></div></div></article>
+        <article class="gallery-card" data-tags="dco zone"><button class="image-button" type="button" aria-label="Open H2 detailed connection topology"><img src="assets/h2_detailed_connection.png" width="1600" height="900" loading="lazy" alt="H2 detailed connection topology" /></button><div class="caption"><b>H2 detailed connection topology</b><div class="chips"><span class="chip orange">DCO per zone</span><span class="chip">Approved</span></div></div></article>
+        <article class="gallery-card" data-tags="mi"><button class="image-button" type="button" aria-label="Open H3 iWin PV Blind Microinverter Topology"><img src="assets/h3_webgpt_microinverter.png" width="1600" height="900" loading="lazy" alt="H3 microinverter topology" /></button><div class="caption"><b>H3 iWin PV Blind Microinverter Topology</b><div class="chips"><span class="chip blue">Parallel MI</span><span class="chip">Approved</span></div></div></article>
+        <article class="gallery-card" data-tags="mi"><button class="image-button" type="button" aria-label="Open h3_microinverter_topology_infographic CODEX"><img src="assets/h3_codex_microinverter.png" width="1600" height="900" loading="lazy" alt="Codex H3 microinverter topology" /></button><div class="caption"><b>h3_microinverter_topology_infographic CODEX</b><div class="chips"><span class="chip blue">Parallel MI</span><span class="chip">Approved</span></div></div></article>
+        <article class="gallery-card" data-tags="dco"><button class="image-button" type="button" aria-label="Open H4 iWin PV Blind Optimizer Topology"><img src="assets/h4_webgpt_optimizer.png" width="1600" height="900" loading="lazy" alt="H4 optimizer topology" /></button><div class="caption"><b>H4 iWin PV Blind Optimizer Topology</b><div class="chips"><span class="chip green">Series DCO</span><span class="chip">Approved</span></div></div></article>
+        <article class="gallery-card" data-tags="comparison"><button class="image-button" type="button" aria-label="Open Codex Comp Table"><img src="assets/codex_comp_table.png" width="1600" height="900" loading="lazy" alt="Codex comparison table" /></button><div class="caption"><b>Codex Comp Table</b><div class="chips"><span class="chip violet">Comparison</span><span class="chip">Approved</span></div></div></article>
+        <article class="gallery-card" data-tags="comparison"><button class="image-button" type="button" aria-label="Open Codex Comp Arch"><img src="assets/codex_comp_arch.png" width="1600" height="900" loading="lazy" alt="Codex comparison architecture schematic" /></button><div class="caption"><b>Codex Comp Arch</b><div class="chips"><span class="chip violet">Comparison</span><span class="chip">Approved</span></div></div></article>
+        <article class="gallery-card" data-tags="comparison"><button class="image-button" type="button" aria-label="Open Comparison chart of PV-BIPV systems"><img src="assets/comparison_chart_pv_bipv.png" width="1600" height="900" loading="lazy" alt="Comparison chart of PV-BIPV systems" /></button><div class="caption"><b>Comparison chart of PV-BIPV systems</b><div class="chips"><span class="chip violet">Comparison</span><span class="chip">Approved</span></div></div></article>
+        <article class="gallery-card" data-tags="dco comparison"><button class="image-button" type="button" aria-label="Open Arch1 ultimate optimizer string infographic"><img src="assets/arch1_ultimate_optimizer.png" width="1600" height="900" loading="lazy" alt="Arch1 ultimate optimizer topology" /></button><div class="caption"><b>Arch1 ultimate optimizer string infographic</b><div class="chips"><span class="chip green">Series DCO</span><span class="chip">Codex</span></div></div></article>
+        <article class="gallery-card" data-tags="comparison dco mi"><button class="image-button" type="button" aria-label="Open Codex Comp Arch: Series DCO vs Parallel MI"><img src="assets/codex_dco_vs_mi_v2.png" width="1600" height="900" loading="lazy" alt="Series DCO versus parallel microinverter comparison" /></button><div class="caption"><b>Codex Comp Arch: Series DCO vs Parallel MI</b><div class="chips"><span class="chip violet">Comparison</span><span class="chip">Codex</span></div></div></article>
+      </div>
+    </section>
+
+    <section class="section" id="sources">
+      <div class="section-head">
+        <div>
+          <h2>Evidence And File Outputs</h2>
+          <p>Dashboard v2 uses Firecrawl/vendor evidence for current commercial fit, Notebook PDFs for conceptual synthesis, and approved infographics for visual review.</p>
+        </div>
+      </div>
+      <div class="source-grid">
+        <div class="source-card">
+          <h3>Primary local sources</h3>
+          <ul>
+            <li><a href="../2026-05-26_iwin_topology_decision_matrix/decision_matrix.md">2026-05-26_iwin_topology_decision_matrix/decision_matrix.md</a></li>
+            <li><a href="../2026-05-26_iwin_price_evidence/price_evidence_report.md">2026-05-26_iwin_price_evidence/price_evidence_report.md</a></li>
+            <li><a href="../2026-05-28_iwin_h2_pdo_competitiveness/h2_pdo_competitiveness_review.md">2026-05-28_iwin_h2_pdo_competitiveness/h2_pdo_competitiveness_review.md</a></li>
+            <li><a href="../2026-05-28_iwin_pdo_parallel_dco/parallel_dco_pdo_evaluation.md">2026-05-28_iwin_pdo_parallel_dco/parallel_dco_pdo_evaluation.md</a></li>
+            <li><a href="notebook_source_synthesis.md">notebook_source_synthesis.md</a></li>
+          </ul>
+        </div>
+        <div class="source-card">
+          <h3>Closure gates before design freeze</h3>
+          <ul>
+            <li>Measured `Voc,cold`, `Vmp`, `Isc`, `Imp`, and `Pmp` across angle/shade/temperature.</li>
+            <li>Moving harness: voltage, current, bend radius, cycle life, connector and feedthrough.</li>
+            <li>Electronics thermal envelope in fixed headbox/facade service zone.</li>
+            <li>RSD/isolation behavior for string optimizer and parallel DCO nodes.</li>
+            <li>Vendor-supported service boundary and warranty configuration.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Generated 2026-05-28. Values are pre-design targets, not certified final plant data. Architecture ranking remains conditional on vendor and iWin measured data.</span>
+      <span>v2 bright dashboard</span>
+    </footer>
+  </div>
+
+  <div class="modal" id="imageModal" aria-hidden="true">
+    <figure>
+      <img src="" width="1600" height="900" alt="Selected infographic preview" id="modalImage" />
+      <figcaption>
+        <span id="modalCaption"></span>
+        <button type="button" id="modalClose">Close</button>
+      </figcaption>
+    </figure>
+  </div>
+
+  <script>
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const galleryCards = document.querySelectorAll(".gallery-card");
+    const applyFilter = (filter, updateUrl = true) => {
+      filterButtons.forEach((item) => item.classList.toggle("active", item.dataset.filter === filter));
+      galleryCards.forEach((card) => {
+        const tags = card.dataset.tags || "";
+        card.style.display = filter === "all" || tags.includes(filter) ? "" : "none";
+      });
+      if (updateUrl) {
+        const url = new URL(window.location);
+        if (filter === "all") {
+          url.searchParams.delete("gallery");
+        } else {
+          url.searchParams.set("gallery", filter);
+        }
+        history.replaceState(null, "", url);
+      }
+    };
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        applyFilter(button.dataset.filter);
+      });
+    });
+
+    const initialFilter = new URL(window.location).searchParams.get("gallery") || "all";
+    if ([...filterButtons].some((button) => button.dataset.filter === initialFilter)) {
+      applyFilter(initialFilter, false);
+    }
+
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    const modalCaption = document.getElementById("modalCaption");
+    const closeModal = () => {
+      modal.classList.remove("open");
+      modal.setAttribute("aria-hidden", "true");
+      modalImage.src = "";
+    };
+
+    document.querySelectorAll(".image-button").forEach((button) => {
+      button.addEventListener("click", () => {
+        const image = button.querySelector("img");
+        modalImage.src = image.src;
+        modalImage.alt = image.alt;
+        modalCaption.textContent = button.closest(".gallery-card").querySelector("b").textContent;
+        modal.classList.add("open");
+        modal.setAttribute("aria-hidden", "false");
+      });
+    });
+
+    document.getElementById("modalClose").addEventListener("click", closeModal);
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) closeModal();
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeModal();
+    });
+  </script>
+</body>
+</html>

@@ -120,11 +120,11 @@ Even though the multiple-stage conversion system circuits look  complicated, the
 
 Figure 2.5  Topology of centralized maximum power g . os -. point tracker with galvanic isolation and single-stage power conversion.
 
-![Figure 2.5 Topology of centralized maximum power g . os -. point tracker with galvanic isolation and single-stage power conversion.](assets/page-004-figure-005_1.png)
+![Figure 2.5 Topology of centralized maximum power g . os -. point tracker with galvanic isolation and single-stage power conversion.|410](assets/page-004-figure-005_1.png)
 
 Figure 2.6  Centralized maximum power point tracker without galvanic isolation: (a) with two-stage conversion; (b) with single-stage conversion.
 
-![Figure 2.6 Centralized maximum power point tracker without galvanic isolation: (a) with two-stage conversion; (b) with single-stage conversion.](assets/page-005-figure-006_1.png)
+![Figure 2.6 Centralized maximum power point tracker without galvanic isolation: (a) with two-stage conversion; (b) with single-stage conversion.|389](assets/page-005-figure-006_1.png)
 
 The single-stage power interface has shown the advantage of simplicity and high conversion efficiency. However, it should be based on an integrated design since the DC/AC inverter must be able to undertake MPPT and other functions required by the grid interconnection. Furthermore, the MPPT dynamic performance is no longer decoupled from the DC link, which is the same as the PV link. When the system is for a single-phase grid interconnection, a significant capacitance at the DC link is required to mitigate the double-line frequency ripples. This generally lowers the speed of MPPT due to the slow dynamic response at the PV link.
 
@@ -204,11 +204,11 @@ The implementation of  communication  and data acquisition systems allows for mo
 
 Figure 2.13  Three-level monitoring of photovoltaic power systems using wireless communication technologies.
 
-![Figure 2.13 Three-level monitoring of photovoltaic power systems using wireless communication technologies.](assets/page-011-figure-013_1.png)
+![Figure 2.13 Three-level monitoring of photovoltaic power systems using wireless communication technologies.|624](assets/page-011-figure-013_1.png)
 
 Figure 2.14  Trend towards distributed maximum power point tracking systems.
 
-![Figure 2.14 Trend towards distributed maximum power point tracking systems.](assets/page-012-figure-014_1.png)
+![Figure 2.14 Trend towards distributed maximum power point tracking systems.|538](assets/page-012-figure-014_1.png)
 
 ## 2.3 DMPPT Systems at PV String Level
 
